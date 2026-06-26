@@ -47,3 +47,11 @@ decisions land at repo/system level, never individual keystrokes.
    to `agents/review-queue.md`. Never approve.
 4. **Advise (sim)** — answer persona questions from APPROVED nodes only, returning the advisor
    contract in `agents/advisor-agent.md`.
+
+## Running the simulation (sim/)
+- `python3 sim/run.py --interactive` — REPL; `--batch sim/questions.seed.json` — scorecard;
+  `--export` — regenerate `sim/web/tree.js` then open `sim/web/index.html`.
+- The engine answers ONLY from approved nodes; unmatched → gap (curator task); open commercial
+  questions (pricing) hit a human-authored stance. Source of truth: `sim/engine.py`.
+- To drive it from here, use `prompts/run-simulation.md`. Produce polished answers only from cited
+  nodes; never invent facts; never change a node's status/approved_by.

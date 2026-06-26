@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Faros-case · Advisor Simulation</title>
+<script src="tree.js"></script>
+<style>
+  :root{
+    --ink:#0A0C12;--surf:#12151E;--surf2:#171B26;--line:#222838;--lsoft:#1A1F2C;
+    --txt:#EAEDF4;--dim:#98A1B3;--faint:#5E6678;
+    --teal:#2DD4BF;--violet:#7C6FF2;--amber:#F5B544;--red:#F2545B;--green:#4ADE80;
+    --mono:ui-monospace,"JetBrains Mono",Menlo,Consolas,monospace;
+    --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:radial-gradient(1000px 600px at 80% -10%,rgba(45,212,191,.05),transparent 60%),var(--ink);
+    color:var(--txt);font-family:var(--sans);line-height:1.5;-webkit-font-smoothing:antialiased;padding:0 0 60px}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 22px}
+  header{border-bottom:1px solid var(--line);background:linear-gradient(180deg,rgba(17,21,31,.9),rgba(10,12,18,.5));position:sticky;top:0;z-index:10;backdrop-filter:blur(8px)}
+  .hin{max-width:1060px;margin:0 auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  .brand{display:flex;align-items:center;gap:11px}
+  .glyph{width:30px;height:30px;border-radius:8px;background:conic-gradient(from 160deg,var(--teal),var(--violet),var(--amber),var(--teal));display:grid;place-items:center}
+  .glyph b{font-family:var(--mono);font-size:12px;color:#0A0C12}
+  .brand .t{font-size:14px;font-weight:640}.brand .s{font-family:var(--mono);font-size:10.5px;color:var(--faint)}
+  .scorechip{font-family:var(--mono);font-size:12px;color:var(--dim);border:1px solid var(--line);border-radius:9px;padding:7px 12px;background:var(--surf)}
+  .scorechip b{color:var(--teal)}
+  .intro{padding:26px 0 6px}
+  .intro h1{font-size:24px;letter-spacing:-.6px;font-weight:680;margin-bottom:8px}
+  .intro p{color:var(--dim);font-size:14.5px;max-width:760px}
+  .intro .det{margin-top:10px;font-family:var(--mono);font-size:11.5px;color:var(--faint)}
+  .controls{display:flex;gap:12px;align-items:center;margin:22px 0 14px;flex-wrap:wrap}
+  select,input[type=text]{font-family:var(--sans);font-size:14px;background:var(--surf);color:var(--txt);border:1px solid var(--line);border-radius:10px;padding:11px 13px}
+  input[type=text]{flex:1;min-width:280px}
+  select:focus,input:focus{outline:none;border-color:var(--teal)}
+  .btn{font-family:var(--sans);font-size:14px;font-weight:560;border:none;border-radius:10px;padding:11px 18px;cursor:pointer;background:linear-gradient(100deg,var(--teal),var(--violet));color:#06120F;transition:filter .15s}
+  .btn:hover{filter:brightness(1.08)}
+  .chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+  .chip{font-size:12.5px;color:var(--dim);border:1px solid var(--line);border-radius:20px;padding:6px 12px;background:var(--surf);cursor:pointer;transition:all .15s}
+  .chip:hover{border-color:var(--teal);color:var(--teal)}
+  .log{display:flex;flex-direction:column;gap:14px}
+  .card{border:1px solid var(--line);border-radius:14px;background:var(--surf);overflow:hidden;animation:fade .3s ease}
+  @keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  .card .q{padding:14px 18px;border-bottom:1px solid var(--lsoft);font-weight:560;display:flex;gap:10px;align-items:flex-start}
+  .card .q .qi{font-family:var(--mono);font-size:11px;color:var(--faint);margin-top:3px}
+  .card .body{padding:16px 18px}
+  .kindtag{display:inline-block;font-family:var(--mono);font-size:10px;letter-spacing:.6px;text-transform:uppercase;padding:3px 9px;border-radius:20px;margin-bottom:12px}
+  .k-answer{color:var(--teal);border:1px solid var(--teal);background:color-mix(in srgb,var(--teal) 12%,transparent)}
+  .k-open{color:var(--amber);border:1px solid var(--amber);background:color-mix(in srgb,var(--amber) 12%,transparent)}
+  .k-gap{color:var(--red);border:1px solid var(--red);background:color-mix(in srgb,var(--red) 12%,transparent)}
+  .ans{font-size:15px;font-weight:520;line-height:1.55;margin-bottom:14px}
+  .meta{display:grid;grid-template-columns:120px 1fr;gap:6px 14px;font-size:13px}
+  .meta .ml{font-family:var(--mono);font-size:11px;color:var(--faint);text-transform:uppercase;letter-spacing:.4px;padding-top:2px}
+  .meta .mv{color:var(--dim)}
+  .hbadge{font-family:var(--mono);font-size:11px;padding:2px 8px;border-radius:6px}
+  .h-shipped{color:var(--green);background:color-mix(in srgb,var(--green) 14%,transparent)}
+  .h-roadmap{color:var(--amber);background:color-mix(in srgb,var(--amber) 14%,transparent)}
+  .h-inference{color:var(--violet);background:color-mix(in srgb,var(--violet) 14%,transparent)}
+  .cite{font-family:var(--mono);font-size:11px;color:var(--teal);border:1px solid var(--line);border-radius:5px;padding:1px 6px;margin:0 4px 4px 0;display:inline-block}
+  .pos-ok{color:var(--green);font-family:var(--mono);font-size:12px}
+  .pos-flag{color:var(--red);font-family:var(--mono);font-size:12px;font-weight:600}
+  .scoredots{font-family:var(--mono);font-size:13px;letter-spacing:3px}
+  .sd-ok{color:var(--green)}.sd-no{color:var(--red)}
+  .empty{color:var(--faint);font-size:14px;padding:30px 0;text-align:center;font-family:var(--mono)}
+  footer{margin-top:30px;text-align:center;font-family:var(--mono);font-size:11px;color:var(--faint)}
+  .err{border:1px solid var(--red);border-radius:12px;padding:18px;color:var(--red);font-family:var(--mono);font-size:13px;margin-top:20px}
+</style>
+</head>
+<body>
+<header><div class="hin">
+  <div class="brand"><div class="glyph"><b>FV</b></div>
+    <div><div class="t">Advisor Simulation</div><div class="s">FAROS-CASE · DETERMINISTIC · LOCAL</div></div></div>
+  <div class="scorechip" id="scorechip">session: <b>0</b> asked</div>
+</div></header>
+
+<div class="wrap">
+  <div class="intro">
+    <h1>Ask as the buyer. The advisor answers only from approved nodes.</h1>
+    <p>This mirrors <code>sim/engine.py</code> in the browser so you can interact offline. Every answer
+    cites the exact tree nodes it used, carries an honest shipped/roadmap/inference label, and passes a
+    positioning check. Unmatched questions become a <b>gap → curator task</b> — the advisor never improvises.</p>
+    <div class="det" id="loadinfo"></div>
+  </div>
+
+  <div class="controls">
+    <select id="persona" aria-label="persona"></select>
+    <input type="text" id="q" placeholder="e.g. An outage hit payments — can you trace which AI session caused it?" />
+    <button class="btn" id="ask">Ask</button>
+  </div>
+  <div class="chips" id="seedchips"></div>
+
+  <div class="log" id="log"><div class="empty">No questions yet — pick a sample chip or type one above.</div></div>
+  <footer>Deterministic engine · source of truth is sim/engine.py · regenerate tree.js with <code>python3 sim/run.py --export</code></footer>
+</div>
+
+<script>
+(function(){
+  if(typeof window.TREE === "undefined"){
+    document.getElementById("log").innerHTML =
+      '<div class="err">tree.js not found. Run <b>python3 sim/run.py --export</b> in the repo, then open this file again (same folder).</div>';
+    return;
+  }
+  const T = window.TREE;
+  const byId = {}; T.nodes.forEach(n=>byId[n.id]=n);
+  const mappings = T.nodes.filter(n=>n.type==="mapping");
+  const personas = T.nodes.filter(n=>n.type==="persona");
+  const THRESH = T.threshold || 0.30;
+
+  // ---- mirror the Python matcher ----
+  const STOP = new Set("a an the of to and or is are was were be been being do does did how what why when who which can could would should we i my our your you it this that with for from on in at as by me us them they help about into out have has had will just so if not no yes".split(" "));
+  const SYN = T.synonyms || {};
+  const SYN_REV = {};
+  Object.keys(SYN).forEach(c=>SYN[c].forEach(w=>SYN_REV[w]=c));
+  const BANNED = T.banned_positioning || [];
+  const OPEN = T.open_intents || [];
+
+  function deplural(t){ return (t.length>4 && t.endsWith("s") && !t.endsWith("ss")) ? t.slice(0,-1) : t; }
+  function tokenize(s){
+    const out=new Set();
+    (s||"").toLowerCase().match(/[a-z0-9]+/g)?.forEach(t=>{
+      if(STOP.has(t))return; t=deplural(t); out.add(SYN_REV[t]||t);
+    }); return out;
+  }
+  function rawTokens(s){
+    const out=new Set();
+    (s||"").toLowerCase().match(/[a-z0-9]+/g)?.forEach(t=>{ if(!STOP.has(t)) out.add(deplural(t)); });
+    return out;
+  }
+  function addTokens(bag, s, w){ tokenize(s).forEach(t=>bag[t]=(bag[t]||0)+w); }
+  function nodeBag(m){
+    const bag={}; const f=m.fields||{};
+    addTokens(bag, f.pain, 3); addTokens(bag, m.title, 2);
+    (m.tags||[]).forEach(t=>addTokens(bag,t,2));
+    const faros=byId[f.faros_ref]; if(faros) addTokens(bag, faros.title, 2);
+    const flow=byId[f.flow_ref];
+    if(flow){ addTokens(bag, flow.title,1); ((flow.fields||{}).ai_touchpoints||[]).forEach(v=>addTokens(bag,String(v),1)); }
+    return bag;
+  }
+  function score(qtok, bag){
+    let hit=0,total=0; for(const k in bag){ total+=bag[k]; if(qtok.has(k)) hit+=bag[k]; }
+    if(!hit||!qtok.size) return 0;
+    return hit/(Math.sqrt(qtok.size)*Math.sqrt(total));
+  }
+  function positioning(text){
+    const low=text.toLowerCase();
+    for(const p of BANNED){ if(low.includes(p)) return ["flagged",p]; }
+    return ["passed",null];
+  }
+  function advise(question, personaId){
+    const qraw=rawTokens(question);
+    for(const oi of OPEN){
+      if(oi.triggers.some(t=>qraw.has(t))){
+        const [pc]=positioning(oi.answer);
+        const cites=[personaId, oi.cite].filter(Boolean);
+        return {kind:"open-question",question,matched_pain:oi.title,answer:oi.answer,
+          faros_nodes:[],mapping_nodes:[],honesty:oi.honesty,positioning:pc,citations:cites,gap:null,match:1.0,
+          score:{c:cites.length>=2,h:true,p:pc==="passed"}};
+      }
+    }
+    const qtok=tokenize(question);
+    let best=null,bs=0;
+    mappings.forEach(m=>{ const s=score(qtok,nodeBag(m)); if(s>bs){bs=s;best=m;} });
+    if(!best || bs<THRESH){
+      return {kind:"gap",question,answer:"Not covered by an approved node yet — routing to the curator to propose a mapping rather than improvising.",
+        gap:"no_approved_node",match:+bs.toFixed(3),honesty:null,positioning:"passed",citations:[],faros_nodes:[],mapping_nodes:[],
+        score:{c:false,h:false,p:true}};
+    }
+    const f=best.fields||{}; const faros=byId[f.faros_ref];
+    const honesty=best.honesty||"inference";
+    const lead = honesty==="shipped" ? "Yes — and this part is live today."
+      : honesty==="roadmap" ? "Yes — the foundation is live, and this specific capability is on the roadmap (flagging that honestly)."
+      : "Here's how Faros approaches it (this read is our inference, not a shipped claim).";
+    const answer = (lead+" "+(f.evidence||"")).trim();
+    const [pc]=positioning(answer+" "+(f.evidence||""));
+    const cites=[personaId,f.flow_ref,best.id,f.faros_ref].filter(Boolean);
+    return {kind:"answer",question,matched_pain:f.pain,answer,
+      faros_nodes:faros?[f.faros_ref]:[],mapping_nodes:[best.id],honesty,positioning:pc,citations:cites,
+      gap:null,match:+bs.toFixed(3),score:{c:cites.length>=2,h:true,p:pc==="passed"}};
+  }
+
+  // ---- UI ----
+  const sel=document.getElementById("persona");
+  personas.forEach(p=>{ const o=document.createElement("option"); o.value=p.id; o.textContent=p.title; sel.appendChild(o); });
+  if(!personas.length){ const o=document.createElement("option"); o.value="persona:maya"; o.textContent="persona:maya"; sel.appendChild(o); }
+  document.getElementById("loadinfo").textContent =
+    `loaded ${T.nodes.length} approved nodes · ${mappings.length} mappings · threshold ${THRESH} · ${OPEN.length} open-question intent(s)`;
+
+  const SEEDS=[
+    "An outage hit payments — can you trace which AI session caused it?",
+    "My board wants to know what our AI spend bought.",
+    "How do you stop the same AI mistake happening again?",
+    "Is this going to surveil my engineers?",
+    "How do you govern AI merges without slowing us down?",
+    "What does Faros cost and how is it priced?",
+    "Which of my AI tools is worth keeping?",
+    "Can Faros help us hire more engineers?"
+  ];
+  const chipWrap=document.getElementById("seedchips");
+  SEEDS.forEach(s=>{ const c=document.createElement("button"); c.className="chip"; c.textContent=s;
+    c.onclick=()=>{ document.getElementById("q").value=s; run(); }; chipWrap.appendChild(c); });
+
+  const log=document.getElementById("log");
+  let asked=0, scoreSum=0, scoreMax=0;
+  const esc=s=>(s||"").replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+
+  function render(r){
+    if(asked===0) log.innerHTML="";
+    asked++;
+    const kindCls = r.kind==="answer"?"k-answer":r.kind==="open-question"?"k-open":"k-gap";
+    const kindLbl = r.kind==="answer"?"answer":r.kind==="open-question"?"open question":"gap → curator";
+    let metaRows="";
+    if(r.matched_pain) metaRows+=`<div class="ml">matched pain</div><div class="mv">${esc(r.matched_pain)}</div>`;
+    if(r.honesty) metaRows+=`<div class="ml">honesty</div><div class="mv"><span class="hbadge h-${r.honesty}">${r.honesty}</span></div>`;
+    metaRows+=`<div class="ml">positioning</div><div class="mv">${r.positioning==="passed"?'<span class="pos-ok">✓ passed</span>':'<span class="pos-flag">⚑ FLAGGED</span>'}</div>`;
+    if(r.citations.length) metaRows+=`<div class="ml">cites</div><div class="mv">${r.citations.map(c=>`<span class="cite">${esc(c)}</span>`).join("")}</div>`;
+    const sc=r.score; const dots=`<span class="${sc.c?'sd-ok':'sd-no'}">●</span><span class="${sc.h?'sd-ok':'sd-no'}">●</span><span class="${sc.p?'sd-ok':'sd-no'}">●</span>`;
+    const tot=(sc.c?1:0)+(sc.h?1:0)+(sc.p?1:0);
+    metaRows+=`<div class="ml">score</div><div class="mv"><span class="scoredots">${dots}</span> &nbsp;${tot}/3 &nbsp;<span style="color:var(--faint);font-family:var(--mono);font-size:11px">match=${r.match}</span></div>`;
+    if(r.kind!=="gap"){ scoreSum+=tot; scoreMax+=3; }
+
+    const card=document.createElement("div"); card.className="card";
+    card.innerHTML=`<div class="q"><span class="qi">Q${asked}</span><span>${esc(r.question)}</span></div>
+      <div class="body"><span class="kindtag ${kindCls}">${kindLbl}</span>
+      <div class="ans">${esc(r.answer)}</div>
+      <div class="meta">${metaRows}</div></div>`;
+    log.prepend(card);
+    document.getElementById("scorechip").innerHTML =
+      `session: <b>${asked}</b> asked · quality <b>${scoreMax?Math.round(100*scoreSum/scoreMax):0}%</b>`;
+  }
+  function run(){
+    const q=document.getElementById("q").value.trim(); if(!q)return;
+    render(advise(q, sel.value)); document.getElementById("q").value="";
+  }
+  document.getElementById("ask").onclick=run;
+  document.getElementById("q").addEventListener("keydown",e=>{ if(e.key==="Enter")run(); });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "_note": "Starter buyer questions for the advisor simulation. Add your own. 'persona' is optional (defaults to persona:maya). These mix questions the approved tree SHOULD answer with a couple it intentionally does NOT yet — gaps are curator tasks, not failures.",
+  "questions": [
+    { "q": "We keep shipping AI-written code that causes incidents and can never tell which session caused what. Can Faros help?" },
+    { "q": "My board wants to know what our AI spend actually bought. What can Faros show them?" },
+    { "q": "How do you stop the same AI mistake from happening again next week?" },
+    { "q": "Is this going to surveil my engineers or rank them?" },
+    { "q": "An outage just hit payments — can you trace it back to the root cause and the model that wrote it?" },
+    { "q": "Our token bill is climbing fast. Is this a cost tool?" },
+    { "q": "How do you govern AI merges without slowing the team down?" },
+    { "q": "What does Faros cost and how is it priced?" },
+    { "q": "Can Faros tell me which of my AI tools is actually worth keeping?" },
+    { "q": "Can Faros help us hire more engineers?" }
+  ]
+}

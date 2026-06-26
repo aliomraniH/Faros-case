@@ -115,13 +115,24 @@ Remove its line from the queue. CI blocks any `approved` node missing `approved_
 
 ---
 
-## §6 · Run the advisor simulation (later)
+## §6 · Run the advisor simulation (Claude Desktop coding)
 
-Once approved nodes include real fetched content, run the **Advisor** against the persona:
-> Paste `prompts/advise-sim.md`. Feed it buyer questions (you can reuse the panel-simulator question
-> set). It answers from approved nodes only and returns the contract (citations + honesty label +
-> positioning check). Score each answer on: correct citations, honest shipped/roadmap labelling, and
-> positioning discipline. That score is your eval.
+The simulation is built and runnable in `sim/`. It answers buyer questions **only** from approved
+nodes, cites them, labels honesty, runs a positioning check, and scores each answer.
+
+```bash
+python3 sim/run.py --interactive                  # REPL — type questions, get scored answers
+python3 sim/run.py --batch sim/questions.seed.json # scorecard across a question set
+python3 sim/run.py --export && open sim/web/index.html   # standalone local UI (no server)
+```
+
+To drive it from **Claude Desktop coding** (local file access): open the repo in the Code tab and
+paste `prompts/run-simulation.md`. It runs the batch, produces a polished answer per result drawn
+**only** from the cited nodes (no new facts), turns each gap into a curator task, and flags any
+answer that fails a score check — without ever changing a node's `status`/`approved_by`.
+
+**The eval:** each answer scores on citations_ok · honesty_ok · positioning_ok. The batch quality %
+is the number to watch as the tree grows with real fetched nodes. See `sim/README.md`.
 
 ---
 

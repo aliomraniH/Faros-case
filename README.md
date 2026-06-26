@@ -88,6 +88,20 @@ Three rules make it deterministic, not vibes:
 - **MCP_Assist:** durable, cross-surface memory of the architecture and website insights, plus the
   handoff baton between web and Cowork/Desktop. See `memory/README.md`.
 
+## Run it now (the simulation)
+
+The Advisor simulation is built and runnable with no API key:
+
+```bash
+python3 sim/run.py --interactive                   # REPL
+python3 sim/run.py --batch sim/questions.seed.json # scorecard
+python3 sim/run.py --export && open sim/web/index.html  # local UI
+```
+
+It answers buyer questions only from approved nodes, cites them, labels shipped/roadmap/inference,
+runs a positioning check, and scores each answer. Unmatched questions become curator tasks. See
+`sim/README.md`. Drive it from Claude Desktop with `prompts/run-simulation.md`.
+
 ## Current state & honest gaps
 
 - The knowledge tree is seeded from **already-gathered** material (press release, Field Guide,
