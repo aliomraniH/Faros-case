@@ -130,13 +130,23 @@ if [[ -f "tools/mcp_health.py" ]]; then
 fi
 
 # ---------------------------------------------------------------------------
+step "6 · Smoke-test the Advisor simulation"
+if [[ -f "sim/run.py" ]]; then
+  python3 sim/run.py --export >/dev/null 2>&1 && c_grn "Exported sim/web/tree.js for the local UI."
+  echo
+  python3 sim/run.py --batch sim/questions.seed.json || c_yel "(sim batch had issues — check output above)"
+  c_cya "Interactive: python3 sim/run.py --interactive   |   UI: open sim/web/index.html"
+fi
+
+# ---------------------------------------------------------------------------
 step "Done"
-c_grn  "Repo seeded and (if credentialed) pushed."
+c_grn  "Repo seeded, validated$( [[ "$GH_MODE" != "none" ]] && echo ', and pushed' )."
 echo
 c_cya  "Next:"
-echo   "  • Fetch faros.ai pages  → see RUNBOOK.md §2  (Claude Cowork or Claude Code WebFetch)"
+echo   "  • Fetch faros.ai pages  → RUNBOOK.md §2  (Claude Cowork or Claude Code WebFetch)"
 echo   "  • Curate into nodes     → RUNBOOK.md §3  (curator agent, status: proposed)"
 echo   "  • Approve (human gate)  → agents/HUMAN-GATE.md"
 echo   "  • Seed/replay memory    → RUNBOOK.md §4"
+echo   "  • Run the simulation    → RUNBOOK.md §6  (Claude Desktop: prompts/run-simulation.md)"
 echo
 c_cya  "Copy-paste prompts for each surface are in prompts/."
