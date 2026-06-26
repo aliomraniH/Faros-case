@@ -1,0 +1,14 @@
+{
+  "tool": "MCP_Assist:memory_save",
+  "args": {
+    "namespace": "dev/faros-case",
+    "key": "arch/agents",
+    "kind": "knowledge",
+    "value": "Two agents, roles never blur: CURATOR reads fetch/raw/*.json and proposes nodes (status=proposed, never approves own work); ADVISOR answers persona questions from APPROVED nodes only, returns a structured contract with citations + honesty label + positioning_check (door/room, empower-not-police), and emits a curator task on gaps instead of improvising.",
+    "source_surface": "claude-web",
+    "tags": [
+      "architecture",
+      "agents"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "tool": "MCP_Assist:memory_save",
+  "args": {
+    "namespace": "dev/faros-case",
+    "key": "insight/persona-maya",
+    "kind": "knowledge",
+    "value": "Primary buyer persona: Maya, VP Platform Engineering, ~1,200-eng B2B SaaS, ~90% AI adoption, renewal coming, board ROI pressure. The squeeze: board above ('justify the spend'), developers below ('help not surveil'); Maya in the middle answers up without policing down. Owns the problem; CFO opens the door; staff engineer guards the gate; developers decide if it lives.",
+    "source_surface": "claude-web",
+    "tags": [
+      "insight",
+      "persona",
+      "maya"
+    ]
+  }
+}

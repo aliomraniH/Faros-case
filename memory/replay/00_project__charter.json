@@ -1,0 +1,14 @@
+{
+  "tool": "MCP_Assist:memory_save",
+  "args": {
+    "namespace": "dev/faros-case",
+    "key": "project/charter",
+    "kind": "decision",
+    "value": "Faros-case: a deterministic, human-supervised knowledge tree mapping Faros AI's offering to a buyer persona (Maya), with Claude-managed advisor + curator agents that answer 'how can Faros help?' from approved nodes only. Repo: aliomraniH/Faros-case. Surfaces: Claude web (seed), Cowork/Desktop (fetch+commit). Goal endstate: run an advisor-vs-persona Q&A simulation.",
+    "source_surface": "claude-web",
+    "tags": [
+      "charter",
+      "architecture"
+    ]
+  }
+}

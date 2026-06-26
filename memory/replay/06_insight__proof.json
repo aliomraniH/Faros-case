@@ -1,0 +1,16 @@
+{
+  "tool": "MCP_Assist:memory_save",
+  "args": {
+    "namespace": "dev/faros-case",
+    "key": "insight/proof",
+    "kind": "knowledge",
+    "value": "Proof points: Vimeo ~+30% Copilot adoption (vendor case study); SmartBear hours/days reporting -> minutes (vendor case study); MIT NANDA: 95% of enterprise AI no measurable P&L impact, a learning gap not model quality (INDEPENDENT \u2014 the credibility anchor). Connectors: 70+ (press-release era) now marketed as 100+. Company: founded 2019, San Mateo, ~$36M (SignalFire/Lobby Capital), ex-Salesforce Einstein team (Vitaly Gordon CEO, Shubha Nabar, Matthew Tovbin).",
+    "source_surface": "claude-web",
+    "tags": [
+      "insight",
+      "faros",
+      "proof",
+      "evidence"
+    ]
+  }
+}

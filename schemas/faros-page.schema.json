@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/aliomraniH/Faros-case/schemas/faros-page.schema.json",
+  "title": "Fetched Faros Page",
+  "description": "Normalized JSON for a single faros.ai page fetched by Claude Cowork/Desktop. One file per page under fetch/raw/. Goal: capture structure (headings, claims, CTAs, capability/solution names) in a form the curator agent can turn into knowledge-tree nodes.",
+  "type": "object",
+  "required": ["url", "tab", "retrieved_at", "title", "sections"],
+  "additionalProperties": false,
+  "properties": {
+    "url": { "type": "string", "description": "Exact page URL fetched." },
+    "tab": {
+      "type": "string",
+      "enum": ["platform", "capabilities", "solutions", "company", "other"],
+      "description": "Which top-nav tab this page belongs to."
+    },
+    "retrieved_at": { "type": "string", "format": "date-time" },
+    "title": { "type": "string", "description": "Page <title> or hero H1." },
+    "hero": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "headline": { "type": "string" },
+        "subhead": { "type": "string" },
+        "primary_cta": { "type": "string" }
+      }
+    },
+    "sections": {
+      "type": "array",
+      "description": "Ordered page sections.",
+      "items": {
+        "type": "object",
+        "required": ["heading"],
+        "additionalProperties": false,
+        "properties": {
+          "heading": { "type": "string" },
+          "body": { "type": "string", "description": "Paraphrase or short extract. Keep verbatim quotes under 15 words." },
+          "bullets": { "type": "array", "items": { "type": "string" } },
+          "named_capabilities": {
+            "type": "array",
+            "description": "Distinct product capability names called out in this section (e.g. 'Token Intelligence', 'Engineering World Model').",
+            "items": { "type": "string" }
+          },
+          "named_solutions": {
+            "type": "array",
+            "description": "Distinct solution/use-case names (e.g. 'AI Transformation', 'Delivery Excellence').",
+            "items": { "type": "string" }
+          },
+          "stats": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["value"],
+              "additionalProperties": false,
+              "properties": {
+                "value": { "type": "string", "description": "e.g. '10x', '40%', '100+'." },
+                "label": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "logos_or_customers": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Customer names shown on the page (Vimeo, SmartBear, etc.)."
+    },
+    "links": {
+      "type": "array",
+      "description": "Outbound links worth following (sub-capability pages, reports).",
+      "items": {
+        "type": "object",
+        "required": ["text", "href"],
+        "additionalProperties": false,
+        "properties": { "text": { "type": "string" }, "href": { "type": "string" } }
+      }
+    },
+    "notes": { "type": "string", "description": "Fetcher notes: anything ambiguous, gated, or that needed a judgment call." }
+  }
+}

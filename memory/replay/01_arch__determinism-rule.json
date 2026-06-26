@@ -1,0 +1,15 @@
+{
+  "tool": "MCP_Assist:memory_save",
+  "args": {
+    "namespace": "dev/faros-case",
+    "key": "arch/determinism-rule",
+    "kind": "decision",
+    "value": "Three rules make it deterministic, not vibes: (1) agents TRAVERSE approved nodes, humans AUTHOR/approve; (2) every node is typed + carries provenance (sourced|inferred|user-intent) and an honesty label (shipped|roadmap|inference); (3) the tree is the contract \u2014 advisor answers cite node IDs or say 'not in the approved tree'. One human gate: approval. Mirrors Faros's own policy+provenance+human-review governance.",
+    "source_surface": "claude-web",
+    "tags": [
+      "architecture",
+      "determinism",
+      "governance"
+    ]
+  }
+}

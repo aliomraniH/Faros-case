@@ -1,0 +1,39 @@
+{
+  "_example_note": "REFERENCE SHAPE ONLY — assembled from the Jun 2026 research pass, not a live fetch. Shows the curator agent what a conformant fetch/raw/*.json looks like. Replace with real fetches from Cowork/Desktop.",
+  "url": "https://www.faros.ai/",
+  "tab": "capabilities",
+  "retrieved_at": "2026-06-26T00:00:00Z",
+  "title": "Engineering Productivity and Intelligence | Faros",
+  "hero": {
+    "headline": "One view of token spend across every team, tool, and model — mapped to the work and outcomes it produced.",
+    "subhead": "AI is everywhere. Impact isn't. 75% of engineers use AI tools — yet most orgs see no measurable performance gains.",
+    "primary_cta": "Book a demo"
+  },
+  "sections": [
+    {
+      "heading": "Token Intelligence",
+      "body": "Traces the flow of AI tokens to the work they produced; understand spend, optimize workflows, maximize outcomes.",
+      "named_capabilities": ["Token Intelligence", "Token Attribution Ledger"],
+      "stats": [{ "value": "100+", "label": "tools/integrations" }]
+    },
+    {
+      "heading": "Engineering World Model",
+      "body": "A knowledge graph of how your teams build and deliver software.",
+      "named_capabilities": ["Engineering World Model"]
+    },
+    {
+      "heading": "Business results",
+      "stats": [
+        { "value": "10x", "label": "higher PR velocity" },
+        { "value": "40%", "label": "fewer failed outcomes" },
+        { "value": "1 day", "label": "to value in POC" }
+      ]
+    }
+  ],
+  "logos_or_customers": ["Vimeo", "SmartBear", "Box", "Coursera", "Autodesk"],
+  "links": [
+    { "text": "Token Intelligence", "href": "https://www.faros.ai/blog/token-intelligence-for-ai-engineering" },
+    { "text": "AI Engineering Report 2026", "href": "https://www.faros.ai/blog/ai-acceleration-whiplash-takeaways" }
+  ],
+  "notes": "Hero/stat wording is paraphrased from the research pass; verify exact current strings on live fetch. Customer logo list may have changed."
+}

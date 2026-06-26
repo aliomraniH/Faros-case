@@ -1,0 +1,16 @@
+{
+  "tool": "MCP_Assist:memory_save",
+  "args": {
+    "namespace": "dev/faros-case",
+    "key": "insight/market-corrections",
+    "kind": "knowledge",
+    "value": "Two facts to keep accurate in the room: (1) EU AI Act \u2014 Aug 2 2026 was the ORIGINAL high-risk deadline; the Digital Omnibus defers it to Dec 2 2027, though transparency rules + the original date remain live pending formal adoption. Don't state Aug 2026 full-obligations as settled. (2) The '~18-month competitive window' is an INFERENCE, not a cited stat \u2014 present as interpretive framing. Causal attribution = double/debiased ML via EconML (CATE, R-score gating); concede limits honestly.",
+    "source_surface": "claude-web",
+    "tags": [
+      "insight",
+      "market",
+      "corrections",
+      "accuracy"
+    ]
+  }
+}

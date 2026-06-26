@@ -1,0 +1,92 @@
+{
+  "thesis": {
+    "one_line": "Faros traces every AI token to the work it produced and the outcome it shipped, so engineering orgs can make AI deliver quality and outcomes — not just speed or spend.",
+    "door": "Spend — 'what did the AI bill buy?' (gets the meeting, credible with Finance).",
+    "room": "Outcomes, quality, and a team that gets better (the real value; never argued as 'spend less')."
+  },
+  "pillars": [
+    {
+      "name": "Observe",
+      "summary": "Trace AI work from tickets to outcomes to spend in one operational graph; every AI token tied to the work it produced at session, file, and decision grain.",
+      "shipped_status": "shipped"
+    },
+    {
+      "name": "Optimize",
+      "summary": "Identify which models, workflows, and context produce the best outcomes; recommend models per task; generate repo-specific skills/rules that improve as outcomes feed back.",
+      "shipped_status": "partial"
+    },
+    {
+      "name": "Govern",
+      "summary": "Distributed context/policy kept in sync across repos; central policy; full provenance tying every shipped change back to spend, model, agent, and context.",
+      "shipped_status": "partial"
+    }
+  ],
+  "capabilities": [
+    {
+      "name": "Token Attribution Ledger",
+      "pillar": "Observe",
+      "what_it_does": "Ties every dollar of AI spend to the work it did and the outcome it shipped; classifies tokens as productive, inefficient, or wasteful.",
+      "shipped_status": "shipped",
+      "source": "faros.ai/blog/token-intelligence (research pass, Jun 2026)"
+    },
+    {
+      "name": "Engineering World Model",
+      "pillar": "Observe",
+      "what_it_does": "A knowledge graph of how an org's teams build and deliver software; the substrate that joins tickets, sessions, PRs, deploys, incidents, and spend.",
+      "shipped_status": "shipped",
+      "source": "faros.ai (research pass, Jun 2026)"
+    },
+    {
+      "name": "Historical Replay",
+      "pillar": "Optimize",
+      "what_it_does": "Replays past PRs/tickets/sessions to learn what makes work succeed or fail, and to verify a change before recommending it.",
+      "shipped_status": "partial",
+      "source": "press-release + Field Guide"
+    },
+    {
+      "name": "Model/Workflow Recommendations",
+      "pillar": "Optimize",
+      "what_it_does": "Recommends which model/tool fits a given task; flags where premium models add value vs. where cheaper ones match outcomes.",
+      "shipped_status": "partial",
+      "source": "press-release"
+    },
+    {
+      "name": "Repo Skills & Rules Generation",
+      "pillar": "Optimize",
+      "what_it_does": "Generates skills, rules, and tools tailored to each repo so coding agents perform optimally; improves them each cycle.",
+      "shipped_status": "partial",
+      "source": "press-release"
+    },
+    {
+      "name": "Negative Memory / Context Write-back",
+      "pillar": "Govern",
+      "what_it_does": "Writes a failed session's lesson back into the repo's context so no agent — and no new engineer — repeats it.",
+      "shipped_status": "roadmap",
+      "source": "inference from Field Guide + demo design"
+    },
+    {
+      "name": "Policy & Compensating Controls",
+      "pillar": "Govern",
+      "what_it_does": "Central policy; blocks banned models / missing required context; can require a compensating control (e.g. ship behind a feature flag) instead of hard-blocking.",
+      "shipped_status": "partial",
+      "source": "press-release + Strategic Canvas"
+    },
+    {
+      "name": "Provenance / Audit Trail",
+      "pillar": "Govern",
+      "what_it_does": "Audit trail tying every shipped change back to the spend, model, agent, and context that produced it, from the original ticket.",
+      "shipped_status": "shipped",
+      "source": "press-release"
+    }
+  ],
+  "solutions": [
+    { "name": "AI Transformation", "for_whom": "Leaders driving AI adoption + ROI", "promise": "Turn AI experimentation into systematic, measurable AI engineering." },
+    { "name": "Delivery Excellence", "for_whom": "Eng leaders running delivery at scale", "promise": "Visibility + control over how work progresses, with enforceable workflows and policy." }
+  ],
+  "proof": [
+    { "customer": "Vimeo", "claim": "~30% increase in GitHub Copilot adoption; improved lead/delivery times.", "evidence_type": "vendor-case-study" },
+    { "customer": "SmartBear", "claim": "Reporting that took hours/days now available in one dashboard in minutes.", "evidence_type": "vendor-case-study" },
+    { "customer": "MIT NANDA (independent)", "claim": "95% of enterprise AI shows no measurable P&L impact — a learning gap, not model quality.", "evidence_type": "independent" }
+  ],
+  "connectors_count": "100+ (press-release era: '70+'; current marketing: '100+')"
+}

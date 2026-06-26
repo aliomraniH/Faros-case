@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/aliomraniH/Faros-case/schemas/knowledge-node.schema.json",
+  "title": "Knowledge Tree Node",
+  "description": "A single typed node in the Faros-case knowledge tree. Stored as YAML frontmatter in a Markdown file; the body is human-readable detail. Agents may create nodes only with status='proposed'; only a human sets status='approved'.",
+  "type": "object",
+  "required": ["id", "type", "title", "parent", "provenance", "status"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z]+:[a-z0-9-]+$",
+      "description": "Stable ID, '<type>:<slug>', e.g. 'faros:token-intelligence', 'persona:maya'."
+    },
+    "type": {
+      "type": "string",
+      "enum": ["organization", "faros", "persona", "flow", "principle", "mapping"]
+    },
+    "title": { "type": "string", "minLength": 2 },
+    "parent": {
+      "type": "string",
+      "description": "ID of the parent node. The single root node 'organization:root' has parent 'null'."
+    },
+    "provenance": {
+      "type": "string",
+      "enum": ["sourced", "inferred", "user-intent"],
+      "description": "sourced = from a cited Faros page/doc; inferred = our labelled reasoning; user-intent = a want stated by the human."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["proposed", "approved", "rejected"],
+      "description": "Agents write 'proposed'. Only a human writes 'approved' or 'rejected'. Advisors answer ONLY from 'approved'."
+    },
+    "source": {
+      "type": "object",
+      "description": "Required when provenance='sourced'.",
+      "required": ["kind"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": { "type": "string", "enum": ["faros-website", "press-release", "field-guide", "market-research"] },
+        "url": { "type": "string" },
+        "retrieved_at": { "type": "string", "format": "date-time" },
+        "quote_or_derivation": { "type": "string", "description": "Short paraphrase or <15-word quote; what in the source supports this node." }
+      }
+    },
+    "honesty": {
+      "type": "string",
+      "enum": ["shipped", "roadmap", "inference"],
+      "description": "For faros/mapping nodes: is the capability live today, on the roadmap, or our inference? Advisors must surface this."
+    },
+    "fields": {
+      "type": "object",
+      "description": "Type-specific structured fields. Validated per-type by the application layer; kept open here.",
+      "additionalProperties": true
+    },
+    "approved_by": { "type": "string", "description": "Human who approved (set only with status='approved')." },
+    "approved_at": { "type": "string", "format": "date-time" },
+    "proposed_by": { "type": "string", "description": "Agent or surface that proposed the node, e.g. 'curator-agent', 'claude-web'." },
+    "tags": { "type": "array", "items": { "type": "string" } }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "provenance": { "const": "sourced" } } },
+      "then": { "required": ["source"] }
+    },
+    {
+      "if": { "properties": { "status": { "const": "approved" } } },
+      "then": { "required": ["approved_by"] }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "tool": "MCP_Assist:memory_save",
+  "args": {
+    "namespace": "dev/faros-case",
+    "key": "arch/node-schema",
+    "kind": "knowledge",
+    "value": "Knowledge node schema at schemas/knowledge-node.schema.json. Types: organization|faros|persona|flow|principle|mapping. Required: id,type,title,parent,provenance,status. Agents write status=proposed; only a human sets approved (requires approved_by). sourced provenance requires a source block (url+retrieved_at). 13 seed nodes all validate (0 errors).",
+    "source_surface": "claude-web",
+    "tags": [
+      "architecture",
+      "schema"
+    ]
+  }
+}

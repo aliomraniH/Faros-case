@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/aliomraniH/Faros-case/schemas/offering.schema.json",
+  "title": "Faros Offering",
+  "description": "The structured model of Faros's offering, assembled by the curator from fetched pages and reviewed by a human. This is the 'what Faros does' half of every mapping.",
+  "type": "object",
+  "required": ["thesis", "pillars", "capabilities"],
+  "additionalProperties": false,
+  "properties": {
+    "thesis": {
+      "type": "object",
+      "required": ["one_line"],
+      "additionalProperties": false,
+      "properties": {
+        "one_line": { "type": "string" },
+        "door": { "type": "string", "description": "The entry framing (spend)." },
+        "room": { "type": "string", "description": "The real value (outcomes/quality)." }
+      }
+    },
+    "pillars": {
+      "type": "array",
+      "description": "Top-level verbs of the offering (e.g. observe / optimize / govern).",
+      "items": {
+        "type": "object",
+        "required": ["name", "summary"],
+        "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string" },
+          "summary": { "type": "string" },
+          "shipped_status": { "type": "string", "enum": ["shipped", "partial", "roadmap"] }
+        }
+      }
+    },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "pillar", "what_it_does"],
+        "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string" },
+          "pillar": { "type": "string" },
+          "what_it_does": { "type": "string" },
+          "shipped_status": { "type": "string", "enum": ["shipped", "partial", "roadmap"] },
+          "source": { "type": "string", "description": "Page/URL this was drawn from." }
+        }
+      }
+    },
+    "solutions": {
+      "type": "array",
+      "description": "Packaged use-cases / personas Faros markets to.",
+      "items": {
+        "type": "object",
+        "required": ["name"],
+        "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string" },
+          "for_whom": { "type": "string" },
+          "promise": { "type": "string" }
+        }
+      }
+    },
+    "proof": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["customer", "claim"],
+        "additionalProperties": false,
+        "properties": {
+          "customer": { "type": "string" },
+          "claim": { "type": "string" },
+          "evidence_type": { "type": "string", "enum": ["vendor-case-study", "independent", "vendor-marketing"] }
+        }
+      }
+    },
+    "connectors_count": { "type": "string", "description": "e.g. '100+'." }
+  }
+}

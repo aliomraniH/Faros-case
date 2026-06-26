@@ -1,0 +1,208 @@
+[
+  {
+    "tool": "MCP_Assist:memory_save",
+    "args": {
+      "namespace": "dev/faros-case",
+      "key": "project/charter",
+      "kind": "decision",
+      "value": "Faros-case: a deterministic, human-supervised knowledge tree mapping Faros AI's offering to a buyer persona (Maya), with Claude-managed advisor + curator agents that answer 'how can Faros help?' from approved nodes only. Repo: aliomraniH/Faros-case. Surfaces: Claude web (seed), Cowork/Desktop (fetch+commit). Goal endstate: run an advisor-vs-persona Q&A simulation.",
+      "source_surface": "claude-web",
+      "tags": [
+        "charter",
+        "architecture"
+      ]
+    }
+  },
+  {
+    "tool": "MCP_Assist:memory_save",
+    "args": {
+      "namespace": "dev/faros-case",
+      "key": "arch/determinism-rule",
+      "kind": "decision",
+      "value": "Three rules make it deterministic, not vibes: (1) agents TRAVERSE approved nodes, humans AUTHOR/approve; (2) every node is typed + carries provenance (sourced|inferred|user-intent) and an honesty label (shipped|roadmap|inference); (3) the tree is the contract \u2014 advisor answers cite node IDs or say 'not in the approved tree'. One human gate: approval. Mirrors Faros's own policy+provenance+human-review governance.",
+      "source_surface": "claude-web",
+      "tags": [
+        "architecture",
+        "determinism",
+        "governance"
+      ]
+    }
+  },
+  {
+    "tool": "MCP_Assist:memory_save",
+    "args": {
+      "namespace": "dev/faros-case",
+      "key": "arch/node-schema",
+      "kind": "knowledge",
+      "value": "Knowledge node schema at schemas/knowledge-node.schema.json. Types: organization|faros|persona|flow|principle|mapping. Required: id,type,title,parent,provenance,status. Agents write status=proposed; only a human sets approved (requires approved_by). sourced provenance requires a source block (url+retrieved_at). 13 seed nodes all validate (0 errors).",
+      "source_surface": "claude-web",
+      "tags": [
+        "architecture",
+        "schema"
+      ]
+    }
+  },
+  {
+    "tool": "MCP_Assist:memory_save",
+    "args": {
+      "namespace": "dev/faros-case",
+      "key": "arch/agents",
+      "kind": "knowledge",
+      "value": "Two agents, roles never blur: CURATOR reads fetch/raw/*.json and proposes nodes (status=proposed, never approves own work); ADVISOR answers persona questions from APPROVED nodes only, returns a structured contract with citations + honesty label + positioning_check (door/room, empower-not-police), and emits a curator task on gaps instead of improvising.",
+      "source_surface": "claude-web",
+      "tags": [
+        "architecture",
+        "agents"
+      ]
+    }
+  },
+  {
+    "tool": "MCP_Assist:memory_save",
+    "args": {
+      "namespace": "dev/faros-case",
+      "key": "insight/thesis",
+      "kind": "knowledge",
+      "value": "Faros thesis (validated against Jun 2026 site): trace every AI token to the work it produced and the outcome it shipped. 'Your AI vendors tell you what you spent; Faros tells you what it produced.' Token Intelligence built on a Token Attribution Ledger + Engineering World Model. Sequence: understand spend -> optimize workflows -> maximize outcomes ('outcome maxxing > token maxxing'). Door=spend, room=outcomes/quality; explicitly NOT FinOps cost-cutting.",
+      "source_surface": "claude-web",
+      "tags": [
+        "insight",
+        "faros",
+        "thesis"
+      ]
+    }
+  },
+  {
+    "tool": "MCP_Assist:memory_save",
+    "args": {
+      "namespace": "dev/faros-case",
+      "key": "insight/pillars",
+      "kind": "knowledge",
+      "value": "Three pillars: OBSERVE (shipped) \u2014 operational graph joining ticket->session->PR->deploy->incident->spend at session/file/decision grain; OPTIMIZE (partial) \u2014 model/workflow recommendations, repo skills/rules, historical replay; GOVERN (partial) \u2014 central policy, distributed context, provenance/audit, compensating controls (feature-flag) over hard blocks, human still reviews+merges.",
+      "source_surface": "claude-web",
+      "tags": [
+        "insight",
+        "faros",
+        "pillars"
+      ]
+    }
+  },
+  {
+    "tool": "MCP_Assist:memory_save",
+    "args": {
+      "namespace": "dev/faros-case",
+      "key": "insight/proof",
+      "kind": "knowledge",
+      "value": "Proof points: Vimeo ~+30% Copilot adoption (vendor case study); SmartBear hours/days reporting -> minutes (vendor case study); MIT NANDA: 95% of enterprise AI no measurable P&L impact, a learning gap not model quality (INDEPENDENT \u2014 the credibility anchor). Connectors: 70+ (press-release era) now marketed as 100+. Company: founded 2019, San Mateo, ~$36M (SignalFire/Lobby Capital), ex-Salesforce Einstein team (Vitaly Gordon CEO, Shubha Nabar, Matthew Tovbin).",
+      "source_surface": "claude-web",
+      "tags": [
+        "insight",
+        "faros",
+        "proof",
+        "evidence"
+      ]
+    }
+  },
+  {
+    "tool": "MCP_Assist:memory_save",
+    "args": {
+      "namespace": "dev/faros-case",
+      "key": "insight/market-corrections",
+      "kind": "knowledge",
+      "value": "Two facts to keep accurate in the room: (1) EU AI Act \u2014 Aug 2 2026 was the ORIGINAL high-risk deadline; the Digital Omnibus defers it to Dec 2 2027, though transparency rules + the original date remain live pending formal adoption. Don't state Aug 2026 full-obligations as settled. (2) The '~18-month competitive window' is an INFERENCE, not a cited stat \u2014 present as interpretive framing. Causal attribution = double/debiased ML via EconML (CATE, R-score gating); concede limits honestly.",
+      "source_surface": "claude-web",
+      "tags": [
+        "insight",
+        "market",
+        "corrections",
+        "accuracy"
+      ]
+    }
+  },
+  {
+    "tool": "MCP_Assist:memory_save",
+    "args": {
+      "namespace": "dev/faros-case",
+      "key": "insight/persona-maya",
+      "kind": "knowledge",
+      "value": "Primary buyer persona: Maya, VP Platform Engineering, ~1,200-eng B2B SaaS, ~90% AI adoption, renewal coming, board ROI pressure. The squeeze: board above ('justify the spend'), developers below ('help not surveil'); Maya in the middle answers up without policing down. Owns the problem; CFO opens the door; staff engineer guards the gate; developers decide if it lives.",
+      "source_surface": "claude-web",
+      "tags": [
+        "insight",
+        "persona",
+        "maya"
+      ]
+    }
+  },
+  {
+    "tool": "MCP_Assist:memory_save",
+    "args": {
+      "namespace": "dev/faros-case",
+      "key": "open/pricing",
+      "kind": "todo",
+      "value": "OPEN: how Faros itself is priced is the cleanest FinOps-vs-platform tell. Ali's intended call: platform/outcome pricing (seats / connected-org tier), NOT consumption or savings-based, because consumption pricing structurally bends the product toward 'spend less' and collapses the positioning. Public anchor seen: ~$29/contributor/month, ~4:1 ROI. Confirm on live fetch.",
+      "source_surface": "claude-web",
+      "tags": [
+        "open",
+        "pricing",
+        "commercial"
+      ]
+    }
+  },
+  {
+    "tool": "MCP_Assist:memory_save",
+    "args": {
+      "namespace": "dev/faros-case",
+      "key": "repo/seed-commit",
+      "kind": "claim",
+      "value": "Seed authored by claude-web: README, ARCHITECTURE, 3 schemas, 13 validated knowledge-tree nodes, agent specs (advisor/curator/orchestration), fetch instructions+targets, memory replay payloads. Pending commit+push by Ali (claude-web sandbox had no GitHub write token).",
+      "source_surface": "claude-web",
+      "tags": [
+        "repo",
+        "seed",
+        "claim"
+      ],
+      "meta": {
+        "repo": "aliomraniH/Faros-case",
+        "branch": "main"
+      }
+    }
+  },
+  {
+    "tool": "MCP_Assist:handoff_save",
+    "args": {
+      "namespace": "dev/faros-case",
+      "key": "handoff/web-to-cowork",
+      "value": {
+        "from": "claude-web",
+        "to": "claude-cowork-or-desktop",
+        "namespace": "dev/faros-case",
+        "next_steps": [
+          "1. Pull the seed repo (Ali pushes it first) and read fetch/INSTRUCTIONS.md + fetch/targets.json.",
+          "2. Fetch Platform / Capabilities / Solutions pages from faros.ai as JSON into fetch/raw/*.json (conform to schemas/faros-page.schema.json).",
+          "3. Append to fetch/raw/_manifest.md; save a 'fetch/batch-1' claim here; run coord_reconcile.",
+          "4. Run the Curator agent (agents/curator-agent.md) to propose tree nodes (status=proposed) from the JSON; append to agents/review-queue.md.",
+          "5. Ali approves nodes (human gate); then the Advisor (agents/advisor-agent.md) can answer persona questions; later, run the Q&A simulation."
+        ],
+        "key_memory_keys": [
+          "project/charter",
+          "arch/determinism-rule",
+          "arch/node-schema",
+          "arch/agents",
+          "insight/thesis",
+          "insight/pillars",
+          "insight/proof",
+          "insight/market-corrections",
+          "insight/persona-maya",
+          "open/pricing",
+          "repo/seed-commit"
+        ],
+        "watch_outs": [
+          "claude-web could NOT reach faros.ai \u2014 that's why fetch is yours.",
+          "Keep verbatim quotes <15 words; curator proposes, never approves.",
+          "Keep EU AI Act + 18-month-window framing accurate (see insight/market-corrections)."
+        ]
+      },
+      "source_surface": "claude-web"
+    }
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "note": "URLs are best-known entry points as of Jun 2026; the fetcher should follow in-page nav for the real sub-pages under each tab and add any it finds. Set retrieved_at to actual fetch time.",
+  "primary": [
+    { "tab": "platform", "url": "https://www.faros.ai/platform", "why": "Top of the Platform tab; follow links to sub-pages." },
+    { "tab": "platform", "url": "https://www.faros.ai/platform/ai-transformation", "why": "Named solution surface seen in research." },
+    { "tab": "platform", "url": "https://www.faros.ai/platform/delivery-excellence", "why": "Named solution surface seen in research." },
+    { "tab": "capabilities", "url": "https://www.faros.ai/", "why": "Homepage carries capability framing (Token Intelligence, Engineering World Model); follow 'Product'/'Capabilities' nav." },
+    { "tab": "capabilities", "url": "https://www.faros.ai/ai-leaders", "why": "Capability/solution surface for AI leaders." },
+    { "tab": "solutions", "url": "https://www.faros.ai/solutions", "why": "Solutions tab root; follow to use-case pages." }
+  ],
+  "secondary": [
+    { "tab": "company", "url": "https://www.faros.ai/company", "why": "Founders, vision, mission." },
+    { "tab": "other", "url": "https://www.faros.ai/blog/ai-acceleration-whiplash-takeaways", "why": "AI Engineering Report 2026 takeaways (research anchor)." },
+    { "tab": "other", "url": "https://www.faros.ai/blog/customer-stories-vimeo", "why": "Verify Vimeo +30% Copilot adoption proof point." },
+    { "tab": "other", "url": "https://www.faros.ai/blog/token-intelligence-for-ai-engineering", "why": "Token Intelligence / Token Attribution Ledger — core of the thesis." }
+  ],
+  "output": {
+    "dir": "fetch/raw/",
+    "filename_pattern": "<tab>__<slug>.json",
+    "schema": "schemas/faros-page.schema.json",
+    "manifest": "fetch/raw/_manifest.md"
+  }
+}

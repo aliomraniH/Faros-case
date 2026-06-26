@@ -1,0 +1,15 @@
+{
+  "tool": "MCP_Assist:memory_save",
+  "args": {
+    "namespace": "dev/faros-case",
+    "key": "open/pricing",
+    "kind": "todo",
+    "value": "OPEN: how Faros itself is priced is the cleanest FinOps-vs-platform tell. Ali's intended call: platform/outcome pricing (seats / connected-org tier), NOT consumption or savings-based, because consumption pricing structurally bends the product toward 'spend less' and collapses the positioning. Public anchor seen: ~$29/contributor/month, ~4:1 ROI. Confirm on live fetch.",
+    "source_surface": "claude-web",
+    "tags": [
+      "open",
+      "pricing",
+      "commercial"
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "tool": "MCP_Assist:handoff_save",
+  "args": {
+    "namespace": "dev/faros-case",
+    "key": "handoff/web-to-cowork",
+    "value": {
+      "from": "claude-web",
+      "to": "claude-cowork-or-desktop",
+      "namespace": "dev/faros-case",
+      "next_steps": [
+        "1. Pull the seed repo (Ali pushes it first) and read fetch/INSTRUCTIONS.md + fetch/targets.json.",
+        "2. Fetch Platform / Capabilities / Solutions pages from faros.ai as JSON into fetch/raw/*.json (conform to schemas/faros-page.schema.json).",
+        "3. Append to fetch/raw/_manifest.md; save a 'fetch/batch-1' claim here; run coord_reconcile.",
+        "4. Run the Curator agent (agents/curator-agent.md) to propose tree nodes (status=proposed) from the JSON; append to agents/review-queue.md.",
+        "5. Ali approves nodes (human gate); then the Advisor (agents/advisor-agent.md) can answer persona questions; later, run the Q&A simulation."
+      ],
+      "key_memory_keys": [
+        "project/charter",
+        "arch/determinism-rule",
+        "arch/node-schema",
+        "arch/agents",
+        "insight/thesis",
+        "insight/pillars",
+        "insight/proof",
+        "insight/market-corrections",
+        "insight/persona-maya",
+        "open/pricing",
+        "repo/seed-commit"
+      ],
+      "watch_outs": [
+        "claude-web could NOT reach faros.ai \u2014 that's why fetch is yours.",
+        "Keep verbatim quotes <15 words; curator proposes, never approves.",
+        "Keep EU AI Act + 18-month-window framing accurate (see insight/market-corrections)."
+      ]
+    },
+    "source_surface": "claude-web"
+  }
+}

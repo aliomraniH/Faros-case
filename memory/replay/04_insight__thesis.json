@@ -1,0 +1,15 @@
+{
+  "tool": "MCP_Assist:memory_save",
+  "args": {
+    "namespace": "dev/faros-case",
+    "key": "insight/thesis",
+    "kind": "knowledge",
+    "value": "Faros thesis (validated against Jun 2026 site): trace every AI token to the work it produced and the outcome it shipped. 'Your AI vendors tell you what you spent; Faros tells you what it produced.' Token Intelligence built on a Token Attribution Ledger + Engineering World Model. Sequence: understand spend -> optimize workflows -> maximize outcomes ('outcome maxxing > token maxxing'). Door=spend, room=outcomes/quality; explicitly NOT FinOps cost-cutting.",
+    "source_surface": "claude-web",
+    "tags": [
+      "insight",
+      "faros",
+      "thesis"
+    ]
+  }
+}

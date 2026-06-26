@@ -1,0 +1,10 @@
+# fetched raw pages can be large / third-party; keep the example + manifest, ignore bulky dumps if desired
+# (commented out by default — we DO want the JSON in the repo as the knowledge source)
+# fetch/raw/*.json
+# !fetch/raw/_example.json
+
+.DS_Store
+node_modules/
+__pycache__/
+*.pyc
+.env

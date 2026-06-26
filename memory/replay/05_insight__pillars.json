@@ -1,0 +1,15 @@
+{
+  "tool": "MCP_Assist:memory_save",
+  "args": {
+    "namespace": "dev/faros-case",
+    "key": "insight/pillars",
+    "kind": "knowledge",
+    "value": "Three pillars: OBSERVE (shipped) \u2014 operational graph joining ticket->session->PR->deploy->incident->spend at session/file/decision grain; OPTIMIZE (partial) \u2014 model/workflow recommendations, repo skills/rules, historical replay; GOVERN (partial) \u2014 central policy, distributed context, provenance/audit, compensating controls (feature-flag) over hard blocks, human still reviews+merges.",
+    "source_surface": "claude-web",
+    "tags": [
+      "insight",
+      "faros",
+      "pillars"
+    ]
+  }
+}

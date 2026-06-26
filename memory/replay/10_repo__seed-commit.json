@@ -1,0 +1,19 @@
+{
+  "tool": "MCP_Assist:memory_save",
+  "args": {
+    "namespace": "dev/faros-case",
+    "key": "repo/seed-commit",
+    "kind": "claim",
+    "value": "Seed authored by claude-web: README, ARCHITECTURE, 3 schemas, 13 validated knowledge-tree nodes, agent specs (advisor/curator/orchestration), fetch instructions+targets, memory replay payloads. Pending commit+push by Ali (claude-web sandbox had no GitHub write token).",
+    "source_surface": "claude-web",
+    "tags": [
+      "repo",
+      "seed",
+      "claim"
+    ],
+    "meta": {
+      "repo": "aliomraniH/Faros-case",
+      "branch": "main"
+    }
+  }
+}
