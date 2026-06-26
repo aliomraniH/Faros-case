@@ -1,0 +1,18 @@
+{
+  "_comment": "Claude Code project settings. acceptEdits does NOT auto-approve MCP tools, so MCP_Assist tools are allow-listed explicitly. Name must match .mcp.json key.",
+  "permissions": {
+    "allow": [
+      "mcp__MCP_Assist__memory_save",
+      "mcp__MCP_Assist__memory_get",
+      "mcp__MCP_Assist__memory_list",
+      "mcp__MCP_Assist__memory_search",
+      "mcp__MCP_Assist__handoff_save",
+      "mcp__MCP_Assist__handoff_load",
+      "mcp__MCP_Assist__handoff_list",
+      "mcp__MCP_Assist__coord_health",
+      "mcp__MCP_Assist__coord_reconcile",
+      "Bash(python3 tools/*.py)",
+      "Bash(git *)"
+    ]
+  }
+}

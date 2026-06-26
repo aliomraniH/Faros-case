@@ -1,0 +1,9 @@
+{
+  "_comment": "MCP server config for Claude Code. The KEY here ('MCP_Assist') is the server name and MUST match the name used everywhere else (the skill, the allow-rules in .claude/settings.json as mcp__MCP_Assist__*, and any tool calls). Pin one name; do not let it drift to 'MCP-Assist' with a hyphen or tools become 'not found'.",
+  "mcpServers": {
+    "MCP_Assist": {
+      "type": "http",
+      "url": "https://mcp-assist-memory.replit.app/mcp"
+    }
+  }
+}
