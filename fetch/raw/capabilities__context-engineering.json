@@ -1,0 +1,46 @@
+{
+  "url": "https://www.faros.ai/platform/context-engineering",
+  "tab": "capabilities",
+  "retrieved_at": "2026-06-26T23:57:50Z",
+  "title": "Context Engineering for AI Agents | Clara by Faros",
+  "hero": {
+    "headline": "Context in. Rework out.",
+    "subhead": "Bootstrap your AI coding agents with institutional knowledge. Less WTF code. More one-shot success.",
+    "primary_cta": "Request a demo"
+  },
+  "sections": [
+    {
+      "heading": "How we help",
+      "body": "AI that unlocks productivity instead of shifting bottlenecks: automate context delivery, accelerate agentic PRs, maintain human oversight.",
+      "stats": [
+        { "value": "10x", "label": "higher PR velocity" },
+        { "value": "40%", "label": "less rework" }
+      ]
+    },
+    {
+      "heading": "Historical replay — give your agents tenure, overnight",
+      "body": "Feeds agents context derived from past PRs and tickets until success rates soar; per-repo context generation including patterns, dependencies, and failure modes; rules battle-tested in replay simulations.",
+      "named_capabilities": ["Historical replay", "Per-repo context generation", "Replay-tested rules"]
+    },
+    {
+      "heading": "Agentic PR delivery — assign Faros, get a PR",
+      "body": "Context planted into agentic workflows for ready-to-merge code: automatic Jira ticket enhancement, disambiguated implementation plans that flag open issues, code generation with Claude, Codex, Copilot, Cursor.",
+      "named_capabilities": ["Jira ticket enhancement", "Implementation plans", "Agentic code generation"]
+    },
+    {
+      "heading": "Human oversight — humans-in-the-loop, by design",
+      "body": "Faros generates a PR; developers review and merge. Developer feedback becomes reusable context so agents don't ask twice; context can train new hires.",
+      "named_capabilities": ["Human-in-the-loop review", "Feedback-to-context"]
+    },
+    {
+      "heading": "Continuous learning — self-optimizing as your codebase evolves",
+      "body": "Captures feedback from every merged PR and review to refine agent behavior; updates the context graph from completed tasks; generates digests for engineers.",
+      "named_capabilities": ["Continuous learning", "Context graph", "Digests"]
+    }
+  ],
+  "logos_or_customers": [],
+  "links": [
+    { "text": "AI Engineering Report 2026", "href": "https://www.faros.ai/research/ai-acceleration-whiplash" }
+  ],
+  "notes": "The capability is branded 'Clara' (page title). This is the live, named surface most relevant to the seed tree's Optimize/Govern roadmap items: 'historical replay' is shipped/branded here (offering.json lists Historical Replay as 'partial'); 'feedback becomes reusable context so agents don't ask twice' is the closest public analog to the repo's roadmap 'Negative Memory / Context Write-back' — but the page frames it as forward learning, not explicitly writing failure lessons back. Honesty for any negative-memory mapping should stay 'inference'. Human-in-the-loop framing corroborates the 'empower not police' principle."
+}

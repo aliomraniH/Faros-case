@@ -1,0 +1,58 @@
+{
+  "url": "https://www.faros.ai/platform/ai-transformation",
+  "tab": "capabilities",
+  "retrieved_at": "2026-06-26T23:57:50Z",
+  "title": "Engineering AI Transformation Platform | Faros",
+  "hero": {
+    "headline": "Turn AI potential into proven velocity.",
+    "subhead": "From pilot to enterprise rollout, confidently accelerate AI rollouts. Faros measures the productivity impact and ROI of AI coding tools.",
+    "primary_cta": "Request a demo"
+  },
+  "sections": [
+    {
+      "heading": "How we help",
+      "body": "Measure impact and ROI, accelerate adoption with cross-SDLC visibility, stay in control with governance and guardrails.",
+      "stats": [
+        { "value": "3x", "label": "increase in adoption" },
+        { "value": "40%", "label": "boost in ROI" }
+      ]
+    },
+    {
+      "heading": "Adoption",
+      "body": "Pilot, learn, scale with a step-by-step framework; power-user and dormant-license identification; cohort comparisons and A/B tests; weekly executive summaries.",
+      "named_capabilities": ["Adoption framework", "Cohort comparison", "A/B testing"]
+    },
+    {
+      "heading": "ROI",
+      "body": "Capture true ROI signals with precision analytics and causal analysis; identify best coding assistant/model; share a CFO-ready report.",
+      "named_capabilities": ["Causal analysis", "CFO-ready ROI report"]
+    },
+    {
+      "heading": "Visibility",
+      "body": "Track AI's impact on code quality, security, developer satisfaction, and tech debt — not just velocity; administer surveys.",
+      "named_capabilities": ["Multi-dimension impact tracking", "Developer surveys"]
+    },
+    {
+      "heading": "Impact",
+      "body": "Pinpoint what's helping and what's holding you back; detect where AI underperforms; alerts when gains stall or decline.",
+      "named_capabilities": ["Bottleneck detection", "Stall alerts"]
+    },
+    {
+      "heading": "Governance",
+      "body": "Enforce safety and quality in the IDE; flag PRs needing extra scrutiny; real-time code-quality checks; distinguish human vs. machine-generated code; enforce guardrails at scale.",
+      "named_capabilities": ["PR risk flagging", "Real-time quality checks", "Guardrails at scale", "AI-generated code tagging", "Policy orchestration", "Audit trails for AI regulatory compliance"]
+    },
+    {
+      "heading": "Coverage highlights / metrics",
+      "body": "Adoption (% AI-generated code by repo/PR, license utilization), pilots (A/B, PR merge rates, code smells, test coverage), rollout (cycle times, CFR, bugs, incidents), governance (AI code tagging, policy orchestration, audit trails).",
+      "named_solutions": ["GAINS framework", "Transformation Roadmaps"]
+    }
+  ],
+  "logos_or_customers": ["Globant", "Autodesk", "Coursera", "SmartBear", "Vimeo"],
+  "links": [
+    { "text": "GAINS framework", "href": "https://www.faros.ai/platform/ai-transformation/gains" },
+    { "text": "AI Productivity Paradox", "href": "https://www.faros.ai/ai-productivity-paradox" },
+    { "text": "Globant case study", "href": "https://www.faros.ai/blog/globant-faros-ai-partnership-for-efficient-agentic-projects" }
+  ],
+  "notes": "Governance section names several capabilities the seed tree marks 'partial/roadmap' under Govern (policy orchestration, guardrails at scale, audit trails) and presents them as live product surfaces — propose as faros nodes but keep honesty 'inference' where the page only describes a dashboard/flag rather than an enforcement mechanism. 'Distinguish human vs machine code' and 'AI-generated code tagging' are concrete and read as shipped. Testimonial: Diego Tartara, CTO, Globant. GAINS is a named framework (quarterly AI maturity assessment + 90-day plan)."
+}

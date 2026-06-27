@@ -1,0 +1,58 @@
+{
+  "url": "https://www.faros.ai/platform/delivery-excellence",
+  "tab": "capabilities",
+  "retrieved_at": "2026-06-26T23:57:50Z",
+  "title": "Engineering Delivery Excellence Platform | Faros",
+  "hero": {
+    "headline": "Predictable delivery roadmap — achieve strategic business outcomes.",
+    "subhead": "Create transparency, predictability, and consistency across cross-team engineering initiatives.",
+    "primary_cta": "Request a demo"
+  },
+  "sections": [
+    {
+      "heading": "How we help",
+      "body": "Deliver on time with centralized progress tracking and forecasting; optimize resource allocation with AI capacity insights; get ahead of blockers with real-time dependency tracking.",
+      "stats": [
+        { "value": "40%", "label": "more predictable delivery" },
+        { "value": "90%", "label": "faster capacity allocation" }
+      ]
+    },
+    {
+      "heading": "Delivery",
+      "body": "Connect disjointed data across tools (including non-standardized Jira) into one source of truth; monitor progress across projects/features/epics; auto-fix data hygiene issues.",
+      "named_capabilities": ["Centralized progress tracking", "Data hygiene auto-fix"]
+    },
+    {
+      "heading": "Predictability",
+      "body": "Analyze real-time data and historical trends to raise red flags; early warning on predicted delays and budget overruns; dependency management.",
+      "named_capabilities": ["Delay/overrun forecasting", "Dependency management"]
+    },
+    {
+      "heading": "Forecasting",
+      "body": "Full visibility into time/resource allocation across products, initiatives, geographies; track time on roadmap, KTLO, security, bugs, tech debt.",
+      "named_capabilities": ["Work allocation analytics", "Capacity forecasting"]
+    },
+    {
+      "heading": "Efficiency (agile health)",
+      "body": "Sprint throughput, WIP, goal attainment; planning and retro dashboards; personalized AI recommendations addressing team constraints.",
+      "named_capabilities": ["Agile health metrics", "AI recommendations"]
+    },
+    {
+      "heading": "Capitalization",
+      "body": "Audit-ready software cost capitalization reports by initiative, epic, or employee; consistent capitalization rules; real-time audit trails.",
+      "named_capabilities": ["SWE cost capitalization"]
+    },
+    {
+      "heading": "Coverage highlights",
+      "body": "Initiative tracking (cost/revenue impact, budget overrun prediction), agile health (say/do ratios, planned vs unplanned), workforce optimization (team composition, 'ghost engineers', vendor benchmarks), SWE cost capitalization.",
+      "named_solutions": ["Initiative Tracking", "Workforce Optimization"]
+    }
+  ],
+  "logos_or_customers": ["Vimeo", "SmartBear", "Riskified"],
+  "links": [
+    { "text": "Initiative tracking", "href": "https://www.faros.ai/initiative-tracking" },
+    { "text": "Software capitalization", "href": "https://www.faros.ai/software-capitalization" },
+    { "text": "Riskified case study", "href": "https://www.faros.ai/blog/customer-stories-riskified" }
+  ],
+  "notes": "A fifth named capability surface not represented in the seed tree's three pillars: predictable delivery / initiative tracking / capacity forecasting / cost capitalization. Reads as shipped product. This corroborates persona Maya's 'govern without slowing down' and board-facing pressures but is operationally a planning/PMO surface rather than the Observe/Optimize/Govern AI-token thesis — propose as faros nodes with honesty 'shipped' but flag that it sits outside the seed tree's pillar taxonomy. FAQ here states '100+ tools' integration count. Testimonial: Tal Levinger, Agile Program Manager, Riskified."
+}

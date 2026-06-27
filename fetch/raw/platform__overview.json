@@ -1,0 +1,68 @@
+{
+  "url": "https://www.faros.ai/platform",
+  "tab": "platform",
+  "retrieved_at": "2026-06-26T23:57:50Z",
+  "title": "Faros Platform: Engineering Intelligence & Productivity",
+  "hero": {
+    "headline": "Discover the power of the Faros platform",
+    "subhead": "From visibility to control, Faros powers the productivity initiatives of the world's largest engineering organizations.",
+    "primary_cta": "Request a demo"
+  },
+  "sections": [
+    {
+      "heading": "What's under the hood? Six powerful capabilities",
+      "body": "Foundational capabilities orgs with thousands of developers and coding agents need to maximize productivity in the age of AI.",
+      "named_capabilities": ["Enterprise-Grade", "Analytics", "AI for Productivity", "Interoperability", "Customization", "Catalogs"]
+    },
+    {
+      "heading": "Built for the enterprise",
+      "body": "Deploy quickly (days not months), scale to thousands of engineers, maintain compliance, safeguard data with granular access control. Key features: large-scale data infrastructure, customizable RBAC permissions, compliance/trust, secure deployment (SaaS, hybrid, on-prem).",
+      "named_capabilities": ["RBAC", "Secure deployment modes"]
+    },
+    {
+      "heading": "Analytics that baseline and benchmark",
+      "body": "Unify engineering data with no pre-standardization. Key features: unified data model, intelligent attribution (map work to teams/services), process analytics (Lead Time, Resolution Time), benchmarks and heatmaps.",
+      "named_capabilities": ["Unified data model", "Intelligent attribution", "Process analytics", "Benchmarks and heatmaps"]
+    },
+    {
+      "heading": "AI that guides and recommends",
+      "body": "Purpose-built AI for developer productivity. Key features: AI summaries and guidance, root cause analysis, expert chatbot (Slack/Teams/IDE), human vs. GenAI code analysis.",
+      "named_capabilities": ["AI summaries", "Root cause analysis", "Expert chatbot", "Human vs. GenAI code analysis"]
+    },
+    {
+      "heading": "Interoperability for complete context",
+      "body": "Integrate the entire toolchain, cloud or on-prem, off-the-shelf or custom. Key features: high-performance connectors, flexible ingestion (Cloud Connectors, Source CLI, Events CLI), webhooks/APIs, any-source compatibility.",
+      "named_capabilities": ["High-performance connectors", "Flexible ingestion", "Any-source compatibility"]
+    },
+    {
+      "heading": "Customization to reflect how you build",
+      "body": "Custom metrics, fully custom dashboards, natural language assistant, workflow builder automations.",
+      "named_capabilities": ["Custom metrics", "Custom dashboards", "Natural language assistant", "Workflow builder"]
+    },
+    {
+      "heading": "Catalogs for teams and services",
+      "body": "A single navigable source of truth: org chart management, service catalog, team pages, IDP integrations.",
+      "named_capabilities": ["Org chart management", "Service catalog", "Team pages", "IDP integrations"]
+    },
+    {
+      "heading": "Problems we solve",
+      "body": "Run engineering faster with AI that knows how you design, implement, test, and ship product.",
+      "named_capabilities": ["Token Intelligence", "AI Transformation", "Context for AI Agents", "Developer Productivity"]
+    },
+    {
+      "heading": "Pricing note (from page FAQ)",
+      "body": "Paid platform; pricing stated 'from as low as $29 per contributor per module per month' (FAQ/LLM-optimization block, contact sales for quotes).",
+      "stats": [{ "value": "$29", "label": "per contributor per module per month (stated floor)" }]
+    }
+  ],
+  "logos_or_customers": ["Autodesk", "Coursera", "Salesforce", "Discord", "Vimeo", "SmartBear", "Globant"],
+  "links": [
+    { "text": "Token Intelligence", "href": "https://www.faros.ai/platform/token-intelligence" },
+    { "text": "AI Transformation", "href": "https://www.faros.ai/platform/ai-transformation" },
+    { "text": "Context for AI Agents", "href": "https://www.faros.ai/platform/context-engineering" },
+    { "text": "Developer Productivity", "href": "https://www.faros.ai/platform/engineering-efficiency" },
+    { "text": "Predictable Roadmap Delivery", "href": "https://www.faros.ai/platform/delivery-excellence" },
+    { "text": "Trust Center", "href": "https://security.faros.ai/" }
+  ],
+  "notes": "Page body is the six-capability platform overview; the long FAQ block is SEO/LLM-optimization content (last updated 12/12/2025 per page) and was used cautiously — competitor comparisons and the $29 price are marketing claims, captured as stated, not endorsed. Deployment: SaaS/hybrid/on-prem. Certs cited: SOC 2, ISO 27001, GDPR, CSA STAR."
+}

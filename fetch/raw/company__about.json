@@ -1,0 +1,41 @@
+{
+  "url": "https://www.faros.ai/company",
+  "tab": "company",
+  "retrieved_at": "2026-06-26T23:57:50Z",
+  "title": "Faros: Company Vision and Mission",
+  "hero": {
+    "headline": "We advance those who build",
+    "subhead": "We give engineering leaders visibility into how work operates across code, people, and systems, and control over how that work progresses through enforceable workflows and policy.",
+    "primary_cta": "See open roles"
+  },
+  "sections": [
+    {
+      "heading": "Our vision",
+      "body": "To forge a world where engineering moves at the speed of ideas."
+    },
+    {
+      "heading": "Our values",
+      "body": "Transformational (long-term impact over short-term predictability), Intensity, Craftsmanship, Ownership (act like founders); transparency over politeness, honest debate over quiet agreement.",
+      "bullets": ["Transformational", "Intensity", "Craftsmanship", "Ownership"]
+    },
+    {
+      "heading": "The story of Faros",
+      "body": "Founded by the founding team of Salesforce Einstein (first comprehensive enterprise AI platform), frustrated by the lack of data-backed narratives for engineering allocation decisions.",
+      "named_solutions": []
+    },
+    {
+      "heading": "Leadership",
+      "body": "Vitaly Gordon (Founder & CEO), Shubha Nabar (Founder & Chief Scientist), Matthew Tovbin (Founder & CTO), Gilad Turbahn (Head of Product & Engineering), Thomas Gerber (Business Value Engineering), Dan Balter (Head of Business), Simanta Chakraborty (Head of Revenue), Dawn Bloomfield (Chief of Staff), Dhruv Gupta (Head of Marketing)."
+    },
+    {
+      "heading": "Investors",
+      "body": "Backed by Signal (likely SignalFire), Venture, GFC, Lobby, Operator Collective (logos shown, names partly inferred from alt-text)."
+    }
+  ],
+  "logos_or_customers": ["Autodesk", "Riskified", "Discord", "Vimeo", "Ironclad", "Coursera", "SmartBear", "Globant", "Thryv", "Vertex", "Alegeus"],
+  "links": [
+    { "text": "Careers", "href": "https://www.faros.ai/company/careers" },
+    { "text": "About us", "href": "https://www.faros.ai/about-us" }
+  ],
+  "notes": "Confirms founders (ex-Salesforce Einstein) and the dual 'visibility AND control' framing — control via 'enforceable workflows and policy' is the public root of the Govern pillar. Vision 'engineering at the speed of ideas' is brandable provenance for an organization-level node. Investor names are partly inferred from SVG alt-text (logos only); flagged as low-confidence."
+}

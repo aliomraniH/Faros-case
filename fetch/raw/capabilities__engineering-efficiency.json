@@ -1,0 +1,56 @@
+{
+  "url": "https://www.faros.ai/platform/engineering-efficiency",
+  "tab": "capabilities",
+  "retrieved_at": "2026-06-26T23:57:50Z",
+  "title": "Engineering Efficiency Platform | Ship Better Code Faster",
+  "hero": {
+    "headline": "Developer Productivity — improve engineering efficiency at scale",
+    "subhead": "Identify and remove friction from developer workflows so you can ship better code, faster.",
+    "primary_cta": "Request a demo"
+  },
+  "sections": [
+    {
+      "heading": "How we help",
+      "body": "Reveal bottlenecks in tools/infra/collaboration; elevate code quality (coverage, flakiness, CFR, MTTR); create seamless workflows to avoid burnout.",
+      "stats": [
+        { "value": "95%", "label": "faster lead time" },
+        { "value": "2x", "label": "developer satisfaction" }
+      ]
+    },
+    {
+      "heading": "Productivity",
+      "body": "Holistic metrics from leading frameworks; prebuilt dashboards for SPACE, DORA, DevEx; tailor metrics to goals and operating model.",
+      "named_capabilities": ["SPACE/DORA/DevEx dashboards"]
+    },
+    {
+      "heading": "DevEx Insights",
+      "body": "Corroborate team sentiment with engineering data; pre-built survey templates and administration; triangulated analysis of surveys with metrics; auto-generated recommendations.",
+      "named_capabilities": ["Developer surveys", "Survey-metric triangulation"]
+    },
+    {
+      "heading": "Benchmarks",
+      "body": "Baseline performance, identify high-impact improvements; scorecards and heatmaps; root cause with trained AI.",
+      "named_capabilities": ["Benchmarks", "Scorecards/heatmaps"]
+    },
+    {
+      "heading": "Automation",
+      "body": "Prebuilt or custom automations for notifications, reminders, alerts; reminders for overdue reviews; alerts on declining developer focus time.",
+      "named_capabilities": ["Workflow automation"]
+    },
+    {
+      "heading": "AI Assistant",
+      "body": "Ask Faros in Slack, Teams, or IDE: PR/task/repo answers for devs, team health for managers, progress-to-goal for leaders.",
+      "named_capabilities": ["AI Assistant"]
+    },
+    {
+      "heading": "Coverage highlights",
+      "body": "Velocity (lead time, cycle times, review patterns), Quality (coverage, code smells, flakiness, CFR, MTTR), Releases (build volumes, deployment frequency), Developer Experience (surveys, telemetry correlation)."
+    }
+  ],
+  "logos_or_customers": ["Autodesk"],
+  "links": [
+    { "text": "DORA Metrics", "href": "https://www.faros.ai/dora-metrics" },
+    { "text": "Developer Experience", "href": "https://www.faros.ai/developer-experience" }
+  ],
+  "notes": "This is the foundational analytics/observability surface — DORA/SPACE/DevEx metrics, surveys, benchmarks. Reads clearly as shipped. Closest to the seed tree's Observe pillar in spirit (joining engineering data) though framed for traditional dev-productivity rather than AI-token attribution. Testimonial: Ben Cochran, VP of Engineering, Autodesk. Note an internal staging URL leaked in body (farosai.webflow.io) — ignored, not a real public link."
+}

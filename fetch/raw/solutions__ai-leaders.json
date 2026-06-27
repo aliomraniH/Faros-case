@@ -1,0 +1,43 @@
+{
+  "url": "https://www.faros.ai/ai-leaders",
+  "tab": "solutions",
+  "retrieved_at": "2026-06-26T23:57:50Z",
+  "title": "Faros Platform for AI Leaders | Maximize AI Productivity",
+  "hero": {
+    "headline": "10x productivity is not hype",
+    "subhead": "AI tools should unlock major productivity, not just shift bottlenecks. Faros brings the people, process, and technology to solve the AI productivity paradox.",
+    "primary_cta": "Request a Demo"
+  },
+  "sections": [
+    {
+      "heading": "Outcomes we deliver",
+      "body": "Prove AI value and ROI (causal analysis separating signal from noise), drive systematic adoption, safeguard code quality, optimize AI tooling investments.",
+      "named_solutions": ["Prove AI value & ROI", "Drive systematic adoption", "Safeguard code quality", "Optimize AI tooling investments"]
+    },
+    {
+      "heading": "How AI leaders use Faros",
+      "body": "Know your baseline and benchmark AI gains; correlate AI usage to business value via intelligent attribution; safeguard code quality in critical repos; stay ahead of the AI tooling curve.",
+      "named_capabilities": ["Baseline & benchmark", "Intelligent attribution", "Repo risk monitoring", "Continuous tool evaluation"]
+    },
+    {
+      "heading": "What you get",
+      "body": "AI Tool Comparison (data-driven A/B tests), AI Impact Insights (causal analysis), Analytics Frameworks (dashboards/benchmarks per rollout stage), The Context Engine (institutional knowledge to agents), Automated Guardrails (real-time monitoring vs thresholds).",
+      "named_capabilities": ["AI Tool Comparison", "AI Impact Insights", "Analytics Frameworks", "The Context Engine", "Automated Guardrails"]
+    },
+    {
+      "heading": "Enterprise-grade security",
+      "body": "Designed with data privacy, information security, and legal compliance as top priorities.",
+      "bullets": ["SOC 2", "GDPR", "ISO 27001", "CSA STAR"]
+    },
+    {
+      "heading": "Problems we solve",
+      "named_capabilities": ["Developer Productivity", "AI Impact & Transformation", "Context for AI Agents", "Predictable Roadmap Delivery"]
+    }
+  ],
+  "logos_or_customers": ["Autodesk", "Riskified", "Discord", "Vimeo", "Ironclad", "Coursera", "SmartBear", "Globant", "Thryv", "Vertex", "Alegeus"],
+  "links": [
+    { "text": "AI Productivity Paradox", "href": "https://www.faros.ai/ai-productivity-paradox" },
+    { "text": "SmartBear case study", "href": "https://www.faros.ai/blog/smartbear-software-engineering-scales-to-support-rapid-growth-by-measuring-outcomes-with-faros" }
+  ],
+  "notes": "The role-based 'Solutions > AI Officers / AI Leaders' page — the closest public match to persona Maya (the AI-accountable leader squeezed between board ROI and developer trust). 'AI tools should unlock productivity, not just shift bottlenecks' and 'safeguard code quality... before they compound' map directly to Maya's success criteria. Note: the site has no '/solutions' index page; solutions are reachable only via role pages (ai-leaders, engineering-executives, platform-engineering-devex-leaders, program-managers) and use-case pages. Testimonial: Vineeta Puranik, CTO, SmartBear."
+}

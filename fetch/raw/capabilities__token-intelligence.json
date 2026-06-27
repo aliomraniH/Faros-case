@@ -1,0 +1,64 @@
+{
+  "url": "https://www.faros.ai/platform/token-intelligence",
+  "tab": "capabilities",
+  "retrieved_at": "2026-06-26T23:57:50Z",
+  "title": "Token Intelligence by Faros: measure and optimize AI spend",
+  "hero": {
+    "headline": "Token Intelligence — trace exactly where your tokens are going",
+    "subhead": "Faros traces token consumption to what it delivers across people, teams, and outcomes — so you know what's productive, wasteful, and what to fix.",
+    "primary_cta": "Request a demo"
+  },
+  "sections": [
+    {
+      "heading": "How we help",
+      "body": "Stop guessing where AI dollars go (visibility by team, tool, time vs budget baseline); find and plug inefficient token usage; route work to the most efficient model.",
+      "stats": [
+        { "value": "$2,000", "label": "token spend per engineer/month (page stat)" },
+        { "value": "94%", "label": "of engineering leaders say ROI metrics are still missing (page stat)" }
+      ]
+    },
+    {
+      "heading": "Features — stop tokenmaxxing, start outcome maxxing",
+      "body": "AI ROI, Token Economics (productive vs wasteful), Budget Insights (keep/scope/cut tools), Team Accountability, Task-to-Tool Matching, Security First (no install on dev machines).",
+      "named_capabilities": ["AI ROI", "Token Economics", "Budget Insights", "Team Accountability", "Task-to-Tool Matching"]
+    },
+    {
+      "heading": "Spend",
+      "body": "Same visibility into AI spend you have into headcount/infra, plus a company baseline. See total spend by team/tool/model; track month-over-month growth; benchmark teams to spot outliers."
+    },
+    {
+      "heading": "Efficiency",
+      "body": "Classifies spend by how deliberately AI was used. Buckets tokens into productive, inefficient, or wasteful — each with a dollar figure; trends the efficiency ratio over time.",
+      "named_capabilities": ["Productive/inefficient/wasteful classification"]
+    },
+    {
+      "heading": "Attribution",
+      "body": "AI spend mapped to team and task, measured against budget; shows who's on track, ahead, or underleveraging allocation; which tool works best for each task type."
+    },
+    {
+      "heading": "Tools and models",
+      "body": "Keep, scope, or cut verdicts for every tool; identify the most cost-efficient model per type of work; arrive at vendor conversations knowing what each tool produced."
+    },
+    {
+      "heading": "Why Faros — not a usage meter",
+      "body": "Engineering context that makes token data meaningful.",
+      "named_capabilities": ["Engineering World Model", "Token Attribution Ledger", "Workflow optimization", "Outcome maximization", "No agent on the machine", "Enterprise grade"]
+    },
+    {
+      "heading": "Works where your team works",
+      "body": "Connects to AI agents and tools via built-in telemetry, managed through central configuration; no installs.",
+      "bullets": ["Claude", "Codex", "Jira", "GitHub", "Azure DevOps", "GitLab", "Bitbucket", "SonarQube", "PagerDuty", "Slack", "Microsoft Teams"]
+    },
+    {
+      "heading": "The Playbook (field guide)",
+      "body": "Field guide to measuring token efficiency: three outcome signals, eleven guardrail metrics. Covers adoption, productivity, quality, and outcome metrics."
+    }
+  ],
+  "logos_or_customers": ["Autodesk", "Riskified", "Discord", "Vimeo", "Ironclad", "Coursera", "SmartBear", "Globant", "Thryv", "Vertex", "Alegeus"],
+  "links": [
+    { "text": "Token Intelligence blog", "href": "https://www.faros.ai/blog/token-intelligence-for-ai-engineering" },
+    { "text": "Token efficiency field guide", "href": "https://www.faros.ai/resources/token-efficiency-field-guide" },
+    { "text": "tokenmaxxing blog", "href": "https://www.faros.ai/blog/tokenmaxxing" }
+  ],
+  "notes": "This page is the live, named home of two capabilities the seed tree treats as Observe sub-capabilities: Engineering World Model and Token Attribution Ledger — both presented as shipped here. 'Productive / inefficient / wasteful' classification matches offering.json exactly. Page describes model-routing and task-to-tool matching as live (Optimize pillar, which offering.json marks 'partial' — see curator conflict note). Stats $2,000/eng/mo and 94% are page-stated marketing figures."
+}

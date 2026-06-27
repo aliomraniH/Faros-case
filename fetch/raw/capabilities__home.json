@@ -1,0 +1,62 @@
+{
+  "url": "https://www.faros.ai/",
+  "tab": "capabilities",
+  "retrieved_at": "2026-06-26T23:57:50Z",
+  "title": "Engineering Productivity and Intelligence | Faros",
+  "hero": {
+    "headline": "Stop tokenmaxxing. Start outcome maxxing.",
+    "subhead": "One view of token spend across every team, tool, and model — mapped to the work and outcomes it produced.",
+    "primary_cta": "Request demo"
+  },
+  "sections": [
+    {
+      "heading": "Problems we solve",
+      "body": "Run engineering faster with AI that knows how you design, implement, test, and ship product.",
+      "named_capabilities": ["Token Intelligence", "AI Transformation", "Context for AI Agents", "Developer Productivity"]
+    },
+    {
+      "heading": "AI Engineering Report 2026: acceleration whiplash",
+      "body": "Throughput is up; bugs, incidents, and rework are rising faster. Two years of data from 22,000 developers across 4,000 teams.",
+      "stats": [
+        { "value": "22,000", "label": "developers studied" },
+        { "value": "4,000", "label": "teams studied" }
+      ]
+    },
+    {
+      "heading": "The Path to AI Impact (how it works)",
+      "body": "Connect (any AI tool, any SDLC, in days), Learn (build a knowledge graph of how teams build/deliver), Deliver (context flows to devs and agents), Prove (continuous measurement shows ROI).",
+      "named_capabilities": ["Knowledge graph", "Continuous measurement"]
+    },
+    {
+      "heading": "Our secret sauce: engineering context, applied everywhere",
+      "body": "Context applied in the code, in the transformation, in the boardroom, in the platform, in the planning. Boardroom framing: prove AI impact and make the case for 'smarter—not smaller—budgets.'",
+      "named_solutions": ["In the Code", "In the Transformation", "In the Boardroom", "In the Platform", "In the Planning"]
+    },
+    {
+      "heading": "Why engineering leaders choose Faros",
+      "body": "Complete Context (a unified model of how you work), Real Solutions (gains, not relocated friction), Proven Impact (value not just spend), Enterprise-Grade.",
+      "named_capabilities": ["Complete Context", "Real Solutions", "Proven Impact", "Enterprise-Grade"]
+    },
+    {
+      "heading": "Business results — quantifiable impact",
+      "stats": [
+        { "value": "10x", "label": "higher PR velocity" },
+        { "value": "40%", "label": "fewer failed outcomes" },
+        { "value": "1 Day", "label": "to value in POC" }
+      ]
+    },
+    {
+      "heading": "Who partners with us (testimonials)",
+      "body": "Autodesk (Ben Cochran, VP Developer Enablement), Coursera (Mustafa Furniturewala, SVP Engineering), SmartBear (Vineeta Puranik, CTO), Vimeo (Rachna Kamath, Chief of Staff to the CTO)."
+    }
+  ],
+  "logos_or_customers": ["Autodesk", "Riskified", "Discord", "Vimeo", "Ironclad", "Coursera", "SmartBear", "Globant", "Thryv", "Vertex", "Alegeus"],
+  "links": [
+    { "text": "Token Intelligence", "href": "https://www.faros.ai/platform/token-intelligence" },
+    { "text": "AI Transformation", "href": "https://www.faros.ai/platform/ai-transformation" },
+    { "text": "Context for AI Agents", "href": "https://www.faros.ai/platform/context-engineering" },
+    { "text": "AI Engineering Report 2026", "href": "https://www.faros.ai/research/ai-acceleration-whiplash" },
+    { "text": "Vimeo case study", "href": "https://www.faros.ai/blog/customer-stories-vimeo" }
+  ],
+  "notes": "Homepage hero confirms the exact positioning the seed tree assumes: token spend mapped to work and outcomes, 'stop tokenmaxxing, start outcome maxxing.' Boardroom message 'smarter—not smaller—budgets' corroborates the repo's 'money is the door, never argue spend less' discipline. Many customer logos shown anonymized ('#1 e-signature platform' etc.); named logos captured. Stats 10x / 40% / 1 day match existing offering.json."
+}
