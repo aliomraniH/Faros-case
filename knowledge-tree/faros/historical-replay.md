@@ -15,11 +15,11 @@ source:
 fields:
   layer: sub-capability
   pillar: optimize
-tags: [faros, historical-replay, optimize, proposed, conflict-flag]
+tags: [faros, historical-replay, optimize, proposed]
 ---
 
 Replays past tasks/PRs to extract per-repo context (patterns, dependencies, failure modes) and to
-battle-test rules in simulation. **Conflict flag for human review:** the live Clara page presents
-historical replay as a current product feature, but seed `offering.json` marks "Historical Replay"
-as `shipped_status: partial`. Per curator rules, not silently resolving — proposed with
-`honesty: inference` so the advisor can't over-claim, and flagged for Ali to set the true status.
+battle-test rules in simulation. **Conflict resolved (Ali): keep the project framing.** The live
+Clara page reads as shipped, but the seed marks Optimize / "Historical Replay" `partial` — and the
+project framing is the newer, authoritative source. Honesty stays `inference` so the advisor won't
+over-claim it as fully shipped.

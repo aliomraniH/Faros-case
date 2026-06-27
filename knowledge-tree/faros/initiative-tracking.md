@@ -14,13 +14,13 @@ source:
   quote_or_derivation: "Track initiative progress, align teams to priorities, and hit delivery commitments."
 fields:
   layer: sub-capability
-  pillar: none
-tags: [faros, initiative-tracking, planning, shipped, proposed, taxonomy-flag]
+  pillar: observe
+tags: [faros, initiative-tracking, planning, shipped, proposed, observe]
 ---
 
 Named sub-capability of Predictable Delivery: real-time initiative health (budget, dates, scope),
 delivery forecasting with overrun/delay alerts, and portfolio/capacity allocation across
 initiatives, products, teams, and geographies, with automatic work categorization. Concrete named
 features (Program Oversight, Dependency Mapper, Capacity Planner from the TPM page) back it as
-shipped. **Carries the delivery-excellence taxonomy flag** — a planning/PMO surface outside the
-Observe/Optimize/Govern thesis.
+shipped. **Folded under Observe** with its parent `faros:delivery-excellence` (Ali's taxonomy
+decision) — delivery analytics on the operational graph.

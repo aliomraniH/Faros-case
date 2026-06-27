@@ -1,7 +1,7 @@
 ---
 id: faros:executive-scorecards
 type: faros
-title: Executive Scorecards & Transformation Roadmaps
+title: Executive Scorecards — boardroom KPI & AI-impact view
 parent: faros:developer-productivity
 provenance: sourced
 status: proposed
@@ -18,9 +18,9 @@ fields:
 tags: [faros, executive-scorecards, boardroom, shipped, proposed]
 ---
 
-Two named, leadership-facing features from the Engineering Executives page: Executive Scorecards
-(KPI + AI-impact monitoring tailored for leadership consumption) and Transformation Roadmaps
-(quarterly AI-maturity assessment + 90-day plan — the recurring engagement also named on the AI
-Transformation and GAINS pages). Directly serves persona:maya's "take success to the boardroom"
-need. Parented under Developer Productivity as the reporting layer; honesty shipped. (Transformation
-Roadmaps overlaps GAINS — note for Ali to decide whether to merge.)
+The leadership-facing reporting view from the Engineering Executives page: **Executive Scorecards** —
+engineering KPI + AI-impact monitoring tailored for boardroom consumption. Directly serves
+persona:maya's "take success to the boardroom" need. Parented under Developer Productivity as the
+reporting layer; honesty shipped. **Merge (Ali):** the overlapping "Transformation Roadmaps"
+(quarterly maturity + 90-day plan) is consolidated into `faros:gains`; this node keeps only the
+distinct scorecard/KPI dashboards so the picture stays clear.

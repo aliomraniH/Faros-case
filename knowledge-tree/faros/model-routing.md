@@ -15,12 +15,12 @@ source:
 fields:
   layer: sub-capability
   pillar: optimize
-tags: [faros, model-routing, optimize, proposed, conflict-flag]
+tags: [faros, model-routing, optimize, proposed]
 ---
 
 Surfaces the most cost-efficient tool/model per task type so teams can route work and cut frontier
-costs ("keep, scope, or cut" verdicts per tool). **Conflict flag:** the live Token Intelligence page
-frames routing and task-to-tool matching as available, while seed `offering.json` marks
-"Model/Workflow Recommendations" and the Optimize pillar as `partial`. Proposed with
-`honesty: inference` and flagged — do not present as fully shipped until Ali confirms. Maps to
-persona:maya's tool-rationalization pain (see `mapping:maya-tool-rationalization`, corroborated).
+costs ("keep, scope, or cut" verdicts per tool). **Conflict resolved (Ali): keep the project
+framing.** The live Token Intelligence page frames routing as available, but the seed marks
+"Model/Workflow Recommendations" and the Optimize pillar `partial`, and that newer project framing
+wins. Honesty stays `inference` — not presented as fully shipped. Maps to persona:maya's
+tool-rationalization pain (see `mapping:maya-tool-rationalization`, corroborated).

@@ -14,12 +14,13 @@ source:
   quote_or_derivation: "Generate accurate, audit-ready reports without a single manual spreadsheet."
 fields:
   layer: sub-capability
-  pillar: none
-tags: [faros, capitalization, finance, shipped, proposed, taxonomy-flag]
+  pillar: observe
+tags: [faros, capitalization, finance, shipped, proposed, observe]
 ---
 
 Named, finance-facing sub-capability of Predictable Delivery: auto-tabulates eligible R&D activities
 from engineering "digital footprints" into audit-ready cost-capitalization reports, filterable by
-initiative/epic/employee, with consistent rules and audit trails. Reads as shipped. **Carries the
-delivery-excellence taxonomy flag** — useful to the org/CFO but outside the AI-token thesis; Ali to
-decide scope. Testimonial: Matt Fisher, VP Product Engineering, Vimeo.
+initiative/epic/employee, with consistent rules and audit trails. Reads as shipped. **Folded under
+Observe** via `faros:delivery-excellence` (Ali's decision) — a finance-facing report derived from the
+observed engineering graph; org/initiative level, not individual. Testimonial: Matt Fisher, VP
+Product Engineering, Vimeo.

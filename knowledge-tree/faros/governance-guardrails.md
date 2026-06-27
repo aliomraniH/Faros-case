@@ -15,13 +15,12 @@ source:
 fields:
   layer: sub-capability
   pillar: govern
-tags: [faros, govern, guardrails, proposed, conflict-flag]
+tags: [faros, govern, guardrails, proposed]
 ---
 
 The AI Transformation page describes IDE-level governance: flag PRs needing extra scrutiny,
 real-time code-quality checks, policy orchestration for risk mitigation, distinguish human vs.
-machine-generated code. **Conflict flag:** the seed `faros:govern` node is `honesty: roadmap` and
-offering.json marks policy/compensating-controls `partial`; the live page reads more shipped.
-Proposed `honesty: inference` and flagged for Ali. The seed's key distinction — *compensating
-controls over hard blocks*, with a human still merging — is the design choice to preserve when
-approving, and keeps this consistent with `principle:empower-not-police`.
+machine-generated code. **Conflict resolved (Ali): keep the project framing.** The seed `faros:govern`
+node is `honesty: roadmap` and the live page reads more shipped, but the newer project framing wins.
+Honesty stays `inference`. Preserve the seed's distinction — *compensating controls over hard blocks,
+a human still merges* — consistent with `principle:empower-not-police`.

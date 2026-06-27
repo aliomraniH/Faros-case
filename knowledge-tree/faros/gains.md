@@ -25,3 +25,8 @@ SDLC telemetry. Part service / part product — the "shared metric that aligns e
 finance" framing is the org-level expression of the repo's door/room positioning. Page cites the
 "$40B invested, 5% see returns" paradox (marketing claim; echoes the MIT NANDA proof point already
 in offering.json).
+
+**Owns the recurring "Transformation Roadmaps" engagement** (quarterly AI-maturity assessment +
+90-day plan). Per Ali's merge decision, the overlap previously duplicated on `faros:executive-scorecards`
+is consolidated here; the scorecard node keeps only the distinct leadership KPI dashboards, so the
+picture stays clear (GAINS = the maturity engagement; Executive Scorecards = the boardroom view).
