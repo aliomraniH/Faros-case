@@ -1,0 +1,31 @@
+{
+  "url": "https://www.faros.ai/platform-engineering-devex-leaders",
+  "tab": "solutions",
+  "retrieved_at": "2026-06-27T00:34:17Z",
+  "title": "Developer Experience Platform That Engineering Leaders Trust | Faros",
+  "hero": {
+    "headline": "Engineer exceptional experiences",
+    "subhead": "Faros provides contextualized insight to help transform with AI, improve productivity, and delight engineers.",
+    "primary_cta": "Request a demo"
+  },
+  "sections": [
+    {
+      "heading": "Outcomes we deliver — build a world-class engineering engine",
+      "body": "Accelerate velocity/efficiency (rank and fix bottlenecks), turn feedback into action (correlate surveys with metrics), empower team autonomy (self-serve metrics), optimize DevEx ROI."
+    },
+    {
+      "heading": "How DevEx and platform engineers use Faros",
+      "body": "Unify engineering data across bespoke CI/CD and on-prem; bridge sentiment and systems (overlay qualitative feedback with telemetry); isolate systemic friction (inner/outer loops + sentiment); benchmark productivity at scale on DORA/SPACE/DevEx/Stanford frameworks."
+    },
+    {
+      "heading": "What you get",
+      "body": "Holistic Benchmarking, hundreds of metrics (heatmaps, adoption trackers, alerts), self-serve analytics (LLM-powered exploration, Slack/Teams answers), extensible data model, automated AI insights, enterprise-grade security.",
+      "named_capabilities": ["Holistic Benchmarking", "Self-Serve Analytics", "Extensible Data Model", "Automated AI Insights"]
+    }
+  ],
+  "logos_or_customers": ["Autodesk"],
+  "links": [
+    { "text": "Best Jellyfish Alternative (blog)", "href": "https://www.faros.ai/blog" }
+  ],
+  "notes": "Retrieved via Claude-in-Chrome. Role/solution page for DevEx + Platform Engineering. Strongly corroborates persona:maya's 'empower the team, never rank it' and 'developers want help not surveillance' — page leads with team autonomy and sentiment+telemetry, not individual ranking. Reinforces principle:empower-not-police. Mostly recombines the Developer Productivity capability for this audience; no new node proposed beyond corroboration. Testimonial: Ben Cochran, VP Developer Enablement, Autodesk."
+}

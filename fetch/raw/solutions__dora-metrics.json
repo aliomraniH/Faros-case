@@ -1,0 +1,25 @@
+{
+  "url": "https://www.faros.ai/dora-metrics",
+  "tab": "solutions",
+  "retrieved_at": "2026-06-27T00:34:17Z",
+  "title": "DORA Metrics Dashboards for Engineering Teams | Faros",
+  "hero": {
+    "headline": "Improve performance and outcomes",
+    "subhead": "Measure industry-standard KPIs for software engineering velocity and quality with accurate, granular, correctly attributed DORA metrics.",
+    "primary_cta": "Request a demo"
+  },
+  "sections": [
+    {
+      "heading": "Why Faros — accurate team-level DORA",
+      "body": "Integrates with task/CI-CD/source/incident tools including homegrown; out-of-the-box dashboards in minutes; metrics from the complete lifecycle of every change; correct attribution even in a monorepo; per-team thresholds; AI summaries; unlimited history; GDPR/SOC2/ISO27001; SaaS/hybrid/on-prem."
+    },
+    {
+      "heading": "Our solution",
+      "body": "Trace every code change idea-to-production; improve DORA with personalized insights (slice by real org chart, overlay survey data, threshold alerts); benchmark with cross-org scorecards color-coded by latest benchmarks.",
+      "named_capabilities": ["DORA metrics dashboards", "Cross-org scorecards"]
+    }
+  ],
+  "logos_or_customers": ["Autodesk"],
+  "links": [],
+  "notes": "Retrieved via Claude-in-Chrome. DORA Metrics is a distinct, clearly-shipped named capability under Developer Productivity / Observe. Strong de-dupe-aware proposal: it's a sub-capability of faros:developer-productivity, not a duplicate. Comparison table positions vs unnamed 'other vendors' — marketing, captured as context not endorsement. Testimonial: Tulika Garg, Director of AI & Platform Products, Autodesk."
+}

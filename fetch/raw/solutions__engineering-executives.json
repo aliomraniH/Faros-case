@@ -1,0 +1,32 @@
+{
+  "url": "https://www.faros.ai/engineering-executives",
+  "tab": "solutions",
+  "retrieved_at": "2026-06-27T00:34:17Z",
+  "title": "Engineering Executives: Successfully Run Engineering with AI | Faros",
+  "hero": {
+    "headline": "Accelerate engineering delivery",
+    "subhead": "Strategic decisions without full context make it harder to move fast and win. Faros provides visibility and control to deploy AI at scale.",
+    "primary_cta": "Request a demo"
+  },
+  "sections": [
+    {
+      "heading": "Outcomes we deliver — run engineering like an AI company",
+      "body": "Deliver 10x with agents (assign tasks to agents that have org context), build a next-gen workforce, transform with AI faster, measure productivity impact for the boardroom.",
+      "named_solutions": ["Deliver 10x with agents", "Build a next-gen workforce", "Measure productivity impact"]
+    },
+    {
+      "heading": "How engineering executives use Faros",
+      "body": "Grow revenue by releasing faster, attract and retain top AI talent, eliminate wasted budgets and inefficiencies, demonstrate engineering's business results (tie initiatives to revenue, cost savings, CLV)."
+    },
+    {
+      "heading": "What you get",
+      "body": "The Context Engine (unified data model), Executive Scorecards (KPI + AI impact monitoring for leadership), Transformation Roadmaps (quarterly AI-maturity assessment + 90-day plan), Strategic Resource Allocation, AI-driven Insights (anomaly/risk detection), Enterprise-Grade Security.",
+      "named_capabilities": ["Context Engine", "Executive Scorecards", "Transformation Roadmaps", "Strategic Resource Allocation", "AI-driven Insights"]
+    }
+  ],
+  "logos_or_customers": ["Coursera"],
+  "links": [
+    { "text": "Coursera case study", "href": "https://www.faros.ai/blog/how-coursera-scales-world-class-engineering-operations-to-unlock-developer-productivity" }
+  ],
+  "notes": "Retrieved via Claude-in-Chrome (get_page_text). Role/solution page for CTOs and VPs. Closest persona match after ai-leaders; 'measure productivity impact, take it to the boardroom' and 'demonstrate engineering's business results' corroborate persona:maya's board-ROI pressure and the money-is-the-door discipline. Names two distinct features worth nodes: Executive Scorecards and Transformation Roadmaps. Testimonial: Mustafa Furniturewala, SVP Engineering, Coursera."
+}

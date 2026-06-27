@@ -1,0 +1,31 @@
+{
+  "url": "https://www.faros.ai/program-managers",
+  "tab": "solutions",
+  "retrieved_at": "2026-06-27T00:34:17Z",
+  "title": "Program Managers: Deliver Confidently with Faros",
+  "hero": {
+    "headline": "Predictable delivery, zero surprises",
+    "subhead": "Faros delivers the context you need to manage dependencies, optimize capacity, and deliver on time.",
+    "primary_cta": "Request a demo"
+  },
+  "sections": [
+    {
+      "heading": "Outcomes we deliver — confident delivery without the chaos",
+      "body": "Confident delivery timelines (spot risks early), optimize capacity planning (historical velocity + actual load), unblock cross-team dependencies, automate status reporting."
+    },
+    {
+      "heading": "How technical program managers use Faros",
+      "body": "Align engineering effort with strategy (Roadmap vs KTLO vs Unplanned split); eliminate the manual data chase (flag missing story points, stale statuses); drive improvements with objective data (Cycle Time, PR Velocity in retros); monitor sprint health (WIP, focus time, scope changes)."
+    },
+    {
+      "heading": "What you get",
+      "body": "Program Oversight (initiative status/blockers/milestones), Dependency Mapper, Automated Reporting, Data Hygiene Engine (imputes data, prompts owners), Capacity Planner, enterprise-grade security.",
+      "named_capabilities": ["Program Oversight", "Dependency Mapper", "Automated Reporting", "Data Hygiene Engine", "Capacity Planner"]
+    }
+  ],
+  "logos_or_customers": ["Vimeo"],
+  "links": [
+    { "text": "Vimeo case study", "href": "https://www.faros.ai/blog/customer-stories-vimeo" }
+  ],
+  "notes": "Retrieved via Claude-in-Chrome. Role/solution page for TPMs — the audience for the Predictable Delivery / Delivery Excellence capability. Confirms delivery-excellence as a real, distinct product surface (Dependency Mapper, Capacity Planner, Data Hygiene Engine are concrete named features). Reinforces the taxonomy flag: this is PMO/planning, outside the Observe/Optimize/Govern AI-token thesis. Testimonial: Rachna Kamath, Chief of Staff to the CTO, Vimeo."
+}

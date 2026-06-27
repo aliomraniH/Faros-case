@@ -20,6 +20,12 @@ approved nodes are visible to the Advisor.
 | `mapping:maya-adoption-aitransformation` | inferred (Maya × AI Transformation) | inference | 2026-06-26 | ☐ |
 | `mapping:maya-rework-context` | inferred (Maya × Clara) | inference | 2026-06-26 | ☐ |
 | `mapping:maya-predictability-delivery` | inferred (Maya × Delivery) | inference | 2026-06-26 | ☐ ⚑ taxonomy |
+| `faros:gains` | /platform/ai-transformation/gains | shipped | 2026-06-27 | ☐ |
+| `faros:dora-metrics` | /dora-metrics | shipped | 2026-06-27 | ☐ |
+| `faros:executive-scorecards` | /engineering-executives | shipped | 2026-06-27 | ☐ |
+| `faros:initiative-tracking` | /initiative-tracking | shipped | 2026-06-27 | ☐ ⚑ taxonomy |
+| `faros:software-capitalization` | /software-capitalization | shipped | 2026-06-27 | ☐ ⚑ taxonomy |
+| `mapping:maya-devex-friction` | inferred (Maya × Developer Experience) | inference | 2026-06-27 | ☐ |
 
 ### Conflict / corroboration flags for Ali (curator does not resolve — rule 5)
 
@@ -37,7 +43,17 @@ approved nodes are visible to the Advisor.
 - **Corroborations (no new node needed):** Token Intelligence page corroborates
   `mapping:maya-roi-ledger` (Token Attribution Ledger) and `mapping:maya-tool-rationalization`
   (task-to-tool routing); homepage hero corroborates the "money is the door, never spend-less"
-  positioning ("smarter—not smaller—budgets").
+  positioning ("smarter—not smaller—budgets"). **Batch 2:** `/ai-impact` corroborates
+  `faros:ai-transformation` (cause-and-effect ROI, anonymized dashboards); `/developer-experience`
+  corroborates `faros:developer-productivity` (DevEx Insights) and `principle:empower-not-police`
+  (expose team variability, not individual ranks); the DevEx/Platform-Engineering and Engineering-
+  Executives role pages recombine existing capabilities for new audiences — captured as raw JSON,
+  no duplicate nodes.
+- **Overlap to resolve (batch 2):** `faros:executive-scorecards` "Transformation Roadmaps" overlaps
+  `faros:gains` (both = quarterly AI-maturity assessment + 90-day plan). Ali to decide merge vs keep
+  separate.
+- **Batch-2 taxonomy:** `faros:initiative-tracking` and `faros:software-capitalization` are
+  sub-capabilities of `faros:delivery-excellence` and inherit its outside-the-three-pillars flag.
 - **Negative memory (`mapping:maya-learning-negmem`):** the Clara page's "feedback becomes reusable
   context so agents don't ask twice" is the closest public analog, but frames forward learning, not
   explicit failure write-back. Left as-is (still roadmap/inference); no overwrite.

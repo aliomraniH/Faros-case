@@ -1,0 +1,25 @@
+{
+  "url": "https://www.faros.ai/software-capitalization",
+  "tab": "solutions",
+  "retrieved_at": "2026-06-27T00:34:17Z",
+  "title": "Software R&D Cost Capitalization Without Manual Overhead | Faros",
+  "hero": {
+    "headline": "Automate cost capitalization reports",
+    "subhead": "Faros automates the entire process, generating accurate, audit-ready reports without a single manual spreadsheet.",
+    "primary_cta": "Request a demo"
+  },
+  "sections": [
+    {
+      "heading": "The challenge — manual cost capitalization drains time",
+      "body": "Auto-generate periodic reports from digital footprints; real-time tracking (filter by initiative/epic/employee); streamline with clear audit trails, no human intervention."
+    },
+    {
+      "heading": "Our solution",
+      "body": "Save engineering-leader time (tabulate eligible activities from digital footprints, export for finance); improve accuracy/transparency/defensibility (consistent capitalization rules, reduce non-compliance risk); repeatable/scalable (onboard new managers fast, handle overlapping tasks and poor data hygiene).",
+      "named_capabilities": ["Automated SWE cost capitalization", "Audit-ready reports"]
+    }
+  ],
+  "logos_or_customers": ["Vimeo"],
+  "links": [],
+  "notes": "Retrieved via Claude-in-Chrome. Software Cost Capitalization is a distinct named sub-capability of Predictable Delivery (faros:delivery-excellence) and a finance-facing surface. Reinforces taxonomy flag. Testimonial: Matt Fisher, VP Product Engineering, Vimeo."
+}

@@ -1,0 +1,41 @@
+{
+  "url": "https://www.faros.ai/platform/ai-transformation/gains",
+  "tab": "capabilities",
+  "retrieved_at": "2026-06-27T00:34:17Z",
+  "title": "AI Productivity Impact Diagnostic | GAINS by Faros",
+  "hero": {
+    "headline": "GAINS™ — prepare your engineering workforce for AI-powered excellence",
+    "subhead": "Partner with us to build a concrete plan for your engineering organization's next steps.",
+    "primary_cta": "Schedule a meeting"
+  },
+  "sections": [
+    {
+      "heading": "The challenge",
+      "body": "Page claim: '$40B invested in GenAI, yet only 5% of enterprises see measurable returns' — the AI Productivity Paradox. Barriers: no clear strategy, teams working alone, infrastructure lag, can't measure success.",
+      "stats": [
+        { "value": "$40B", "label": "invested in GenAI (page claim)" },
+        { "value": "5%", "label": "of enterprises see measurable returns (page claim)" }
+      ]
+    },
+    {
+      "heading": "GAINS = Generative AI Impact Net Score",
+      "body": "A diagnostic to benchmark AI maturity, identify organizational friction, and tie AI usage to engineering and business outcomes. Names tools: Copilot, Cursor, Claude Code, Windsurf, Augment, Devin.",
+      "named_capabilities": ["GAINS — Generative AI Impact Net Score"]
+    },
+    {
+      "heading": "The diagnostic — three steps",
+      "body": "1) Where are you today? (baseline measurement + root cause). 2) Discover the art of the possible (benchmark vs leaders, quantify ROI of each intervention). 3) Unlock AI's potential in 90 days (team-specific action plan, KPIs mapping AI performance to business outcomes).",
+      "bullets": ["Baseline + root cause", "Benchmark + ROI of interventions", "90-day action plan"]
+    },
+    {
+      "heading": "Our solution — ten transformation dimensions",
+      "body": "Uses interviews, surveys, and live SDLC telemetry to measure adoption/usage, velocity/flow efficiency, quality/safety, onboarding/platform maturity, org structure/strategic alignment. Each dimension linked to business performance — a shared metric aligning engineering and finance."
+    }
+  ],
+  "logos_or_customers": [],
+  "links": [
+    { "text": "AI Productivity Paradox", "href": "https://www.faros.ai/ai-productivity-paradox" },
+    { "text": "AI Engineering Report 2026", "href": "https://www.faros.ai/research/ai-acceleration-whiplash" }
+  ],
+  "notes": "Retrieved via Claude-in-Chrome. GAINS is a named, trademarked framework/diagnostic (Generative AI Impact Net Score) referenced by the AI Transformation capability — worth its own node. Part service/engagement (interviews + 90-day plan), part product (telemetry). The '$40B / 5%' figures are page marketing claims (echoing the MIT NANDA 95%-no-impact stat already in offering.json proof); captured as-stated. Aligns engineering + finance = the door/room positioning at the org level."
+}

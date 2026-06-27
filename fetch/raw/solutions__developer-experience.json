@@ -1,0 +1,26 @@
+{
+  "url": "https://www.faros.ai/developer-experience",
+  "tab": "solutions",
+  "retrieved_at": "2026-06-27T00:34:17Z",
+  "title": "Developer Experience Metrics That Drive Real Productivity | Faros",
+  "hero": {
+    "headline": "Boost team health and productivity",
+    "subhead": "Faros blends survey feedback with workflow telemetry to deliver contextualized developer experience metrics.",
+    "primary_cta": "Request a demo"
+  },
+  "sections": [
+    {
+      "heading": "The challenge — developers lose 20% of time to friction",
+      "body": "Run our surveys or bring your own; align responses to workflow telemetry (blended visibility); make the right investments (diagnose pain points, track outcomes).",
+      "stats": [{ "value": "20%", "label": "of developer time lost to workflow/infra inefficiencies (page claim)" }]
+    },
+    {
+      "heading": "Our solution",
+      "body": "Centralize developer survey data; blend survey responses with tool telemetry for sharper insights; prioritize the right interventions and track impact. Counters recency bias by balancing feedback with evergreen data; exposes variability across teams (no one-size-fits-all).",
+      "named_capabilities": ["Developer surveys", "Sentiment + telemetry blend", "Intervention impact tracking"]
+    }
+  ],
+  "logos_or_customers": ["Coursera"],
+  "links": [],
+  "notes": "Retrieved via Claude-in-Chrome. Developer Experience (surveys + telemetry) is a sub-capability already represented inside faros:developer-productivity ('DevEx Insights' section). Captured as corroboration, not a new node. Notably reinforces persona:maya / principle:empower-not-police: 'expose variability across teams instead of one-size-fits-all', balance sentiment with evergreen data — improvement, not ranking. Testimonial: Mustafa Furniturewala, SVP Engineering, Coursera."
+}

@@ -1,0 +1,32 @@
+{
+  "url": "https://www.faros.ai/ai-impact",
+  "tab": "solutions",
+  "retrieved_at": "2026-06-27T00:34:17Z",
+  "title": "AI Coding Tool Impact Analysis Platform | Faros",
+  "hero": {
+    "headline": "Maximize AI coding impact & ROI",
+    "subhead": "The only platform built to prove AI coding ROI using cause-and-effect analysis. Understand impact. Optimize adoption. Scale what delivers.",
+    "primary_cta": "Request a demo"
+  },
+  "sections": [
+    {
+      "heading": "Why Faros — vs raw AI-assistant telemetry",
+      "body": "Granular adoption metrics, full usage history, downstream cause-and-effect impact on velocity/quality/security/satisfaction from 100+ tools, team & power-user views, A/B and before/after analysis, out-of-the-box dashboards and surveys.",
+      "stats": [{ "value": "100+", "label": "tools (data sources for impact analysis)" }]
+    },
+    {
+      "heading": "How we help — unlock 40% higher ROI",
+      "body": "Optimize tooling mix (best tools/models for your code and developers), prove business value (cause-and-effect tied to delivery/quality/risk), scale with control (governance, guardrails, end-to-end monitoring).",
+      "stats": [{ "value": "40%", "label": "higher ROI from AI coding tools (page claim)" }]
+    },
+    {
+      "heading": "Our solution",
+      "body": "Track adoption/usage over time (daily/weekly/monthly, acceptance rates, % AI-generated code by repo, unused licenses); measure downstream impacts across SDLC; understand time savings and developer satisfaction (surveys)."
+    }
+  ],
+  "logos_or_customers": ["Riskified"],
+  "links": [
+    { "text": "Riskified case study", "href": "https://www.faros.ai/blog/customer-stories-riskified" }
+  ],
+  "notes": "Retrieved via Claude-in-Chrome. The 'AI Impact & ROI' use-case page (nav also links it as /copilot-module). Heavily overlaps faros:ai-transformation (causal ROI, adoption, A/B). Treated as corroboration of that node rather than a duplicate — adds the 'cause-and-effect / defensible measurement' framing and the explicit 'anonymized ROI dashboards' point relevant to persona:maya's 'empower not police'. Testimonial: Shai Peretz, SVP Engineering, Riskified."
+}

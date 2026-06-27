@@ -1,0 +1,25 @@
+{
+  "url": "https://www.faros.ai/initiative-tracking",
+  "tab": "solutions",
+  "retrieved_at": "2026-06-27T00:34:17Z",
+  "title": "Initiative Tracking That Drives Engineering Delivery | Faros",
+  "hero": {
+    "headline": "Confidence in every commitment",
+    "subhead": "Faros provides the visibility leaders need to track initiative progress, align teams to priorities, and hit delivery commitments.",
+    "primary_cta": "Request a demo"
+  },
+  "sections": [
+    {
+      "heading": "The challenge — misalignment costs time, money, trust",
+      "body": "Improve stakeholder visibility (live dashboards vs spreadsheets), drive critical projects to success, align resources to outcomes."
+    },
+    {
+      "heading": "Our solution",
+      "body": "Automate reporting with real-time data (single source of truth for quarterly commitments, initiative health/budget/dates); keep critical work on track (forecast timelines, alert on overruns/delays); monitor portfolio investments and capacity allocation across initiatives/products/teams/geographies; automatic work categorization and attribution.",
+      "named_capabilities": ["Initiative health tracking", "Delivery forecasting", "Portfolio/capacity allocation"]
+    }
+  ],
+  "logos_or_customers": [],
+  "links": [],
+  "notes": "Retrieved via Claude-in-Chrome. Initiative Tracking is a distinct named sub-capability of Predictable Delivery (faros:delivery-excellence). Reinforces the taxonomy flag (PMO/planning surface). De-dupe: propose as sub-capability under delivery-excellence, not a standalone pillar."
+}
