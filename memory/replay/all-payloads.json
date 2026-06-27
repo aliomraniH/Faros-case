@@ -206,7 +206,7 @@
     }
   },
   {
-    "tool": "MCP_Assist:memory_save",
+    "tool": "assist-memory:memory_save",
     "args": {
       "namespace": "dev/faros-case",
       "key": "fetch/batch-1",
@@ -227,7 +227,7 @@
     }
   },
   {
-    "tool": "MCP_Assist:memory_save",
+    "tool": "assist-memory:memory_save",
     "args": {
       "namespace": "dev/faros-case",
       "key": "insight/offering-live",

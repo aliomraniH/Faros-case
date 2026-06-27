@@ -1,5 +1,5 @@
 {
-  "tool": "MCP_Assist:memory_save",
+  "tool": "assist-memory:memory_save",
   "args": {
     "namespace": "dev/faros-case",
     "key": "fetch/batch-1",
@@ -9,6 +9,6 @@
     "source_surface": "claude-cowork",
     "tags": ["fetch", "curate", "batch-1", "proposed"]
   },
-  "_then": "MCP_Assist:coord_reconcile(namespace='dev/faros-case') so this claim is verified against the repo once the commit is pushed.",
-  "_note": "Staged because MCP_Assist's /mcp transport returned 'Session terminated' on every call during the Cowork run on 2026-06-26 even though the app root returned ok. Replay this payload (and run coord_reconcile) from any surface once the endpoint is healthy."
+  "_then": "assist-memory:coord_reconcile(namespace='dev/faros-case') so this claim is verified against the repo once the commit is pushed.",
+  "_note": "Staged because assist-memory's /mcp transport returned 'Session terminated' on every call during the Cowork run on 2026-06-26 even though the app root returned ok. Replay this payload (and run coord_reconcile) from any surface once the endpoint is healthy."
 }

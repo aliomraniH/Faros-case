@@ -1,5 +1,5 @@
 {
-  "tool": "MCP_Assist:memory_save",
+  "tool": "assist-memory:memory_save",
   "args": {
     "namespace": "dev/faros-case",
     "key": "insight/offering-live",
@@ -8,5 +8,5 @@
     "source_surface": "claude-cowork",
     "tags": ["insight", "offering", "live-fetch", "batch-1"]
   },
-  "_note": "Staged for replay — MCP_Assist /mcp transport was returning 'Session terminated' during the Cowork run. Readable from Claude web/Desktop once replayed."
+  "_note": "Staged for replay — assist-memory /mcp transport was returning 'Session terminated' during the Cowork run. Readable from Claude web/Desktop once replayed."
 }
