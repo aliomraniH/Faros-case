@@ -211,17 +211,18 @@
       "namespace": "dev/faros-case",
       "key": "fetch/batch-1",
       "kind": "claim",
-      "value": "Cowork fetched 9 faros.ai pages to fetch/raw/*.json and the curator proposed 14 knowledge-tree nodes (11 faros + 3 mapping), all status=proposed proposed_by=cowork-curator. validate_nodes.py exits 0 (30 nodes: 16 approved, 14 proposed). Files: fetch/raw/{platform__overview,capabilities__home,capabilities__token-intelligence,capabilities__context-engineering,capabilities__ai-transformation,capabilities__delivery-excellence,capabilities__engineering-efficiency,solutions__ai-leaders,company__about}.json; knowledge-tree/faros/{token-intelligence,ai-transformation,clara-context-engine,developer-productivity,delivery-excellence,engineering-world-model,token-attribution-ledger,historical-replay,model-routing,governance-guardrails,provenance-audit-trail}.md; knowledge-tree/mapping/{maya-adoption-to-aitransformation,maya-rework-to-context,maya-predictability-to-delivery}.md. Committed locally as ab64860 on main; push pending (Cowork sandbox lacked GitHub creds).",
+      "value": "Cowork fetch+curate complete across 2 batches. Batch-1 (WebFetch, 2026-06-26): 9 faros.ai pages (Platform/Capabilities + ai-leaders + company) -> 14 proposed nodes (11 faros + 3 mapping). Batch-2 (Claude-in-Chrome, 2026-06-27): 9 remaining Solutions pages (3 role pages engineering-executives/devex-platform-leaders/program-managers, GAINS, + use-case pages ai-impact/dora-metrics/initiative-tracking/software-capitalization/developer-experience) -> 6 proposed nodes (faros:gains, faros:dora-metrics, faros:executive-scorecards, faros:initiative-tracking, faros:software-capitalization, mapping:maya-devex-friction). Total: 18 raw pages in fetch/raw/*.json, 20 proposed knowledge-tree nodes (16 faros + 4 mapping), all status=proposed proposed_by=cowork-curator. validate_nodes.py exits 0 (36 nodes: 16 approved, 20 proposed). Commits on main: ab64860 (batch-1), c2e825c (batch-2). Conflicts/taxonomy flags logged in agents/review-queue.md (Optimize/Govern shipped-vs-partial; delivery-excellence + sub-caps outside 3-pillar thesis; GAINS vs Transformation-Roadmaps overlap; 70+->100+ connectors). Push pending if Cowork sandbox lacked GitHub creds.",
       "meta": {
         "repo": "aliomraniH/Faros-case",
         "branch": "main",
-        "repo_sha": "ab648608a69f388fa593590bf412cd56fecf3832"
+        "repo_sha": "c2e825c7b3687daae027189f1d2c51a5a4d959a0"
       },
       "source_surface": "claude-cowork",
       "tags": [
         "fetch",
         "curate",
         "batch-1",
+        "batch-2",
         "proposed"
       ]
     }
