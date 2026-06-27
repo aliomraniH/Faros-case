@@ -10,7 +10,7 @@
 #   1. Checks prerequisites (git, python3, and a GitHub credential).
 #   2. Validates the seed knowledge tree (schema + human-gate rules).
 #   3. Initializes git (if needed) and pushes to github.com/aliomraniH/Faros-case.
-#   4. Optionally seeds MCP_Assist memory (if the server is awake).
+#   4. Optionally seeds assist-memory memory (if the server is awake).
 #   5. Prints the next steps (fetch → curate → approve → advise).
 #
 # Safe to re-run. Each step is idempotent and guarded.
@@ -117,14 +117,14 @@ else
 fi
 
 # ---------------------------------------------------------------------------
-step "5 · (Optional) Seed MCP_Assist memory if the server is awake"
+step "5 · (Optional) Seed assist-memory memory if the server is awake"
 if [[ -f "tools/mcp_health.py" ]]; then
   if python3 tools/mcp_health.py; then
-    c_grn "MCP_Assist looks reachable."
+    c_grn "assist-memory looks reachable."
     c_cya "To seed memory, run Claude Code with the prompt in prompts/claude-code-seed-memory.md,"
     c_cya "or: python3 tools/replay_memory.py   (raw HTTP fallback)."
   else
-    c_yel "MCP_Assist endpoint not reachable right now (Replit app may be asleep)."
+    c_yel "assist-memory endpoint not reachable right now (Replit app may be asleep)."
     c_yel "It will seed later — the payloads are staged in memory/replay/. See RUNBOOK.md §4."
   fi
 fi

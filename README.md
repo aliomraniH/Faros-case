@@ -45,7 +45,7 @@ sales conversation about Faros.
            │ structured answers                            │ raw JSON
            │                                               │
    ┌───────┴───────────────┐                     ┌─────────┴────────────────┐
-   │  MCP_Assist memory     │                    │  FETCH (Cowork/Desktop)   │
+   │  assist-memory memory     │                    │  FETCH (Cowork/Desktop)   │
    │  architecture + insights│                   │  faros.ai → JSON          │
    │  cross-surface handoffs │                   │  /fetch/raw/*.json        │
    └────────────────────────┘                    └──────────────────────────┘
@@ -75,17 +75,17 @@ Three rules make it deterministic, not vibes:
 | `schemas/` | JSON schemas: the node schema, the fetched-page schema, the offering schema. |
 | `agents/` | Agent specifications (advisor, curator, orchestration) — what Claude runs, separately. |
 | `fetch/` | Instructions + targets for Cowork/Desktop to pull faros.ai pages as JSON into `fetch/raw/`. |
-| `memory/` | What's mirrored into MCP_Assist, and replay payloads to (re)seed it. |
+| `memory/` | What's mirrored into assist-memory, and replay payloads to (re)seed it. |
 
 ## How the surfaces divide the work
 
 - **Claude web (here):** authored this seed — structure, schemas, initial tree, persona mapping,
-  agent specs, and the MCP_Assist replay payloads. Insight source: the press release, the Field
+  agent specs, and the assist-memory replay payloads. Insight source: the press release, the Field
   Guide, and a June 2026 market-research pass.
 - **Claude Cowork / Claude Desktop:** run `fetch/INSTRUCTIONS.md` — fetch the Platform,
   Capabilities, and Solutions pages from faros.ai as JSON into `fetch/raw/`, then let the curator
   agent propose tree nodes from them for human approval.
-- **MCP_Assist:** durable, cross-surface memory of the architecture and website insights, plus the
+- **assist-memory:** durable, cross-surface memory of the architecture and website insights, plus the
   handoff baton between web and Cowork/Desktop. See `memory/README.md`.
 
 ## Run it now (the simulation)
@@ -107,7 +107,7 @@ runs a positioning check, and scores each answer. Unmatched questions become cur
 - The knowledge tree is seeded from **already-gathered** material (press release, Field Guide,
   market research). Nodes derived from a **live fetch** of faros.ai are *not yet present* — that's
   the Cowork/Desktop step.
-- The MCP_Assist server was **unreachable** when this seed was authored (every call returned
+- The assist-memory server was **unreachable** when this seed was authored (every call returned
   "Session terminated"). The intended memory writes are staged as **replay payloads** in
   `memory/replay/` so they can be applied verbatim once the server is back. Nothing was silently
   assumed to have been written.

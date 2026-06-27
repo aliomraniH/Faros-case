@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-replay_memory.py — replay the staged MCP_Assist payloads over raw HTTP.
+replay_memory.py — replay the staged assist-memory payloads over raw HTTP.
 
 This is a FALLBACK. The preferred path is to let Claude Code (which has the
-MCP_Assist connector loaded) replay them as native tool calls — see
+assist-memory connector loaded) replay them as native tool calls — see
 prompts/claude-code-seed-memory.md. Use this only if you want to seed memory
 from a plain shell without Claude in the loop.
 
@@ -74,7 +74,7 @@ def main():
 
     ok = fail = skipped = 0
     for i, p in enumerate(payloads, 1):
-        tool = p["tool"].split(":", 1)[-1]  # 'MCP_Assist:memory_save' -> 'memory_save'
+        tool = p["tool"].split(":", 1)[-1]  # 'assist-memory:memory_save' -> 'memory_save'
         args = p["args"]
         key = args.get("key", "?")
         if args.get("kind") == "claim" and not INCLUDE_CLAIM:

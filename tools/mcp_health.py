@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-mcp_health.py — quick reachability check for the MCP_Assist memory server.
+mcp_health.py — quick reachability check for the assist-memory memory server.
 
 Exit 0 if the endpoint answers an MCP initialize handshake; 1 otherwise.
 This is a *transport* check, not a name check: if it fails with the server
@@ -40,15 +40,15 @@ def main():
             "clientInfo": {"name": "faros-case-health", "version": "1.0"},
         })
         if "result" in resp:
-            print(f"✓ MCP_Assist reachable at {URL}")
+            print(f"✓ assist-memory reachable at {URL}")
             return 0
-        print(f"✗ MCP_Assist responded with an error: {resp.get('error')}")
+        print(f"✗ assist-memory responded with an error: {resp.get('error')}")
         return 1
     except urllib.error.URLError as e:
-        print(f"✗ MCP_Assist unreachable at {URL}: {e}")
+        print(f"✗ assist-memory unreachable at {URL}: {e}")
         return 1
     except Exception as e:
-        print(f"✗ MCP_Assist check failed: {e}")
+        print(f"✗ assist-memory check failed: {e}")
         return 1
 
 if __name__ == "__main__":

@@ -1,12 +1,12 @@
 # Prompt — Claude Cowork · fetch + curate + sync faros.ai (batch-1)
 
 Run this in **Claude Cowork** with the `Faros-case` repo connected (clone or GitHub). It is one job
-in three parts: crawl the site, propose nodes, sync to git + MCP_Assist. Do the work; do NOT approve
+in three parts: crawl the site, propose nodes, sync to git + assist-memory. Do the work; do NOT approve
 anything — approval is Ali's gate.
 
 ## Bootstrap (do first)
 Read `CLAUDE.md`, `fetch/INSTRUCTIONS.md`, `fetch/targets.json`, and `agents/curator-agent.md`.
-Then bootstrap context from **MCP_Assist** namespace `dev/faros-case`: read the `insight/*` and
+Then bootstrap context from **assist-memory** namespace `dev/faros-case`: read the `insight/*` and
 `arch/*` entries and the `handoff/web-to-cowork` baton. The repo is live at
 `github.com/aliomraniH/Faros-case` (branch `main`).
 
@@ -37,7 +37,7 @@ update node and flag the conflict in the queue.
 ## PART 3 — SYNC
 1. Run `python3 tools/validate_nodes.py` — it MUST exit 0; fix only schema/format issues.
 2. Commit the raw JSON + proposed nodes and open a PR (or push a branch) for Ali to review.
-3. In **MCP_Assist** `dev/faros-case`:
+3. In **assist-memory** `dev/faros-case`:
    - save a **claim** keyed `fetch/batch-1` with `meta.repo=aliomraniH/Faros-case`, `meta.branch=main`,
      and the list of files written, then run `coord_reconcile`;
    - save a **knowledge** entry `insight/offering-live` summarizing the real Platform / Capabilities /

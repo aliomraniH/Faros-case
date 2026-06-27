@@ -16,7 +16,7 @@ without `approved_by` will fail.
 - `agents/` — Curator + Advisor specs and the orchestration loop. `agents/HUMAN-GATE.md` = how Ali
   approves.
 - `fetch/` — instructions + targets to pull faros.ai pages as JSON into `fetch/raw/`.
-- `memory/` — MCP_Assist key map + staged replay payloads.
+- `memory/` — assist-memory key map + staged replay payloads.
 - `tools/` — `validate_nodes.py`, `mcp_health.py`, `replay_memory.py`.
 
 ## Conventions
@@ -26,8 +26,8 @@ without `approved_by` will fail.
 - Keep verbatim quotes from any source **under 15 words**; paraphrase the rest.
 - Run `python3 tools/validate_nodes.py` before every commit. It must exit 0.
 
-## MCP_Assist (coordination memory)
-- Connector configured in `.mcp.json` under the name **`MCP_Assist`** (pin this name everywhere).
+## assist-memory (coordination memory)
+- Connector configured in `.mcp.json` under the name **`assist-memory`** (pin this name everywhere).
 - Namespace: **`dev/faros-case`**.
 - At the start of a work session: `coord_health("dev/faros-case")`, then load `insight/*` + `arch/*`.
 - If the endpoint errors with "Session terminated", the Replit app is asleep — open its URL once to
@@ -40,7 +40,7 @@ argue "see and improve what the spend produced." Never frame Faros as engineer s
 decisions land at repo/system level, never individual keystrokes.
 
 ## Typical tasks you'll be asked to do
-1. **Seed memory** — replay payloads into MCP_Assist (`dev/faros-case`).
+1. **Seed memory** — replay payloads into assist-memory (`dev/faros-case`).
 2. **Fetch** — pull faros.ai Platform/Capabilities/Solutions pages to `fetch/raw/*.json` (conform to
    `schemas/faros-page.schema.json`). Use WebFetch.
 3. **Curate** — read `fetch/raw/*.json`, propose `faros`/`mapping` nodes (`status: proposed`), append

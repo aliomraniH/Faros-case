@@ -1,5 +1,5 @@
 {
-  "tool": "MCP_Assist:memory_save",
+  "tool": "assist-memory:memory_save",
   "args": {
     "namespace": "dev/faros-case",
     "key": "insight/proof",

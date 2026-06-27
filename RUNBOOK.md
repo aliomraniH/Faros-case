@@ -8,7 +8,7 @@ hand off a whole task. You (Ali) are the approval gate in the middle.
   Claude Code ──push──► GitHub ──┐
        │  seed memory            │
        ▼                         ▼
-   MCP_Assist            Claude Cowork ──fetch faros.ai──► fetch/raw/*.json
+   assist-memory            Claude Cowork ──fetch faros.ai──► fetch/raw/*.json
    (dev/faros-case)             │ curate (propose nodes)
        ▲                        ▼
        └──── you approve ◄── agents/review-queue.md ──► Advisor answers (simulation)
@@ -79,9 +79,9 @@ python3 tools/validate_nodes.py    # must exit 0
 
 ---
 
-## §4 · Seed / update MCP_Assist memory (Claude Code)
+## §4 · Seed / update assist-memory memory (Claude Code)
 
-The architecture + website insights belong in MCP_Assist so any surface can bootstrap. Two ways:
+The architecture + website insights belong in assist-memory so any surface can bootstrap. Two ways:
 
 **Preferred — native tool calls via Claude Code** (the connector is in `.mcp.json`):
 > Paste `prompts/claude-code-seed-memory.md`. It checks health, then replays
@@ -97,7 +97,7 @@ python3 tools/replay_memory.py --include-claim   # after the push
 
 **If you see "Session terminated" / unreachable:** the server is a Replit app that sleeps. Open
 `https://mcp-assist-memory.replit.app/mcp` (or its dashboard) once to wake it, then retry. This is a
-server state — **not** a connector-name mismatch (the name `MCP_Assist` is correct; a real mismatch
+server state — **not** a connector-name mismatch (the name `assist-memory` is correct; a real mismatch
 would say "tool not found").
 
 ---
@@ -138,7 +138,7 @@ is the number to watch as the tree grows with real fetched nodes. See `sim/READM
 
 ## What you need installed
 - **Claude Code** (the CLI / desktop Code tab) with your GitHub token (`gh auth login` or a `repo`
-  scoped token in `GH_TOKEN`). The `.mcp.json` here auto-connects MCP_Assist.
+  scoped token in `GH_TOKEN`). The `.mcp.json` here auto-connects assist-memory.
 - **Claude Cowork** (desktop app's Cowork tab, or mobile) — for the fetch/curate batch.
 - **python3** with `pyyaml`, `jsonschema` (the bootstrap installs these).
 - Optional: `gh` CLI for the easiest auth + repo creation.

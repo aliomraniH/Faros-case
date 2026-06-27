@@ -28,7 +28,7 @@ accurate sourcing is its whole job. It never approves anything.
    leave `evidence` to be confirmed.
 5. **Flag conflicts.** If a fetched page contradicts an existing approved node (e.g. connector count
    changed 70+→100+), don't silently overwrite — propose the update and flag the conflict for the
-   human, and (when MCP_Assist is up) write a `claim` so `coord_health` surfaces the collision.
+   human, and (when assist-memory is up) write a `claim` so `coord_health` surfaces the collision.
 
 ## System prompt (seed)
 

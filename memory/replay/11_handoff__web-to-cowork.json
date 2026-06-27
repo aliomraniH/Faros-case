@@ -1,5 +1,5 @@
 {
-  "tool": "MCP_Assist:handoff_save",
+  "tool": "assist-memory:handoff_save",
   "args": {
     "namespace": "dev/faros-case",
     "key": "handoff/web-to-cowork",

@@ -1,0 +1,14 @@
+{
+  "tool": "MCP_Assist:memory_save",
+  "args": {
+    "namespace": "dev/faros-case",
+    "key": "fetch/batch-1",
+    "kind": "claim",
+    "value": "Cowork fetched 9 faros.ai pages to fetch/raw/*.json and the curator proposed 14 knowledge-tree nodes (11 faros + 3 mapping), all status=proposed proposed_by=cowork-curator. validate_nodes.py exits 0 (30 nodes: 16 approved, 14 proposed). Files: fetch/raw/{platform__overview,capabilities__home,capabilities__token-intelligence,capabilities__context-engineering,capabilities__ai-transformation,capabilities__delivery-excellence,capabilities__engineering-efficiency,solutions__ai-leaders,company__about}.json; knowledge-tree/faros/{token-intelligence,ai-transformation,clara-context-engine,developer-productivity,delivery-excellence,engineering-world-model,token-attribution-ledger,historical-replay,model-routing,governance-guardrails,provenance-audit-trail}.md; knowledge-tree/mapping/{maya-adoption-to-aitransformation,maya-rework-to-context,maya-predictability-to-delivery}.md. Committed locally as ab64860 on main; push pending (Cowork sandbox lacked GitHub creds).",
+    "meta": { "repo": "aliomraniH/Faros-case", "branch": "main", "repo_sha": "ab648608a69f388fa593590bf412cd56fecf3832" },
+    "source_surface": "claude-cowork",
+    "tags": ["fetch", "curate", "batch-1", "proposed"]
+  },
+  "_then": "MCP_Assist:coord_reconcile(namespace='dev/faros-case') so this claim is verified against the repo once the commit is pushed.",
+  "_note": "Staged because MCP_Assist's /mcp transport returned 'Session terminated' on every call during the Cowork run on 2026-06-26 even though the app root returned ok. Replay this payload (and run coord_reconcile) from any surface once the endpoint is healthy."
+}

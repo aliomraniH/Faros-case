@@ -85,9 +85,9 @@ Orchestration (`agents/orchestration.md`) defines the loop: fetch → curator pr
 approves → advisor answers → gaps found → curator proposes again. The human is in the loop at
 exactly one place — approval — and that single gate is what makes the whole thing deterministic.
 
-## 4. Memory & coordination (MCP_Assist)
+## 4. Memory & coordination (assist-memory)
 
-The tree lives in git (durable, reviewable, diff-able). **MCP_Assist** holds the *coordination*
+The tree lives in git (durable, reviewable, diff-able). **assist-memory** holds the *coordination*
 layer that git doesn't:
 
 - the **architecture decisions** (`kind: decision`) and **website insights** (`kind: knowledge`),

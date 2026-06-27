@@ -19,7 +19,7 @@ truly blocks you:
 4. If the push fails because the GitHub repo doesn't exist yet, create it and push:
    `gh repo create aliomraniH/Faros-case --private --source=. --remote=origin --push`
    (use `--public` instead of `--private` if I tell you to).
-5. Run `python3 tools/mcp_health.py`. If MCP_Assist is reachable, seed memory by following
+5. Run `python3 tools/mcp_health.py`. If assist-memory is reachable, seed memory by following
    `prompts/claude-code-seed-memory.md` (replay `memory/replay/all-payloads.json` into namespace
    `dev/faros-case`, skipping the `repo/seed-commit` claim until after the push, then run
    `coord_reconcile`). If it's NOT reachable, tell me — it's a sleeping Replit app, not a name

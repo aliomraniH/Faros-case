@@ -41,11 +41,11 @@ Secondary (optional, high-value for the tree):
 
 ## Coordination
 
-When the fetch batch is done, record it in MCP_Assist so the curator (any surface) knows the raw
+When the fetch batch is done, record it in assist-memory so the curator (any surface) knows the raw
 JSON is ready:
 
 ```
-MCP_Assist:memory_save(
+assist-memory:memory_save(
   namespace="dev/faros-case",
   key="fetch/batch-1",
   kind="claim",

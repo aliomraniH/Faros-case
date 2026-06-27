@@ -7,7 +7,7 @@ run against a buyer persona.
 ## Inputs
 - A user question (free text), optionally scoped to a persona (default `persona:maya`).
 - The **approved** subset of the knowledge tree (nodes with `status: approved`).
-- The MCP_Assist namespace `dev/faros-case` for any durable context.
+- The assist-memory namespace `dev/faros-case` for any durable context.
 
 ## The answer contract (deterministic output shape)
 
@@ -38,7 +38,7 @@ run against a buyer persona.
 ## Traversal algorithm
 1. Resolve persona (default Maya). Load its `pressures` and `success_criteria`.
 2. Match the question to a **flow** and a **pain** (semantic match over approved `flow` + `mapping`
-   nodes). If MCP_Assist `memory_search` is available, use it; else substring match.
+   nodes). If assist-memory `memory_search` is available, use it; else substring match.
 3. Collect the `mapping` node(s) whose `pain` matches; follow `faros_ref` to the capability.
 4. Draft the answer from the mapping's `evidence`, in the persona's language.
 5. Run the **positioning check** (door/room + empower-not-police). Rewrite if flagged.

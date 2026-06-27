@@ -1,6 +1,6 @@
 [
   {
-    "tool": "MCP_Assist:memory_save",
+    "tool": "assist-memory:memory_save",
     "args": {
       "namespace": "dev/faros-case",
       "key": "project/charter",
@@ -14,7 +14,7 @@
     }
   },
   {
-    "tool": "MCP_Assist:memory_save",
+    "tool": "assist-memory:memory_save",
     "args": {
       "namespace": "dev/faros-case",
       "key": "arch/determinism-rule",
@@ -29,7 +29,7 @@
     }
   },
   {
-    "tool": "MCP_Assist:memory_save",
+    "tool": "assist-memory:memory_save",
     "args": {
       "namespace": "dev/faros-case",
       "key": "arch/node-schema",
@@ -43,7 +43,7 @@
     }
   },
   {
-    "tool": "MCP_Assist:memory_save",
+    "tool": "assist-memory:memory_save",
     "args": {
       "namespace": "dev/faros-case",
       "key": "arch/agents",
@@ -57,7 +57,7 @@
     }
   },
   {
-    "tool": "MCP_Assist:memory_save",
+    "tool": "assist-memory:memory_save",
     "args": {
       "namespace": "dev/faros-case",
       "key": "insight/thesis",
@@ -72,7 +72,7 @@
     }
   },
   {
-    "tool": "MCP_Assist:memory_save",
+    "tool": "assist-memory:memory_save",
     "args": {
       "namespace": "dev/faros-case",
       "key": "insight/pillars",
@@ -87,7 +87,7 @@
     }
   },
   {
-    "tool": "MCP_Assist:memory_save",
+    "tool": "assist-memory:memory_save",
     "args": {
       "namespace": "dev/faros-case",
       "key": "insight/proof",
@@ -103,7 +103,7 @@
     }
   },
   {
-    "tool": "MCP_Assist:memory_save",
+    "tool": "assist-memory:memory_save",
     "args": {
       "namespace": "dev/faros-case",
       "key": "insight/market-corrections",
@@ -119,7 +119,7 @@
     }
   },
   {
-    "tool": "MCP_Assist:memory_save",
+    "tool": "assist-memory:memory_save",
     "args": {
       "namespace": "dev/faros-case",
       "key": "insight/persona-maya",
@@ -134,7 +134,7 @@
     }
   },
   {
-    "tool": "MCP_Assist:memory_save",
+    "tool": "assist-memory:memory_save",
     "args": {
       "namespace": "dev/faros-case",
       "key": "open/pricing",
@@ -149,7 +149,7 @@
     }
   },
   {
-    "tool": "MCP_Assist:memory_save",
+    "tool": "assist-memory:memory_save",
     "args": {
       "namespace": "dev/faros-case",
       "key": "repo/seed-commit",
@@ -168,7 +168,7 @@
     }
   },
   {
-    "tool": "MCP_Assist:handoff_save",
+    "tool": "assist-memory:handoff_save",
     "args": {
       "namespace": "dev/faros-case",
       "key": "handoff/web-to-cowork",
@@ -203,6 +203,43 @@
         ]
       },
       "source_surface": "claude-web"
+    }
+  },
+  {
+    "tool": "MCP_Assist:memory_save",
+    "args": {
+      "namespace": "dev/faros-case",
+      "key": "fetch/batch-1",
+      "kind": "claim",
+      "value": "Cowork fetched 9 faros.ai pages to fetch/raw/*.json and the curator proposed 14 knowledge-tree nodes (11 faros + 3 mapping), all status=proposed proposed_by=cowork-curator. validate_nodes.py exits 0 (30 nodes: 16 approved, 14 proposed). Files: fetch/raw/{platform__overview,capabilities__home,capabilities__token-intelligence,capabilities__context-engineering,capabilities__ai-transformation,capabilities__delivery-excellence,capabilities__engineering-efficiency,solutions__ai-leaders,company__about}.json; knowledge-tree/faros/{token-intelligence,ai-transformation,clara-context-engine,developer-productivity,delivery-excellence,engineering-world-model,token-attribution-ledger,historical-replay,model-routing,governance-guardrails,provenance-audit-trail}.md; knowledge-tree/mapping/{maya-adoption-to-aitransformation,maya-rework-to-context,maya-predictability-to-delivery}.md. Committed locally as ab64860 on main; push pending (Cowork sandbox lacked GitHub creds).",
+      "meta": {
+        "repo": "aliomraniH/Faros-case",
+        "branch": "main",
+        "repo_sha": "ab648608a69f388fa593590bf412cd56fecf3832"
+      },
+      "source_surface": "claude-cowork",
+      "tags": [
+        "fetch",
+        "curate",
+        "batch-1",
+        "proposed"
+      ]
+    }
+  },
+  {
+    "tool": "MCP_Assist:memory_save",
+    "args": {
+      "namespace": "dev/faros-case",
+      "key": "insight/offering-live",
+      "kind": "knowledge",
+      "value": "Live faros.ai offering as fetched 2026-06-26 (Cowork batch-1). PLATFORM is one product framed as six foundational capabilities: Enterprise-Grade, Analytics, AI for Productivity, Interoperability, Customization, Catalogs. CAPABILITIES nav names five product surfaces: (1) Token Intelligence \u2014 trace/classify AI token spend productive|inefficient|wasteful, attribute to team/task, keep/scope/cut tool verdicts; built on Engineering World Model + Token Attribution Ledger (both presented shipped); (2) AI Transformation \u2014 causal-analysis ROI, cohort/A-B tests, CFO-ready reports, GAINS maturity framework, IDE governance/guardrails; (3) Context for AI Agents (branded 'Clara') \u2014 bootstrap agents with tribal knowledge from past PRs, agentic PR delivery with Claude/Codex/Copilot/Cursor, human-in-the-loop, continuous learning; (4) Developer Productivity \u2014 DORA/SPACE/DevEx dashboards, surveys, benchmarks, AI Assistant in Slack/Teams/IDE; (5) Predictable Roadmap Delivery \u2014 initiative tracking, delay/overrun forecasting, capacity analytics, software cost capitalization (a planning/PMO surface OUTSIDE the seed's Observe/Optimize/Govern thesis \u2014 taxonomy flag). SOLUTIONS have no /solutions index page; reached via role pages (ai-leaders, engineering-executives, platform-engineering-devex-leaders, program-managers) and use-case pages. Positioning confirmed by homepage hero 'stop tokenmaxxing, start outcome maxxing' and 'smarter\u2014not smaller\u2014budgets' (matches repo's money-is-the-door discipline). Company: founded by ex-Salesforce Einstein team (Vitaly Gordon CEO, Shubha Nabar Chief Scientist, Matthew Tovbin CTO); vision 'engineering at the speed of ideas'; certs SOC2/ISO27001/GDPR/CSA STAR; 100+ integrations; stats 10x PR velocity / 40% fewer failed outcomes / 1-day POC; stated price floor $29 per contributor per module per month. Conflicts flagged for human: Optimize (historical-replay, model-routing) and Govern (guardrails) read more shipped on live pages than seed marks them (partial/roadmap).",
+      "source_surface": "claude-cowork",
+      "tags": [
+        "insight",
+        "offering",
+        "live-fetch",
+        "batch-1"
+      ]
     }
   }
 ]

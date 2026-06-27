@@ -15,7 +15,7 @@ chmod +x bootstrap.sh
 ```
 `bootstrap.sh` is the full first-run script. It: installs deps → validates the tree → commits →
 pushes to `github.com/aliomraniH/Faros-case` (using `gh` or `$GH_TOKEN`/`$GITHUB_TOKEN`) → checks
-MCP_Assist → exports the local sim UI → runs a simulation smoke test. Safe to re-run.
+assist-memory → exports the local sim UI → runs a simulation smoke test. Safe to re-run.
 
 ## C · Just try the simulation (no GitHub, no network)
 ```bash
@@ -35,7 +35,7 @@ approved nodes only. Full picture: `README.md` → `ARCHITECTURE.md` → `RUNBOO
 
 ### What you need installed
 - **Claude Code** (CLI or Desktop Code tab) with a GitHub token (`gh auth login`, or a `repo`-scoped
-  token in `GH_TOKEN`). `.mcp.json` auto-connects MCP_Assist.
+  token in `GH_TOKEN`). `.mcp.json` auto-connects assist-memory.
 - **Claude Cowork** (Desktop Cowork tab or mobile) — for the faros.ai fetch + curate batch.
 - **python3** with `pyyaml` + `jsonschema` (the script installs these).
 - Optional: `gh` CLI (easiest auth + repo creation).

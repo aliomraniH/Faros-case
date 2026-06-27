@@ -1,0 +1,12 @@
+{
+  "tool": "MCP_Assist:memory_save",
+  "args": {
+    "namespace": "dev/faros-case",
+    "key": "insight/offering-live",
+    "kind": "knowledge",
+    "value": "Live faros.ai offering as fetched 2026-06-26 (Cowork batch-1). PLATFORM is one product framed as six foundational capabilities: Enterprise-Grade, Analytics, AI for Productivity, Interoperability, Customization, Catalogs. CAPABILITIES nav names five product surfaces: (1) Token Intelligence — trace/classify AI token spend productive|inefficient|wasteful, attribute to team/task, keep/scope/cut tool verdicts; built on Engineering World Model + Token Attribution Ledger (both presented shipped); (2) AI Transformation — causal-analysis ROI, cohort/A-B tests, CFO-ready reports, GAINS maturity framework, IDE governance/guardrails; (3) Context for AI Agents (branded 'Clara') — bootstrap agents with tribal knowledge from past PRs, agentic PR delivery with Claude/Codex/Copilot/Cursor, human-in-the-loop, continuous learning; (4) Developer Productivity — DORA/SPACE/DevEx dashboards, surveys, benchmarks, AI Assistant in Slack/Teams/IDE; (5) Predictable Roadmap Delivery — initiative tracking, delay/overrun forecasting, capacity analytics, software cost capitalization (a planning/PMO surface OUTSIDE the seed's Observe/Optimize/Govern thesis — taxonomy flag). SOLUTIONS have no /solutions index page; reached via role pages (ai-leaders, engineering-executives, platform-engineering-devex-leaders, program-managers) and use-case pages. Positioning confirmed by homepage hero 'stop tokenmaxxing, start outcome maxxing' and 'smarter—not smaller—budgets' (matches repo's money-is-the-door discipline). Company: founded by ex-Salesforce Einstein team (Vitaly Gordon CEO, Shubha Nabar Chief Scientist, Matthew Tovbin CTO); vision 'engineering at the speed of ideas'; certs SOC2/ISO27001/GDPR/CSA STAR; 100+ integrations; stats 10x PR velocity / 40% fewer failed outcomes / 1-day POC; stated price floor $29 per contributor per module per month. Conflicts flagged for human: Optimize (historical-replay, model-routing) and Govern (guardrails) read more shipped on live pages than seed marks them (partial/roadmap).",
+    "source_surface": "claude-cowork",
+    "tags": ["insight", "offering", "live-fetch", "batch-1"]
+  },
+  "_note": "Staged for replay — MCP_Assist /mcp transport was returning 'Session terminated' during the Cowork run. Readable from Claude web/Desktop once replayed."
+}
