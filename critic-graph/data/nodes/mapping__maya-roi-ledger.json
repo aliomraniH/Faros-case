@@ -1,0 +1,23 @@
+{
+  "built": "2026-06-30T00:00:00+00:00",
+  "namespace": "dev/faros-case",
+  "node": {
+    "id": "mapping:maya-roi-ledger",
+    "type": "mapping",
+    "title": "Mapping — Maya's board-ROI pain → Token Attribution Ledger",
+    "parent": "organization:root",
+    "status": "approved",
+    "honesty": "shipped",
+    "provenance": "sourced",
+    "summary": "Maps Maya's 'can't tell the board what the spend produced' to the Token Attribution Ledger that ties dollars to shipped outcomes — the 'door' card.",
+    "interview_question": "This is your opening move. What's the single proof point that makes the board believe the attribution?",
+    "competitor": {
+      "key": "harness",
+      "name": "Harness",
+      "domain": "harness.io",
+      "color": "#00ADE4",
+      "mono": "H",
+      "positioning": "Harness AI DLC Insights targets the identical board-ROI buying moment with a 'token spend → shipped software' pitch."
+    }
+  }
+}

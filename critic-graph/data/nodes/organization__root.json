@@ -1,0 +1,15 @@
+{
+  "built": "2026-06-30T00:00:00+00:00",
+  "namespace": "dev/faros-case",
+  "node": {
+    "id": "organization:root",
+    "type": "organization",
+    "title": "The buyer organization (as modelled by the advisor)",
+    "parent": null,
+    "status": "approved",
+    "provenance": "user-intent",
+    "summary": "The root frame: the advisor models a single buyer organization and answers 'how can Faros help?' strictly from its approved children.",
+    "interview_question": "Why model a whole 'buyer organization' as the root instead of just listing Faros features?",
+    "competitor": null
+  }
+}

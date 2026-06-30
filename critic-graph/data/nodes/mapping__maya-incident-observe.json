@@ -1,0 +1,23 @@
+{
+  "built": "2026-06-30T00:00:00+00:00",
+  "namespace": "dev/faros-case",
+  "node": {
+    "id": "mapping:maya-incident-observe",
+    "type": "mapping",
+    "title": "Mapping — Maya's incident-to-cause pain → Observe",
+    "parent": "organization:root",
+    "status": "approved",
+    "honesty": "shipped",
+    "provenance": "inferred",
+    "summary": "Maps the 'trail goes cold at every tool boundary' pain to the Observe graph that joins the chain and reaches the one missing repo rule.",
+    "interview_question": "What does 'the trail goes cold' look like in a real customer's stack, and how many boundaries does Observe actually cross unaided?",
+    "competitor": {
+      "key": "rootly",
+      "name": "Rootly",
+      "domain": "rootly.com",
+      "color": "#FF4F64",
+      "mono": "R",
+      "positioning": "Rootly/incident.io own incident→PR causation and the on-call's trust; they argue root-cause lives in the incident tool, not an analytics graph."
+    }
+  }
+}

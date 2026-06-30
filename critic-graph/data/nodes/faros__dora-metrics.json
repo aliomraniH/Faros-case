@@ -1,0 +1,24 @@
+{
+  "built": "2026-06-30T00:00:00+00:00",
+  "namespace": "dev/faros-case",
+  "node": {
+    "id": "faros:dora-metrics",
+    "type": "faros",
+    "title": "DORA Metrics — accurate, attributed delivery KPIs",
+    "parent": "faros:developer-productivity",
+    "status": "proposed",
+    "honesty": "shipped",
+    "provenance": "sourced",
+    "pillar": "observe",
+    "summary": "Accurate, granular, correctly-attributed DORA metrics even in messy enterprise environments.",
+    "interview_question": "Everyone claims 'accurate DORA' — what makes your attribution correct where others get it wrong?",
+    "competitor": {
+      "key": "swarmia",
+      "name": "Swarmia",
+      "domain": "swarmia.com",
+      "color": "#1D6AFF",
+      "mono": "S",
+      "positioning": "Swarmia and LinearB sell DORA dashboards as a core, mature product at a known per-dev price — commodity pressure on this node."
+    }
+  }
+}

@@ -1,0 +1,623 @@
+{
+  "built": "2026-06-30T00:00:00+00:00",
+  "namespace": "dev/faros-case",
+  "description": "Critic graph: Faros knowledge nodes clustered by competitor line-of-attack, each carrying the toughest interviewer question.",
+  "themes": [
+    {
+      "id": "correlation-not-causation",
+      "label": "“That’s correlation, not causation”",
+      "desc": "Rivals already ship AI-impact / ROI reports; the attack is that Faros’s causal claim is unproven and indistinguishable from correlation on a slide.",
+      "color": "#E5484D",
+      "competitors": [
+        {
+          "key": "cloudzero",
+          "name": "CloudZero",
+          "domain": "cloudzero.com",
+          "color": "#2563EB",
+          "mono": "Cz"
+        },
+        {
+          "key": "dx",
+          "name": "DX (Atlassian)",
+          "domain": "getdx.com",
+          "color": "#111827",
+          "mono": "DX"
+        },
+        {
+          "key": "harness",
+          "name": "Harness",
+          "domain": "harness.io",
+          "color": "#00ADE4",
+          "mono": "H"
+        },
+        {
+          "key": "jellyfish",
+          "name": "Jellyfish",
+          "domain": "jellyfish.co",
+          "color": "#00B3A4",
+          "mono": "J"
+        }
+      ],
+      "targets": [
+        "faros:ai-transformation",
+        "faros:gains",
+        "faros:executive-scorecards",
+        "mapping:maya-adoption-aitransformation",
+        "mapping:maya-roi-ledger",
+        "flow:board-asks-roi"
+      ],
+      "questions": [
+        {
+          "id": "faros:ai-transformation",
+          "title": "AI Transformation — measure and scale AI adoption with ROI",
+          "q": "What exactly is the 'causal analysis' here — and can you defend it without naming an estimator you haven't published?"
+        },
+        {
+          "id": "faros:gains",
+          "title": "GAINS — Generative AI Impact Net Score diagnostic",
+          "q": "Is GAINS a real diagnostic with a defensible scale, or a lead-gen framework? What's the n behind the benchmark?"
+        },
+        {
+          "id": "faros:executive-scorecards",
+          "title": "Executive Scorecards — boardroom KPI & AI-impact view",
+          "q": "What does a CFO see here that they can't already get from Jellyfish's exec view?"
+        },
+        {
+          "id": "flow:board-asks-roi",
+          "title": "Flow — board asks 'what did the AI spend buy?'",
+          "q": "Walk me through this flow the way Maya lives it — where exactly does today's tooling leave her without an answer?"
+        },
+        {
+          "id": "mapping:maya-roi-ledger",
+          "title": "Mapping — Maya's board-ROI pain → Token Attribution Ledger",
+          "q": "This is your opening move. What's the single proof point that makes the board believe the attribution?"
+        },
+        {
+          "id": "mapping:maya-adoption-aitransformation",
+          "title": "Mapping — Maya's 'make adoption stick & prove ROI' → AI Transformation",
+          "q": "What's your honest read on adoption — does Faros prove ROI, or just measure adoption and call it ROI?"
+        }
+      ]
+    },
+    {
+      "id": "we-own-the-session",
+      "label": "“Context belongs in the IDE, not a platform”",
+      "desc": "Copilot/Cursor own the in-session token + context and keep adding native codebase context, squeezing the Optimize/Clara layer.",
+      "color": "#24292F",
+      "competitors": [
+        {
+          "key": "copilot",
+          "name": "GitHub Copilot",
+          "domain": "github.com",
+          "color": "#24292F",
+          "mono": "GH"
+        },
+        {
+          "key": "cursor",
+          "name": "Cursor",
+          "domain": "cursor.com",
+          "color": "#111111",
+          "mono": "Cu"
+        },
+        {
+          "key": "sonarqube",
+          "name": "SonarQube",
+          "domain": "sonarsource.com",
+          "color": "#126ED3",
+          "mono": "Sq"
+        },
+        {
+          "key": "unblocked",
+          "name": "Unblocked",
+          "domain": "getunblocked.com",
+          "color": "#7C3AED",
+          "mono": "U"
+        }
+      ],
+      "targets": [
+        "faros:clara-context-engine",
+        "faros:historical-replay",
+        "faros:model-routing",
+        "faros:optimize",
+        "mapping:maya-rework-context"
+      ],
+      "questions": [
+        {
+          "id": "faros:clara-context-engine",
+          "title": "Clara — Context Engineering for AI agents",
+          "q": "If Cursor and Copilot keep adding their own codebase context, what's left for Clara to own?"
+        },
+        {
+          "id": "faros:historical-replay",
+          "title": "Historical Replay — learn context from past PRs",
+          "q": "Is 'replay' shipped or aspirational? Show me the loop running on real history, not a demo."
+        },
+        {
+          "id": "faros:model-routing",
+          "title": "Task-to-Tool / Model Routing — right model per task",
+          "q": "Routing changes weekly as models ship — how is your recommendation anything but stale by the time it's acted on?"
+        },
+        {
+          "id": "faros:optimize",
+          "title": "Optimize — context that makes AI accurate",
+          "q": "Which parts of Optimize are shipped today versus roadmap? Be specific about the line."
+        },
+        {
+          "id": "mapping:maya-rework-context",
+          "title": "Mapping — Maya's 'throughput up, rework up' → Clara Context Engine",
+          "q": "'40% less rework' — is that a Faros customer result or a marketing number? What's independent here?"
+        }
+      ]
+    },
+    {
+      "id": "we-are-the-graph",
+      "label": "“We’re already your source of truth”",
+      "desc": "IDPs (Backstage/Cortex/Port/OpsLevel) own the service/ownership graph and claim to be the operational source of truth Faros wants to be.",
+      "color": "#6F4FF2",
+      "competitors": [
+        {
+          "key": "backstage",
+          "name": "Backstage",
+          "domain": "backstage.io",
+          "color": "#36BAA2",
+          "mono": "B"
+        },
+        {
+          "key": "cortex",
+          "name": "Cortex",
+          "domain": "cortex.io",
+          "color": "#6F4FF2",
+          "mono": "C"
+        }
+      ],
+      "targets": [
+        "faros:observe",
+        "faros:engineering-world-model"
+      ],
+      "questions": [
+        {
+          "id": "faros:engineering-world-model",
+          "title": "Engineering World Model — the unified graph",
+          "q": "You call it a 'world model' — how is that different from a service catalog or an internal developer portal?"
+        },
+        {
+          "id": "faros:observe",
+          "title": "Observe — the operational graph",
+          "q": "Where does the join actually break — which edges in that chain are inferred rather than observed?"
+        }
+      ]
+    },
+    {
+      "id": "commodity-analytics",
+      "label": "“DORA/DevEx is a commodity”",
+      "desc": "LinearB/Swarmia/Jellyfish/DX sell mature delivery + DevEx analytics at a known per-dev price; this is Faros’s least-differentiated ground.",
+      "color": "#5B3DF5",
+      "competitors": [
+        {
+          "key": "dx",
+          "name": "DX (Atlassian)",
+          "domain": "getdx.com",
+          "color": "#111827",
+          "mono": "DX"
+        },
+        {
+          "key": "linearb",
+          "name": "LinearB",
+          "domain": "linearb.io",
+          "color": "#5B3DF5",
+          "mono": "L"
+        },
+        {
+          "key": "swarmia",
+          "name": "Swarmia",
+          "domain": "swarmia.com",
+          "color": "#1D6AFF",
+          "mono": "S"
+        }
+      ],
+      "targets": [
+        "faros:developer-productivity",
+        "faros:dora-metrics",
+        "mapping:maya-devex-friction",
+        "principle:empower-not-police",
+        "mapping:maya-surveillance-govern"
+      ],
+      "questions": [
+        {
+          "id": "faros:developer-productivity",
+          "title": "Developer Productivity — DORA/SPACE/DevEx analytics",
+          "q": "This is a crowded category — why would a team rip out LinearB or Swarmia for this?"
+        },
+        {
+          "id": "faros:dora-metrics",
+          "title": "DORA Metrics — accurate, attributed delivery KPIs",
+          "q": "Everyone claims 'accurate DORA' — what makes your attribution correct where others get it wrong?"
+        },
+        {
+          "id": "mapping:maya-devex-friction",
+          "title": "Mapping — Maya's 'empower the team, never rank it' → Developer Experience",
+          "q": "How do you guarantee a 'team variability' view doesn't get turned into an individual ranking by the customer's own managers?"
+        },
+        {
+          "id": "mapping:maya-surveillance-govern",
+          "title": "Mapping — 'is this surveillance?' → repo/system-level governance",
+          "q": "What technically prevents a customer from using your data to rank or monitor individual engineers?"
+        },
+        {
+          "id": "principle:empower-not-police",
+          "title": "Principle — empower the team, never police it",
+          "q": "This is a value, not a feature. How is 'empower not police' enforced in the product rather than just promised in the deck?"
+        }
+      ]
+    },
+    {
+      "id": "planning-incumbents",
+      "label": "“Planning is our home turf”",
+      "desc": "Jellyfish/LinearB own engineering planning, allocation, capitalization, and delivery forecasting — surfaces outside the core Observe/Optimize/Govern thesis.",
+      "color": "#00B3A4",
+      "competitors": [
+        {
+          "key": "jellyfish",
+          "name": "Jellyfish",
+          "domain": "jellyfish.co",
+          "color": "#00B3A4",
+          "mono": "J"
+        }
+      ],
+      "targets": [
+        "faros:delivery-excellence",
+        "faros:initiative-tracking",
+        "faros:software-capitalization",
+        "mapping:maya-predictability-delivery"
+      ],
+      "questions": [
+        {
+          "id": "faros:delivery-excellence",
+          "title": "Predictable Delivery — initiative tracking & forecasting",
+          "q": "This is a PMO/planning surface outside the Observe/Optimize/Govern thesis — does it dilute the story or extend it?"
+        },
+        {
+          "id": "faros:initiative-tracking",
+          "title": "Initiative Tracking — commitments, forecasting, portfolio",
+          "q": "How is this not just a Jira rollup with a forecast on top?"
+        },
+        {
+          "id": "faros:software-capitalization",
+          "title": "Software Cost Capitalization — audit-ready, automated",
+          "q": "Capitalization is a finance workflow far from AI ROI — why is Faros the right vendor for the CFO's auditors?"
+        },
+        {
+          "id": "mapping:maya-predictability-delivery",
+          "title": "Mapping — Maya's 'answer up, deliver commitments' → Predictable Delivery",
+          "q": "You labelled this 'inference' — what's the evidence the delivery surface actually serves Maya's pain, not just exists on the site?"
+        }
+      ]
+    },
+    {
+      "id": "spend-side-finops",
+      "label": "“We own the spend side”",
+      "desc": "LLM-obs/FinOps (Langfuse/Helicone/Datadog/CloudZero/Vantage) see session→tokens or spend but break at PR→outcome — ‘a chart, not a chargeback.’",
+      "color": "#2563EB",
+      "competitors": [
+        {
+          "key": "exceeds",
+          "name": "Exceeds AI",
+          "domain": "exceeds.ai",
+          "color": "#6D28D9",
+          "mono": "E"
+        },
+        {
+          "key": "harness",
+          "name": "Harness",
+          "domain": "harness.io",
+          "color": "#00ADE4",
+          "mono": "H"
+        },
+        {
+          "key": "vantage",
+          "name": "Vantage",
+          "domain": "vantage.sh",
+          "color": "#0F172A",
+          "mono": "V"
+        }
+      ],
+      "targets": [
+        "faros:token-intelligence",
+        "faros:token-attribution-ledger",
+        "mapping:maya-tool-rationalization"
+      ],
+      "questions": [
+        {
+          "id": "faros:token-intelligence",
+          "title": "Token Intelligence — trace AI spend to outcomes",
+          "q": "How do you actually attribute a token to an outcome, and where does that attribution become an estimate rather than a fact?"
+        },
+        {
+          "id": "faros:token-attribution-ledger",
+          "title": "Token Attribution Ledger — every token to its outcome",
+          "q": "What's in the ledger at the row level, and what stops it from being a prettier version of a cost report?"
+        },
+        {
+          "id": "mapping:maya-tool-rationalization",
+          "title": "Mapping — which AI tools/models are worth keeping → Optimize",
+          "q": "A keep/scope/cut verdict is a strong claim — what evidence backs a 'cut' recommendation that a VP would stake budget on?"
+        }
+      ]
+    },
+    {
+      "id": "governance-in-scm",
+      "label": "“Governance lives in the SCM”",
+      "desc": "GitHub-native rulesets/Advanced Security + audit logs already gate merges and trail changes; the incumbent says you don’t need a layer above.",
+      "color": "#632CA6",
+      "competitors": [
+        {
+          "key": "copilot",
+          "name": "GitHub Copilot",
+          "domain": "github.com",
+          "color": "#24292F",
+          "mono": "GH"
+        },
+        {
+          "key": "datadog",
+          "name": "Datadog",
+          "domain": "datadoghq.com",
+          "color": "#632CA6",
+          "mono": "Dd"
+        }
+      ],
+      "targets": [
+        "faros:govern",
+        "faros:governance-guardrails",
+        "faros:provenance-audit-trail",
+        "mapping:maya-govern-velocity"
+      ],
+      "questions": [
+        {
+          "id": "faros:govern",
+          "title": "Govern — policy, distributed context, provenance",
+          "q": "What in Govern is live versus roadmap, and how is a 'compensating control' more than a feature flag with a nicer name?"
+        },
+        {
+          "id": "faros:governance-guardrails",
+          "title": "Governance & Guardrails — policy, flags, code tagging",
+          "q": "You marked this 'inference' — what can you actually demonstrate today versus what you're hoping to ship?"
+        },
+        {
+          "id": "faros:provenance-audit-trail",
+          "title": "Provenance & Audit Trail — ticket to shipped change",
+          "q": "With the EU AI Act high-risk deadline now deferred to Dec 2027, how do you keep this from being a compliance feature looking for a deadline?"
+        },
+        {
+          "id": "mapping:maya-govern-velocity",
+          "title": "Mapping — govern AI merges without slowing down → compensating controls",
+          "q": "A feature flag is a developer convention, not governance — what makes this a control a CISO would sign off on?"
+        }
+      ]
+    },
+    {
+      "id": "incident-depth",
+      "label": "“Root cause lives in the incident tool”",
+      "desc": "Rootly/incident.io tie incident→PR and resolve single incidents deeper than Faros, owning the on-call’s trust at the moment of pain.",
+      "color": "#F25533",
+      "competitors": [
+        {
+          "key": "rootly",
+          "name": "Rootly",
+          "domain": "rootly.com",
+          "color": "#FF4F64",
+          "mono": "R"
+        }
+      ],
+      "targets": [
+        "flow:incident-to-cause",
+        "mapping:maya-incident-observe"
+      ],
+      "questions": [
+        {
+          "id": "flow:incident-to-cause",
+          "title": "Flow — from production incident to root cause",
+          "q": "When you say you trace an incident to the AI session that caused it — is that an observed edge or an inference at the PR/aggregate level?"
+        },
+        {
+          "id": "mapping:maya-incident-observe",
+          "title": "Mapping — Maya's incident-to-cause pain → Observe",
+          "q": "What does 'the trail goes cold' look like in a real customer's stack, and how many boundaries does Observe actually cross unaided?"
+        }
+      ]
+    },
+    {
+      "id": "knowledge-memory",
+      "label": "“We already capture team knowledge”",
+      "desc": "Unblocked/Pieces own personal/team memory of past context, contesting the transfer-of-mastery and negative-memory story.",
+      "color": "#7C3AED",
+      "competitors": [
+        {
+          "key": "unblocked",
+          "name": "Unblocked",
+          "domain": "getunblocked.com",
+          "color": "#7C3AED",
+          "mono": "U"
+        }
+      ],
+      "targets": [
+        "mapping:maya-learning-negmem",
+        "principle:transfer-of-mastery"
+      ],
+      "questions": [
+        {
+          "id": "mapping:maya-learning-negmem",
+          "title": "Mapping — Maya's repeat-mistakes pain → Negative Memory",
+          "q": "Negative memory is the most compelling story and it's roadmap — how do you sell the vision without over-promising it as shipped?"
+        },
+        {
+          "id": "principle:transfer-of-mastery",
+          "title": "Principle — transfer of mastery (human + machine memory)",
+          "q": "This is your emotional close. What's the one customer story where transfer-of-mastery actually happened, not just could happen?"
+        }
+      ]
+    },
+    {
+      "id": "whole-platform",
+      "label": "“We span the whole chain too” (the real threat)",
+      "desc": "Harness AI DLC Insights + Exceeds AI attack the connected, cross-stage attribution thesis head-on — the #1 and #2 watch-list threats.",
+      "color": "#00ADE4",
+      "competitors": [
+        {
+          "key": "harness",
+          "name": "Harness",
+          "domain": "harness.io",
+          "color": "#00ADE4",
+          "mono": "H"
+        }
+      ],
+      "targets": [
+        "faros:root"
+      ],
+      "questions": [
+        {
+          "id": "faros:root",
+          "title": "Faros AI — offering root",
+          "q": "In one sentence, what is Faros — and why isn't it just another FinOps or DevEx dashboard?"
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "theme": "correlation-not-causation",
+      "node": "faros:ai-transformation"
+    },
+    {
+      "theme": "correlation-not-causation",
+      "node": "faros:gains"
+    },
+    {
+      "theme": "correlation-not-causation",
+      "node": "faros:executive-scorecards"
+    },
+    {
+      "theme": "correlation-not-causation",
+      "node": "mapping:maya-adoption-aitransformation"
+    },
+    {
+      "theme": "correlation-not-causation",
+      "node": "mapping:maya-roi-ledger"
+    },
+    {
+      "theme": "correlation-not-causation",
+      "node": "flow:board-asks-roi"
+    },
+    {
+      "theme": "we-own-the-session",
+      "node": "faros:clara-context-engine"
+    },
+    {
+      "theme": "we-own-the-session",
+      "node": "faros:historical-replay"
+    },
+    {
+      "theme": "we-own-the-session",
+      "node": "faros:model-routing"
+    },
+    {
+      "theme": "we-own-the-session",
+      "node": "faros:optimize"
+    },
+    {
+      "theme": "we-own-the-session",
+      "node": "mapping:maya-rework-context"
+    },
+    {
+      "theme": "we-are-the-graph",
+      "node": "faros:observe"
+    },
+    {
+      "theme": "we-are-the-graph",
+      "node": "faros:engineering-world-model"
+    },
+    {
+      "theme": "commodity-analytics",
+      "node": "faros:developer-productivity"
+    },
+    {
+      "theme": "commodity-analytics",
+      "node": "faros:dora-metrics"
+    },
+    {
+      "theme": "commodity-analytics",
+      "node": "mapping:maya-devex-friction"
+    },
+    {
+      "theme": "commodity-analytics",
+      "node": "principle:empower-not-police"
+    },
+    {
+      "theme": "commodity-analytics",
+      "node": "mapping:maya-surveillance-govern"
+    },
+    {
+      "theme": "planning-incumbents",
+      "node": "faros:delivery-excellence"
+    },
+    {
+      "theme": "planning-incumbents",
+      "node": "faros:initiative-tracking"
+    },
+    {
+      "theme": "planning-incumbents",
+      "node": "faros:software-capitalization"
+    },
+    {
+      "theme": "planning-incumbents",
+      "node": "mapping:maya-predictability-delivery"
+    },
+    {
+      "theme": "spend-side-finops",
+      "node": "faros:token-intelligence"
+    },
+    {
+      "theme": "spend-side-finops",
+      "node": "faros:token-attribution-ledger"
+    },
+    {
+      "theme": "spend-side-finops",
+      "node": "mapping:maya-tool-rationalization"
+    },
+    {
+      "theme": "governance-in-scm",
+      "node": "faros:govern"
+    },
+    {
+      "theme": "governance-in-scm",
+      "node": "faros:governance-guardrails"
+    },
+    {
+      "theme": "governance-in-scm",
+      "node": "faros:provenance-audit-trail"
+    },
+    {
+      "theme": "governance-in-scm",
+      "node": "mapping:maya-govern-velocity"
+    },
+    {
+      "theme": "incident-depth",
+      "node": "flow:incident-to-cause"
+    },
+    {
+      "theme": "incident-depth",
+      "node": "mapping:maya-incident-observe"
+    },
+    {
+      "theme": "knowledge-memory",
+      "node": "mapping:maya-learning-negmem"
+    },
+    {
+      "theme": "knowledge-memory",
+      "node": "principle:transfer-of-mastery"
+    },
+    {
+      "theme": "whole-platform",
+      "node": "faros:root"
+    }
+  ]
+}

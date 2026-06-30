@@ -1,0 +1,23 @@
+{
+  "built": "2026-06-30T00:00:00+00:00",
+  "namespace": "dev/faros-case",
+  "node": {
+    "id": "mapping:maya-learning-negmem",
+    "type": "mapping",
+    "title": "Mapping — Maya's repeat-mistakes pain → Negative Memory",
+    "parent": "organization:root",
+    "status": "approved",
+    "honesty": "roadmap",
+    "provenance": "inferred",
+    "summary": "Maps 'agents repeat last week's mistake; lessons live in one senior's head' to replaying the failed session and writing the rule back into repo context.",
+    "interview_question": "Negative memory is the most compelling story and it's roadmap — how do you sell the vision without over-promising it as shipped?",
+    "competitor": {
+      "key": "unblocked",
+      "name": "Unblocked",
+      "domain": "getunblocked.com",
+      "color": "#7C3AED",
+      "mono": "U",
+      "positioning": "Unblocked and Pieces own developer/team memory of past context; they capture knowledge but not an org-level negative-memory governance loop."
+    }
+  }
+}

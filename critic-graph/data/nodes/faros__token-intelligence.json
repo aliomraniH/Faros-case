@@ -1,0 +1,24 @@
+{
+  "built": "2026-06-30T00:00:00+00:00",
+  "namespace": "dev/faros-case",
+  "node": {
+    "id": "faros:token-intelligence",
+    "type": "faros",
+    "title": "Token Intelligence — trace AI spend to outcomes",
+    "parent": "faros:root",
+    "status": "proposed",
+    "honesty": "shipped",
+    "provenance": "sourced",
+    "pillar": "observe",
+    "summary": "Traces token consumption and classifies it productive / inefficient / wasteful, attributing spend to people, teams, and the outcomes it delivered.",
+    "interview_question": "How do you actually attribute a token to an outcome, and where does that attribution become an estimate rather than a fact?",
+    "competitor": {
+      "key": "harness",
+      "name": "Harness",
+      "domain": "harness.io",
+      "color": "#00ADE4",
+      "mono": "H",
+      "positioning": "Harness AI DLC Insights markets the same 'see what your AI tokens shipped' join and is the #1 watch-list threat to this exact card."
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "built": "2026-06-30T00:00:00+00:00",
+  "namespace": "dev/faros-case",
+  "node": {
+    "id": "faros:historical-replay",
+    "type": "faros",
+    "title": "Historical Replay — learn context from past PRs",
+    "parent": "faros:optimize",
+    "status": "proposed",
+    "honesty": "inference",
+    "provenance": "sourced",
+    "pillar": "optimize",
+    "summary": "Derives context from past PRs and tickets and replays it until agent success rates climb.",
+    "interview_question": "Is 'replay' shipped or aspirational? Show me the loop running on real history, not a demo.",
+    "competitor": {
+      "key": "unblocked",
+      "name": "Unblocked",
+      "domain": "getunblocked.com",
+      "color": "#7C3AED",
+      "mono": "U",
+      "positioning": "Unblocked builds answers from a codebase's history and discussions; it owns the 'learn from the past' framing for individual developers."
+    }
+  }
+}

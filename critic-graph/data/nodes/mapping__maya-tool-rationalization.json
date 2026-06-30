@@ -1,0 +1,23 @@
+{
+  "built": "2026-06-30T00:00:00+00:00",
+  "namespace": "dev/faros-case",
+  "node": {
+    "id": "mapping:maya-tool-rationalization",
+    "type": "mapping",
+    "title": "Mapping — which AI tools/models are worth keeping → Optimize",
+    "parent": "organization:root",
+    "status": "approved",
+    "honesty": "roadmap",
+    "provenance": "sourced",
+    "summary": "Maps 'too many tools/models — which to keep, scope, or cut' to Optimize's keep/scope/cut verdicts and per-task model recommendations.",
+    "interview_question": "A keep/scope/cut verdict is a strong claim — what evidence backs a 'cut' recommendation that a VP would stake budget on?",
+    "competitor": {
+      "key": "vantage",
+      "name": "Vantage",
+      "domain": "vantage.sh",
+      "color": "#0F172A",
+      "mono": "V",
+      "positioning": "Vantage and CloudZero already give spend-rationalization verdicts on the cost side; they own 'what to cut' for FinOps but can't tie it to delivered outcomes."
+    }
+  }
+}

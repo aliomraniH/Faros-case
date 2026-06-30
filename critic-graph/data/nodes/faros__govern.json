@@ -1,0 +1,24 @@
+{
+  "built": "2026-06-30T00:00:00+00:00",
+  "namespace": "dev/faros-case",
+  "node": {
+    "id": "faros:govern",
+    "type": "faros",
+    "title": "Govern — policy, distributed context, provenance",
+    "parent": "faros:root",
+    "status": "approved",
+    "honesty": "roadmap",
+    "provenance": "sourced",
+    "pillar": "govern",
+    "summary": "Central policy with distributed context, provenance/audit, and compensating controls (feature flags over hard blocks) — humans still review and merge.",
+    "interview_question": "What in Govern is live versus roadmap, and how is a 'compensating control' more than a feature flag with a nicer name?",
+    "competitor": {
+      "key": "copilot",
+      "name": "GitHub Copilot",
+      "domain": "github.com",
+      "color": "#24292F",
+      "mono": "GH",
+      "positioning": "GitHub native branch protection, rulesets, and Advanced Security already govern what merges; the platform incumbent argues governance lives in the SCM, not a layer above it."
+    }
+  }
+}

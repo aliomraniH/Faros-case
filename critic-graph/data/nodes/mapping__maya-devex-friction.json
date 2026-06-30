@@ -1,0 +1,23 @@
+{
+  "built": "2026-06-30T00:00:00+00:00",
+  "namespace": "dev/faros-case",
+  "node": {
+    "id": "mapping:maya-devex-friction",
+    "type": "mapping",
+    "title": "Mapping — Maya's 'empower the team, never rank it' → Developer Experience",
+    "parent": "organization:root",
+    "status": "proposed",
+    "honesty": "inference",
+    "provenance": "inferred",
+    "summary": "Maps 'help not surveillance; improve the team without ranking individuals' to DevEx that exposes variability across teams, not people.",
+    "interview_question": "How do you guarantee a 'team variability' view doesn't get turned into an individual ranking by the customer's own managers?",
+    "competitor": {
+      "key": "dx",
+      "name": "DX (Atlassian)",
+      "domain": "getdx.com",
+      "color": "#111827",
+      "mono": "DX",
+      "positioning": "DX (Atlassian) is the gold standard for survey-based, non-ranking DevEx measurement and would be Maya's natural first call here."
+    }
+  }
+}

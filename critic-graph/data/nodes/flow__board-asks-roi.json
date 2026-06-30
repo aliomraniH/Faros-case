@@ -1,0 +1,22 @@
+{
+  "built": "2026-06-30T00:00:00+00:00",
+  "namespace": "dev/faros-case",
+  "node": {
+    "id": "flow:board-asks-roi",
+    "type": "flow",
+    "title": "Flow — board asks 'what did the AI spend buy?'",
+    "parent": "organization:root",
+    "status": "approved",
+    "provenance": "inferred",
+    "summary": "The reporting flow where Maya must answer the board on AI spend with evidence, spanning Copilot/Cursor/Claude Code spend, delivery dashboards, surveys, and a spreadsheet.",
+    "interview_question": "Walk me through this flow the way Maya lives it — where exactly does today's tooling leave her without an answer?",
+    "competitor": {
+      "key": "cloudzero",
+      "name": "CloudZero",
+      "domain": "cloudzero.com",
+      "color": "#2563EB",
+      "mono": "Cz",
+      "positioning": "CloudZero's survey says 87% of finance leaders need to tie AI spend to results and only 22% can — but CloudZero sells the spend side and stops at 'a chart, not a chargeback.'"
+    }
+  }
+}

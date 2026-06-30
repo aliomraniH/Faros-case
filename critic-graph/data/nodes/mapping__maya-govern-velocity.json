@@ -1,0 +1,23 @@
+{
+  "built": "2026-06-30T00:00:00+00:00",
+  "namespace": "dev/faros-case",
+  "node": {
+    "id": "mapping:maya-govern-velocity",
+    "type": "mapping",
+    "title": "Mapping — govern AI merges without slowing down → compensating controls",
+    "parent": "organization:root",
+    "status": "approved",
+    "honesty": "roadmap",
+    "provenance": "inferred",
+    "summary": "Maps 'govern AI merges without killing velocity' to compensating controls — ship behind a feature flag instead of a hard block; a human still merges.",
+    "interview_question": "A feature flag is a developer convention, not governance — what makes this a control a CISO would sign off on?",
+    "competitor": {
+      "key": "copilot",
+      "name": "GitHub Copilot",
+      "domain": "github.com",
+      "color": "#24292F",
+      "mono": "GH",
+      "positioning": "GitHub native rulesets/required reviews are the velocity-vs-control default; the incumbent argues you don't need a third party to gate merges."
+    }
+  }
+}

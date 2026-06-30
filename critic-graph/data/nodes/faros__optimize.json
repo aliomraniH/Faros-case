@@ -1,0 +1,24 @@
+{
+  "built": "2026-06-30T00:00:00+00:00",
+  "namespace": "dev/faros-case",
+  "node": {
+    "id": "faros:optimize",
+    "type": "faros",
+    "title": "Optimize — context that makes AI accurate",
+    "parent": "faros:root",
+    "status": "approved",
+    "honesty": "roadmap",
+    "provenance": "sourced",
+    "pillar": "optimize",
+    "summary": "Generates skills, rules, and tools tailored to each repo and recommends models per task — the pillar that turns observation into better agent performance.",
+    "interview_question": "Which parts of Optimize are shipped today versus roadmap? Be specific about the line.",
+    "competitor": {
+      "key": "copilot",
+      "name": "GitHub Copilot",
+      "domain": "github.com",
+      "color": "#24292F",
+      "mono": "GH",
+      "positioning": "Copilot/Cursor optimize in-session with their own context and rules files; the in-tool incumbent is the default 'good enough' for most teams."
+    }
+  }
+}

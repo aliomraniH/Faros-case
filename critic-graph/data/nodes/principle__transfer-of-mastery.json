@@ -1,0 +1,22 @@
+{
+  "built": "2026-06-30T00:00:00+00:00",
+  "namespace": "dev/faros-case",
+  "node": {
+    "id": "principle:transfer-of-mastery",
+    "type": "principle",
+    "title": "Principle — transfer of mastery (human + machine memory)",
+    "parent": "organization:root",
+    "status": "approved",
+    "provenance": "user-intent",
+    "summary": "A senior's hard-won lesson becomes the team's standing knowledge — read by the next junior and by every agent. The narrative climax that closes the MIT learning gap.",
+    "interview_question": "This is your emotional close. What's the one customer story where transfer-of-mastery actually happened, not just could happen?",
+    "competitor": {
+      "key": "unblocked",
+      "name": "Unblocked",
+      "domain": "getunblocked.com",
+      "color": "#7C3AED",
+      "mono": "U",
+      "positioning": "Unblocked/Pieces sell 'capture and reuse team knowledge'; they own the personal/team memory story but not the human+agent governance loop Faros frames."
+    }
+  }
+}

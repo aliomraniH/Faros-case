@@ -1,0 +1,155 @@
+{
+  "note": "Brand metadata for monogram chips. Favicons were fetched live via the Chrome extension from each domain; the extension's safety filter blocks raw image base64 from leaving the browser, so chips are rendered from brand color + monogram.",
+  "brands": {
+    "faros": {
+      "name": "Faros AI",
+      "domain": "faros.ai",
+      "color": "#E5484D",
+      "mono": "F"
+    },
+    "harness": {
+      "name": "Harness",
+      "domain": "harness.io",
+      "color": "#00ADE4",
+      "mono": "H"
+    },
+    "exceeds": {
+      "name": "Exceeds AI",
+      "domain": "exceeds.ai",
+      "color": "#6D28D9",
+      "mono": "E"
+    },
+    "jellyfish": {
+      "name": "Jellyfish",
+      "domain": "jellyfish.co",
+      "color": "#00B3A4",
+      "mono": "J"
+    },
+    "linearb": {
+      "name": "LinearB",
+      "domain": "linearb.io",
+      "color": "#5B3DF5",
+      "mono": "L"
+    },
+    "swarmia": {
+      "name": "Swarmia",
+      "domain": "swarmia.com",
+      "color": "#1D6AFF",
+      "mono": "S"
+    },
+    "dx": {
+      "name": "DX (Atlassian)",
+      "domain": "getdx.com",
+      "color": "#111827",
+      "mono": "DX"
+    },
+    "atlassian": {
+      "name": "Atlassian",
+      "domain": "atlassian.com",
+      "color": "#0052CC",
+      "mono": "A"
+    },
+    "cortex": {
+      "name": "Cortex",
+      "domain": "cortex.io",
+      "color": "#6F4FF2",
+      "mono": "C"
+    },
+    "port": {
+      "name": "Port",
+      "domain": "getport.io",
+      "color": "#5C49E0",
+      "mono": "P"
+    },
+    "opslevel": {
+      "name": "OpsLevel",
+      "domain": "opslevel.com",
+      "color": "#2D6BFF",
+      "mono": "O"
+    },
+    "backstage": {
+      "name": "Backstage",
+      "domain": "backstage.io",
+      "color": "#36BAA2",
+      "mono": "B"
+    },
+    "cursor": {
+      "name": "Cursor",
+      "domain": "cursor.com",
+      "color": "#111111",
+      "mono": "Cu"
+    },
+    "copilot": {
+      "name": "GitHub Copilot",
+      "domain": "github.com",
+      "color": "#24292F",
+      "mono": "GH"
+    },
+    "unblocked": {
+      "name": "Unblocked",
+      "domain": "getunblocked.com",
+      "color": "#7C3AED",
+      "mono": "U"
+    },
+    "pieces": {
+      "name": "Pieces",
+      "domain": "pieces.app",
+      "color": "#E8590C",
+      "mono": "Pi"
+    },
+    "langfuse": {
+      "name": "Langfuse",
+      "domain": "langfuse.com",
+      "color": "#2563EB",
+      "mono": "Lf"
+    },
+    "helicone": {
+      "name": "Helicone",
+      "domain": "helicone.ai",
+      "color": "#0EA5E9",
+      "mono": "He"
+    },
+    "datadog": {
+      "name": "Datadog",
+      "domain": "datadoghq.com",
+      "color": "#632CA6",
+      "mono": "Dd"
+    },
+    "cloudzero": {
+      "name": "CloudZero",
+      "domain": "cloudzero.com",
+      "color": "#2563EB",
+      "mono": "Cz"
+    },
+    "vantage": {
+      "name": "Vantage",
+      "domain": "vantage.sh",
+      "color": "#0F172A",
+      "mono": "V"
+    },
+    "rootly": {
+      "name": "Rootly",
+      "domain": "rootly.com",
+      "color": "#FF4F64",
+      "mono": "R"
+    },
+    "incidentio": {
+      "name": "incident.io",
+      "domain": "incident.io",
+      "color": "#F25533",
+      "mono": "io"
+    },
+    "gitclear": {
+      "name": "GitClear",
+      "domain": "gitclear.com",
+      "color": "#2E7D32",
+      "mono": "Gc"
+    },
+    "sonarqube": {
+      "name": "SonarQube",
+      "domain": "sonarsource.com",
+      "color": "#126ED3",
+      "mono": "Sq"
+    }
+  }
+}

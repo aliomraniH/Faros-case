@@ -1,0 +1,24 @@
+{
+  "built": "2026-06-30T00:00:00+00:00",
+  "namespace": "dev/faros-case",
+  "node": {
+    "id": "faros:root",
+    "type": "faros",
+    "title": "Faros AI — offering root",
+    "parent": "organization:root",
+    "status": "approved",
+    "honesty": "shipped",
+    "provenance": "sourced",
+    "pillar": "all",
+    "summary": "Faros V observes AI work from tickets to outcomes to spend, optimizes context, and governs with provenance — one platform spanning the whole chain.",
+    "interview_question": "In one sentence, what is Faros — and why isn't it just another FinOps or DevEx dashboard?",
+    "competitor": {
+      "key": "harness",
+      "name": "Harness",
+      "domain": "harness.io",
+      "color": "#00ADE4",
+      "mono": "H",
+      "positioning": "Harness pitches one end-to-end software-delivery platform too, and its AI DLC Insights (May 2026) sells the same 'token spend → shipped software' story — the closest whole-platform analog."
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "built": "2026-06-30T00:00:00+00:00",
+  "namespace": "dev/faros-case",
+  "node": {
+    "id": "mapping:maya-adoption-aitransformation",
+    "type": "mapping",
+    "title": "Mapping — Maya's 'make adoption stick & prove ROI' → AI Transformation",
+    "parent": "organization:root",
+    "status": "proposed",
+    "honesty": "inference",
+    "provenance": "inferred",
+    "summary": "Maps 'board wants the AI line item justified; adoption is uneven' to AI Transformation's causal ROI, cohort tests, CFO reports, and GAINS.",
+    "interview_question": "What's your honest read on adoption — does Faros prove ROI, or just measure adoption and call it ROI?",
+    "competitor": {
+      "key": "jellyfish",
+      "name": "Jellyfish",
+      "domain": "jellyfish.co",
+      "color": "#00B3A4",
+      "mono": "J",
+      "positioning": "Jellyfish's AI Impact is the incumbent 'prove AI adoption ROI' report; the buyer will demand the causal-vs-correlation distinction be made obvious."
+    }
+  }
+}

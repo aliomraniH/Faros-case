@@ -1,0 +1,24 @@
+{
+  "built": "2026-06-30T00:00:00+00:00",
+  "namespace": "dev/faros-case",
+  "node": {
+    "id": "faros:token-attribution-ledger",
+    "type": "faros",
+    "title": "Token Attribution Ledger — every token to its outcome",
+    "parent": "faros:observe",
+    "status": "proposed",
+    "honesty": "shipped",
+    "provenance": "sourced",
+    "pillar": "observe",
+    "summary": "The ledger that ties every dollar of AI spend to the work it produced and the outcome it shipped — the substrate under Token Intelligence.",
+    "interview_question": "What's in the ledger at the row level, and what stops it from being a prettier version of a cost report?",
+    "competitor": {
+      "key": "exceeds",
+      "name": "Exceeds AI",
+      "domain": "exceeds.ai",
+      "color": "#6D28D9",
+      "mono": "E",
+      "positioning": "Exceeds AI does commit/line-level AI-vs-human diffing and is outcome-priced (<$20K/yr) — a cheaper, narrower attack on the same attribution claim."
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "built": "2026-06-30T00:00:00+00:00",
+  "namespace": "dev/faros-case",
+  "node": {
+    "id": "faros:provenance-audit-trail",
+    "type": "faros",
+    "title": "Provenance & Audit Trail — ticket to shipped change",
+    "parent": "faros:govern",
+    "status": "proposed",
+    "honesty": "shipped",
+    "provenance": "sourced",
+    "pillar": "govern",
+    "summary": "Audit trails from ticket to shipped change for AI regulatory compliance.",
+    "interview_question": "With the EU AI Act high-risk deadline now deferred to Dec 2027, how do you keep this from being a compliance feature looking for a deadline?",
+    "competitor": {
+      "key": "datadog",
+      "name": "Datadog",
+      "domain": "datadoghq.com",
+      "color": "#632CA6",
+      "mono": "Dd",
+      "positioning": "Datadog (and SCM-native audit logs) already provide audit/observability trails enterprises trust; Faros must prove the AI-session-level provenance is uniquely needed."
+    }
+  }
+}

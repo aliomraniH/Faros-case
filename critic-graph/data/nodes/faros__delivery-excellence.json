@@ -1,0 +1,24 @@
+{
+  "built": "2026-06-30T00:00:00+00:00",
+  "namespace": "dev/faros-case",
+  "node": {
+    "id": "faros:delivery-excellence",
+    "type": "faros",
+    "title": "Predictable Delivery — initiative tracking & forecasting",
+    "parent": "faros:observe",
+    "status": "proposed",
+    "honesty": "shipped",
+    "provenance": "sourced",
+    "pillar": "observe",
+    "summary": "Creates transparency, predictability, and consistency across cross-team initiatives via tracking, delay/overrun forecasting, and capacity analytics.",
+    "interview_question": "This is a PMO/planning surface outside the Observe/Optimize/Govern thesis — does it dilute the story or extend it?",
+    "competitor": {
+      "key": "jellyfish",
+      "name": "Jellyfish",
+      "domain": "jellyfish.co",
+      "color": "#00B3A4",
+      "mono": "J",
+      "positioning": "Jellyfish and LinearB own engineering planning, allocation, and delivery forecasting as a primary product — this is their home turf, not Faros's."
+    }
+  }
+}

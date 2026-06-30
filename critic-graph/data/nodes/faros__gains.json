@@ -1,0 +1,24 @@
+{
+  "built": "2026-06-30T00:00:00+00:00",
+  "namespace": "dev/faros-case",
+  "node": {
+    "id": "faros:gains",
+    "type": "faros",
+    "title": "GAINS — Generative AI Impact Net Score diagnostic",
+    "parent": "faros:ai-transformation",
+    "status": "proposed",
+    "honesty": "shipped",
+    "provenance": "sourced",
+    "pillar": "observe",
+    "summary": "A diagnostic that benchmarks AI maturity, surfaces organizational friction, and ties AI usage to outcomes.",
+    "interview_question": "Is GAINS a real diagnostic with a defensible scale, or a lead-gen framework? What's the n behind the benchmark?",
+    "competitor": {
+      "key": "dx",
+      "name": "DX (Atlassian)",
+      "domain": "getdx.com",
+      "color": "#111827",
+      "mono": "DX",
+      "positioning": "DX (now Atlassian, ~$1B) owns the credible quant+qual DevEx benchmark with the largest research bench — the strongest incumbent on 'maturity diagnostics'."
+    }
+  }
+}

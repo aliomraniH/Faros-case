@@ -1,0 +1,24 @@
+{
+  "built": "2026-06-30T00:00:00+00:00",
+  "namespace": "dev/faros-case",
+  "node": {
+    "id": "faros:clara-context-engine",
+    "type": "faros",
+    "title": "Clara — Context Engineering for AI agents",
+    "parent": "faros:root",
+    "status": "proposed",
+    "honesty": "shipped",
+    "provenance": "sourced",
+    "pillar": "optimize",
+    "summary": "Bootstraps AI coding agents with institutional knowledge from past PRs and tickets, delivers agentic PRs with a human in the loop, and learns from every merge.",
+    "interview_question": "If Cursor and Copilot keep adding their own codebase context, what's left for Clara to own?",
+    "competitor": {
+      "key": "cursor",
+      "name": "Cursor",
+      "domain": "cursor.com",
+      "color": "#111111",
+      "mono": "Cu",
+      "positioning": "Cursor/Copilot add in-IDE codebase context natively and own the session; they argue context belongs in the tool, not a separate platform."
+    }
+  }
+}

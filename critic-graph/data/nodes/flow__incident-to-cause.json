@@ -1,0 +1,22 @@
+{
+  "built": "2026-06-30T00:00:00+00:00",
+  "namespace": "dev/faros-case",
+  "node": {
+    "id": "flow:incident-to-cause",
+    "type": "flow",
+    "title": "Flow — from production incident to root cause",
+    "parent": "organization:root",
+    "status": "approved",
+    "provenance": "inferred",
+    "summary": "The signature flow: a P1 incident traced back through deploy and PR to the AI session and the context it did or didn't have.",
+    "interview_question": "When you say you trace an incident to the AI session that caused it — is that an observed edge or an inference at the PR/aggregate level?",
+    "competitor": {
+      "key": "rootly",
+      "name": "Rootly",
+      "domain": "rootly.com",
+      "color": "#FF4F64",
+      "mono": "R",
+      "positioning": "Rootly and incident.io tie an incident to its causing PR and resolve single incidents deeper than Faros — but they stop before the AI session and spend."
+    }
+  }
+}

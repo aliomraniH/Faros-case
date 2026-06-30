@@ -1,0 +1,23 @@
+{
+  "built": "2026-06-30T00:00:00+00:00",
+  "namespace": "dev/faros-case",
+  "node": {
+    "id": "mapping:maya-rework-context",
+    "type": "mapping",
+    "title": "Mapping — Maya's 'throughput up, rework up' → Clara Context Engine",
+    "parent": "organization:root",
+    "status": "proposed",
+    "honesty": "inference",
+    "provenance": "inferred",
+    "summary": "Maps 'AI shifted the bottleneck to review; bugs and rework rising faster than throughput' to Clara's review-ready, context-bootstrapped agent PRs.",
+    "interview_question": "'40% less rework' — is that a Faros customer result or a marketing number? What's independent here?",
+    "competitor": {
+      "key": "sonarqube",
+      "name": "SonarQube",
+      "domain": "sonarsource.com",
+      "color": "#126ED3",
+      "mono": "Sq",
+      "positioning": "SonarQube and GitClear own code-quality/churn measurement (GitClear's churn data even corroborates the problem) — they quantify rework but don't fix it at the agent-context level."
+    }
+  }
+}

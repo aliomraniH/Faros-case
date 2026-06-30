@@ -1,0 +1,22 @@
+{
+  "built": "2026-06-30T00:00:00+00:00",
+  "namespace": "dev/faros-case",
+  "node": {
+    "id": "principle:empower-not-police",
+    "type": "principle",
+    "title": "Principle — empower the team, never police it",
+    "parent": "organization:root",
+    "status": "approved",
+    "provenance": "user-intent",
+    "summary": "Measurement and governance land at the repo/system level — never individual keystrokes. The line between a tool developers adopt and one they route around.",
+    "interview_question": "This is a value, not a feature. How is 'empower not police' enforced in the product rather than just promised in the deck?",
+    "competitor": {
+      "key": "dx",
+      "name": "DX (Atlassian)",
+      "domain": "getdx.com",
+      "color": "#111827",
+      "mono": "DX",
+      "positioning": "Every DevEx/productivity vendor claims 'we don't surveil'; the principle only differentiates if Faros can prove enforcement where rivals only assert intent."
+    }
+  }
+}

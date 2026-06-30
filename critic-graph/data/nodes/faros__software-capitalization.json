@@ -1,0 +1,24 @@
+{
+  "built": "2026-06-30T00:00:00+00:00",
+  "namespace": "dev/faros-case",
+  "node": {
+    "id": "faros:software-capitalization",
+    "type": "faros",
+    "title": "Software Cost Capitalization — audit-ready, automated",
+    "parent": "faros:delivery-excellence",
+    "status": "proposed",
+    "honesty": "shipped",
+    "provenance": "sourced",
+    "pillar": "observe",
+    "summary": "Generates accurate, audit-ready capitalization reports automatically — no manual spreadsheets.",
+    "interview_question": "Capitalization is a finance workflow far from AI ROI — why is Faros the right vendor for the CFO's auditors?",
+    "competitor": {
+      "key": "jellyfish",
+      "name": "Jellyfish",
+      "domain": "jellyfish.co",
+      "color": "#00B3A4",
+      "mono": "J",
+      "positioning": "Jellyfish explicitly sells software capitalization to finance teams already — a direct, mature competitor on this exact node."
+    }
+  }
+}

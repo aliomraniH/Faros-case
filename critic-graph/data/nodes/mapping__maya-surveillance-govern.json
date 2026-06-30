@@ -1,0 +1,23 @@
+{
+  "built": "2026-06-30T00:00:00+00:00",
+  "namespace": "dev/faros-case",
+  "node": {
+    "id": "mapping:maya-surveillance-govern",
+    "type": "mapping",
+    "title": "Mapping — 'is this surveillance?' → repo/system-level governance",
+    "parent": "organization:root",
+    "status": "approved",
+    "honesty": "shipped",
+    "provenance": "inferred",
+    "summary": "Maps the surveillance fear to the discipline that everything lands at repo/system level — context, flags, traces, policy — never individual keystrokes.",
+    "interview_question": "What technically prevents a customer from using your data to rank or monitor individual engineers?",
+    "competitor": {
+      "key": "dx",
+      "name": "DX (Atlassian)",
+      "domain": "getdx.com",
+      "color": "#111827",
+      "mono": "DX",
+      "positioning": "The anti-pattern is older developer-productivity/surveillance tooling that ranks individuals; Faros must visibly distance itself from that whole category."
+    }
+  }
+}

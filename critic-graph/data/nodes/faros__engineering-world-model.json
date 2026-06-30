@@ -1,0 +1,24 @@
+{
+  "built": "2026-06-30T00:00:00+00:00",
+  "namespace": "dev/faros-case",
+  "node": {
+    "id": "faros:engineering-world-model",
+    "type": "faros",
+    "title": "Engineering World Model — the unified graph",
+    "parent": "faros:observe",
+    "status": "proposed",
+    "honesty": "shipped",
+    "provenance": "sourced",
+    "pillar": "observe",
+    "summary": "A single source of truth connecting teams, tools, repos, and workflows — the graph that makes cross-stage attribution possible.",
+    "interview_question": "You call it a 'world model' — how is that different from a service catalog or an internal developer portal?",
+    "competitor": {
+      "key": "cortex",
+      "name": "Cortex",
+      "domain": "cortex.io",
+      "color": "#6F4FF2",
+      "mono": "C",
+      "positioning": "Cortex (and Port/Backstage) already claim to be the system-of-record graph of services and ownership; they argue the catalog they own is the real source of truth."
+    }
+  }
+}

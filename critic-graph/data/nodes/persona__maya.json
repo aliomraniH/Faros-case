@@ -1,0 +1,15 @@
+{
+  "built": "2026-06-30T00:00:00+00:00",
+  "namespace": "dev/faros-case",
+  "node": {
+    "id": "persona:maya",
+    "type": "persona",
+    "title": "Maya — VP Platform Engineering (primary buyer)",
+    "parent": "organization:root",
+    "status": "approved",
+    "provenance": "inferred",
+    "summary": "The primary buyer: VP Platform Eng at a ~1,200-eng B2B SaaS, ~90% AI adoption, renewal looming. Squeezed between a board demanding ROI and developers demanding no surveillance.",
+    "interview_question": "Is Maya the economic buyer or the champion? Who actually signs, and who can veto?",
+    "competitor": null
+  }
+}
