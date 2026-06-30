@@ -1,0 +1,517 @@
+{
+  "built": "2026-06-30T00:00:00+00:00",
+  "namespace": "dev/faros-case",
+  "description": "Per-node answer angles for the critic graph. Three buckets: actual (shipped|independent|public|vendor|market), vision/principle (principle|inference|roadmap|synthesis), research suggestion (verify|test|build|reframe).",
+  "node_count": 36,
+  "angle_count": 109,
+  "responses": {
+    "organization:root": [
+      {
+        "t": "inference",
+        "x": "A feature list answers 'what does Faros have'; modeling the org answers 'what does Maya need' — and only the second tells you which features matter and which to drop."
+      },
+      {
+        "t": "principle",
+        "x": "The root is the buyer's world, so every recommendation has to trace to a real pain inside it — that's the guard against a capability tour."
+      },
+      {
+        "t": "reframe",
+        "x": "Develop the one example where org-first changes the answer: a feature that demos well but maps to no pain in Maya's org, and gets cut. That makes the discipline concrete."
+      }
+    ],
+    "faros:root": [
+      {
+        "t": "shipped",
+        "x": "Faros is the operational graph that joins ticket→AI session→PR→deploy→incident→spend. It isn't FinOps or DevEx because those each own one link and stop — the join across all of them is the product."
+      },
+      {
+        "t": "principle",
+        "x": "And it isn't a cost tool: spend is the entry point, but what it sells is whether that spend produced quality, attributed work. Money is the door, quality is the room."
+      },
+      {
+        "t": "reframe",
+        "x": "Draft the half-sentence that separates Faros from Harness AI DLC Insights specifically — the closest whole-platform analog — since the connected-graph-as-prerequisite line is the one that has to survive the room."
+      }
+    ],
+    "faros:token-intelligence": [
+      {
+        "t": "shipped",
+        "x": "The graph carries the edges: a session's tokens link to the PR they produced and the change that shipped, so spend attributes to work through observed connectors — not a guess."
+      },
+      {
+        "t": "inference",
+        "x": "It becomes an estimate at PR→business-outcome and session→incident — those are aggregate/inference, and that's the boundary I'd state plainly."
+      },
+      {
+        "t": "build",
+        "x": "Define a confidence model: tag each edge observed-vs-inferred and surface a per-row confidence, so 'where it's an estimate' is a visible field, not an admission."
+      }
+    ],
+    "faros:token-attribution-ledger": [
+      {
+        "t": "shipped",
+        "x": "A row is {spend unit → session → PR → shipped change → outcome}. A cost report has the first field; the ledger has the last three, joined through the graph."
+      },
+      {
+        "t": "market",
+        "x": "CloudZero/Vantage stop at the dollar — that's the chart; the outcome edge is what makes it a chargeback, and that edge is the thing they can't draw."
+      },
+      {
+        "t": "test",
+        "x": "Build the single believable row as a demo artifact — one real PR, its tokens, its outcome — because a board believes one row it can follow faster than any aggregate."
+      }
+    ],
+    "faros:engineering-world-model": [
+      {
+        "t": "shipped",
+        "x": "A catalog is a static map of services and owners; the world model adds the live event edges — who and which AI session touched each change — which is what attribution needs and a catalog doesn't have."
+      },
+      {
+        "t": "market",
+        "x": "Cortex/Backstage/Port own structure but break at measurement and AI-session attribution; the world model is structure plus the work happening on it."
+      },
+      {
+        "t": "reframe",
+        "x": "Sharpen it with one query the world model answers that an IDP can't — e.g. 'which AI sessions touched the services in this incident's blast radius.' That single query is the demo line."
+      }
+    ],
+    "faros:ai-transformation": [
+      {
+        "t": "public",
+        "x": "It's a controlled comparison — matched cohorts and A/B tests of teams with and without the tool — so lift is measured against a baseline, not read off a trend. Faros's own words: it 'separates real gains from coincidence.'"
+      },
+      {
+        "t": "market",
+        "x": "I can't claim a published estimator, but I can show the design — matched cohorts, holdouts — which is already more than Jellyfish, who labels its own AI Impact 'correlation.'"
+      },
+      {
+        "t": "verify",
+        "x": "Confirm from Faros docs/customers exactly which designs run (cohort, A/B, diff-in-diff) so 'causal' has a concrete method behind it without overstating the estimator."
+      },
+      {
+        "t": "test",
+        "x": "Produce one worked cohort example — treated vs holdout delta on real or synthetic data — as the slide-ready proof that the method is real."
+      }
+    ],
+    "faros:gains": [
+      {
+        "t": "shipped",
+        "x": "GAINS reads AI usage and friction from the graph and ties it to outcomes, so it's a real diagnostic — but it's a maturity framework, and whether its benchmark has the n to be a normed 'score' is the honest open part."
+      },
+      {
+        "t": "market",
+        "x": "DX owns survey-benchmark rigor; GAINS' defensible edge is that it's operational — derived from your actual data, not a questionnaire."
+      },
+      {
+        "t": "verify",
+        "x": "Get the benchmark n and how the scale is constructed from Faros; until then, present GAINS as a framework, not a normed score."
+      }
+    ],
+    "faros:executive-scorecards": [
+      {
+        "t": "shipped",
+        "x": "The same KPIs, but with spend→outcome attribution under each one — so a CFO can say 'this AI line produced this shipped value,' which Jellyfish's correlation view can't substantiate."
+      },
+      {
+        "t": "principle",
+        "x": "The CFO enters on the spend number and leaves with the quality/outcome story — that leave-with line is the difference, not the chart."
+      },
+      {
+        "t": "verify",
+        "x": "Pin down which board-ready figures the scorecard exports today vs Jellyfish's, so 'what's different' is a concrete field-by-field answer, not a claim."
+      }
+    ],
+    "faros:developer-productivity": [
+      {
+        "t": "inference",
+        "x": "Straight answer: you wouldn't rip them out for the DORA view alone — you'd adopt Faros for the link they don't have (session + spend joined to delivery), and the DORA view comes along for free."
+      },
+      {
+        "t": "market",
+        "x": "This is the commodity link; I'd concede parity and not fight on per-dev price."
+      },
+      {
+        "t": "reframe",
+        "x": "Build the 'and also' pitch, not the 'rip out' pitch: the wedge is the cross-stage join, with DORA as the familiar on-ramp — develop that landing explicitly."
+      }
+    ],
+    "faros:dora-metrics": [
+      {
+        "t": "shipped",
+        "x": "Correct attribution comes from the graph resolving identities and merges across messy enterprise repos before computing the metric — the error in others is usually bad joins, not bad math."
+      },
+      {
+        "t": "inference",
+        "x": "Honestly 'more accurate DORA' is a thin wedge on its own; the real point is the same correct join also reaches session and spend."
+      },
+      {
+        "t": "test",
+        "x": "Find or construct one concrete miscount — a merge/identity case rivals get wrong and Faros gets right — because one example beats the adjective 'accurate.'"
+      }
+    ],
+    "faros:clara-context-engine": [
+      {
+        "t": "shipped",
+        "x": "Clara owns what an IDE can't see: cross-session, cross-tool org history — past PRs, tickets, decisions — fed into the agent, with a human approving and the system learning from every merge."
+      },
+      {
+        "t": "inference",
+        "x": "The IDE optimizes one session; Clara optimizes the institution across sessions and tools — a different layer, not a competing feature."
+      },
+      {
+        "t": "build",
+        "x": "Specify the interface: how Clara's context rides into Cursor/Copilot (rules files, MCP, context injection) rather than fighting them — owning the layer means feeding their session, not replacing it."
+      }
+    ],
+    "faros:historical-replay": [
+      {
+        "t": "shipped",
+        "x": "What I can show today: Clara learns from every merged PR and carries that context forward — that's the live half, here now."
+      },
+      {
+        "t": "roadmap",
+        "x": "'Replay until success rates climb' as a closed automated loop is roadmap — I'd demo learning-on-merge and label the full loop honestly."
+      },
+      {
+        "t": "test",
+        "x": "Run the loop on one repo's real PR history and chart agent success before/after the learned context — that evidence converts 'aspirational' into 'shipped slice.'"
+      }
+    ],
+    "faros:model-routing": [
+      {
+        "t": "shipped",
+        "x": "The recommendation isn't a fixed leaderboard — it's derived from your own task outcomes on the graph, so it updates as your results change, not on a vendor's cadence."
+      },
+      {
+        "t": "roadmap",
+        "x": "Fully adaptive auto-routing is roadmap; what's real is the evidence of which tool-model pairings worked on your actual work."
+      },
+      {
+        "t": "build",
+        "x": "Define the refresh mechanism — how often the recommendation recomputes and on what signal — so 'not stale' is an engineering answer (a re-eval trigger), not a hope."
+      }
+    ],
+    "faros:optimize": [
+      {
+        "t": "shipped",
+        "x": "Specific line: shipped = per-repo context and observing which tool-model fits which task; roadmap = auto-generating tailored skills/rules/tools per repo and adaptive routing."
+      },
+      {
+        "t": "principle",
+        "x": "The pillar's whole job is turning observation into better agent performance — the frame is 'make your agents perform,' not 'spend less.'"
+      },
+      {
+        "t": "verify",
+        "x": "Get the exact shipped-vs-roadmap line from Faros eng feature by feature, so the 'be specific' answer is theirs, not my inference."
+      }
+    ],
+    "faros:observe": [
+      {
+        "t": "shipped",
+        "x": "The join is observed for ticket→PR→deploy and session→PR wherever connectors expose it — solid at session/file/decision grain."
+      },
+      {
+        "t": "inference",
+        "x": "It becomes inference at session→incident and where a connector is coarse — e.g. Copilot API granularity. I'd name those two as the real boundaries before being pushed."
+      },
+      {
+        "t": "verify",
+        "x": "Make the inventory: list every edge in the chain marked observed-vs-inferred per connector — that table is the honest, unbluffable answer to 'where does it break.'"
+      }
+    ],
+    "faros:govern": [
+      {
+        "t": "shipped",
+        "x": "Live: provenance/audit from ticket to shipped change, and a human review/merge. Roadmap: central policy with distributed context."
+      },
+      {
+        "t": "inference",
+        "x": "A compensating control is the flag plus the provenance graph and policy — the flag ships the change safely, the trail proves who approved it. That bundle is the control; the flag alone isn't."
+      },
+      {
+        "t": "build",
+        "x": "Spec the minimal control a CISO signs off on — flag + required human approval + immutable audit record — and map it to a named framework (SOC2/ISO) so it's auditable, not a convention."
+      }
+    ],
+    "faros:governance-guardrails": [
+      {
+        "t": "shipped",
+        "x": "Demoable today: the provenance/audit trail and the human review-and-merge gate."
+      },
+      {
+        "t": "inference",
+        "x": "Policy enforcement, flags, and code tagging at scale are the intended shape, not shipped — I'd show the trail and call the rest direction."
+      },
+      {
+        "t": "build",
+        "x": "Pick the one guardrail to ship first — likely code tagging tied to provenance — and prototype it, so 'inference' has a concrete next-shipped item behind it."
+      }
+    ],
+    "faros:provenance-audit-trail": [
+      {
+        "t": "shipped",
+        "x": "It earns its keep without the regulation: it's how you do incident forensics and answer 'who approved this AI change and why' — useful the day a P1 hits, not just the day an auditor calls."
+      },
+      {
+        "t": "market",
+        "x": "I'd state the date right — high-risk obligations deferred to Dec 2 2027 by the Digital Omnibus, transparency rules still live — so the pitch isn't manufactured deadline urgency."
+      },
+      {
+        "t": "reframe",
+        "x": "Lead the value with incident forensics and trust, not compliance — develop that as the primary frame so the deadline deferral is irrelevant to the buy."
+      }
+    ],
+    "faros:delivery-excellence": [
+      {
+        "t": "inference",
+        "x": "It extends the story only where it rides the graph (forecasting from real delivery signal); as a standalone PMO play it dilutes. So: keep it a graph-fed view, don't sell it as a planning product."
+      },
+      {
+        "t": "market",
+        "x": "Jellyfish/LinearB own planning; competing there off-thesis is the dilution risk."
+      },
+      {
+        "t": "reframe",
+        "x": "Decide the cut line: which delivery surfaces stay (graph-fed) and which drop from the core story — a real scope decision, which is the judgment the panel is testing."
+      }
+    ],
+    "faros:initiative-tracking": [
+      {
+        "t": "shipped",
+        "x": "Because the forecast uses the graph's real delivery and capacity signal, not just ticket status — a Jira rollup forecasts off the tickets; this forecasts off the work."
+      },
+      {
+        "t": "inference",
+        "x": "I'd still be candid the gap is narrow — the honest claim is 'a better-grounded forecast,' not a new category."
+      },
+      {
+        "t": "test",
+        "x": "Show one forecast where the graph-grounded version caught a slip the ticket-only view missed — that's the only thing that separates it from a rollup."
+      }
+    ],
+    "faros:software-capitalization": [
+      {
+        "t": "shipped",
+        "x": "Because the cap report is generated from already-attributed work in the graph — every capitalized hour traces to a real change, which is exactly what auditors want and spreadsheets can't give."
+      },
+      {
+        "t": "market",
+        "x": "Jellyfish sells cap too, so I'd be honest it's competitive and non-core — justified by reusing the attribution graph, not by being a finance specialist."
+      },
+      {
+        "t": "verify",
+        "x": "Confirm which standard the cap output is built against (ASC 350-40 / IAS 38) so 'audit-ready' is a specific compliance claim, not a vibe."
+      }
+    ],
+    "flow:board-asks-roi": [
+      {
+        "t": "independent",
+        "x": "She pulls Copilot/Cursor/Claude Code spend from three consoles, delivery numbers from a dashboard, sentiment from a survey, and hand-assembles a deck — and still can't connect spend to outcome. CloudZero's survey: 87% need that link, 22% have it."
+      },
+      {
+        "t": "shipped",
+        "x": "The exact stuck point is the join — every source is real, none connects spend→outcome — which is the one thing Observe does."
+      },
+      {
+        "t": "test",
+        "x": "Script this as the live demo: the four-source manual scramble vs the one Faros view — the contrast is the pitch, so build it side-by-side."
+      }
+    ],
+    "flow:incident-to-cause": [
+      {
+        "t": "shipped",
+        "x": "Incident→deploy→PR is observed — a real traced edge."
+      },
+      {
+        "t": "inference",
+        "x": "PR→the specific AI session is inference at the PR/aggregate level — we don't claim a keystroke-level causal edge, and I'd say so before being pushed."
+      },
+      {
+        "t": "build",
+        "x": "Scope what makes session→PR observed (session IDs in commit metadata) — naming the path to closing the inference is a stronger answer than just conceding it."
+      }
+    ],
+    "mapping:maya-roi-ledger": [
+      {
+        "t": "shipped",
+        "x": "One traced row: this PR shipped this feature, ran on this many tokens, here's the chain. The board believes one row it can follow faster than any aggregate."
+      },
+      {
+        "t": "vendor",
+        "x": "If I reach for 10x/40% headlines, I'd flag them vendor and put them after the row, never before it."
+      },
+      {
+        "t": "test",
+        "x": "Pre-build that row from a real or realistic case as the opening artifact — the 'door' card lives or dies on having it ready."
+      }
+    ],
+    "mapping:maya-tool-rationalization": [
+      {
+        "t": "shipped",
+        "x": "A cut is backed by the graph showing a tool's spend with no attributable outcome over a period — evidence of non-use, not opinion."
+      },
+      {
+        "t": "roadmap",
+        "x": "An automated keep/scope/cut verdict is roadmap; today it's evidence the VP reads, not a button that decides."
+      },
+      {
+        "t": "build",
+        "x": "Define the cut threshold — how much spend over what window below what outcome floor flags a 'cut' — because a VP stakes budget on a rule, not a hunch."
+      }
+    ],
+    "mapping:maya-incident-observe": [
+      {
+        "t": "shipped",
+        "x": "Cold = the on-call hops tool to tool by hand: incident.io → deploy log → GitHub → the AI tool, rebuilding context at each boundary. Observe pre-joins those hops so the chain is already assembled."
+      },
+      {
+        "t": "inference",
+        "x": "How many boundaries it crosses unaided depends on connector coverage — I'd show the real number for a given stack, not claim 'all.'"
+      },
+      {
+        "t": "verify",
+        "x": "Map a real reference stack's boundaries and count which Observe crosses out-of-the-box vs needs config — concrete coverage beats 'it connects everything.'"
+      }
+    ],
+    "mapping:maya-learning-negmem": [
+      {
+        "t": "shipped",
+        "x": "I sell the live half as proof of direction: Clara already learns from every merge and carries per-repo context. Negative memory is that loop pointed at failures — and I'd label it roadmap explicitly."
+      },
+      {
+        "t": "principle",
+        "x": "Frame it as transfer of mastery closing the MIT learning gap — aspiration ('your best teams haven't seen their best yet'), never a shipped claim."
+      },
+      {
+        "t": "build",
+        "x": "Prototype the smallest real version: one failed session replayed into one repo rule that blocks the repeat — a working sliver makes the vision credible without over-promising the loop."
+      }
+    ],
+    "mapping:maya-predictability-delivery": [
+      {
+        "t": "inference",
+        "x": "Honest answer: I have no evidence yet — it plausibly maps to 'hit and report commitments without policing,' but it's on the site, not validated for Maya."
+      },
+      {
+        "t": "market",
+        "x": "And Jellyfish/LinearB are the proven answer here, so I'd hold this mapping loosely."
+      },
+      {
+        "t": "verify",
+        "x": "Test the mapping in one discovery call: does Maya actually reach for a delivery-forecast surface, or is this a feature looking for a persona? That settles the 'inference' honestly."
+      }
+    ],
+    "mapping:maya-rework-context": [
+      {
+        "t": "vendor",
+        "x": "The 40% is a vendor number — I'd say that outright and not dress it as independent."
+      },
+      {
+        "t": "independent",
+        "x": "What's independently established is the problem: GitClear's 211M-line study shows copy/paste up 8.3%→12.3% and duplicate blocks ~8x — so rework is real even if the 40% fix isn't independently verified."
+      },
+      {
+        "t": "test",
+        "x": "Run a before/after rework measurement (churn, duplicate blocks) on a design partner with Clara context on vs off — that's how 40% stops being marketing and becomes a result."
+      }
+    ],
+    "mapping:maya-devex-friction": [
+      {
+        "t": "shipped",
+        "x": "The data model aggregates at team/repo/system level — individual keystroke streams aren't collected or exposed, so there's no individual row to rank from."
+      },
+      {
+        "t": "inference",
+        "x": "I won't claim a customer can never misuse an export — the honest guarantee is about what we surface, not what they do downstream."
+      },
+      {
+        "t": "build",
+        "x": "Design the actual guardrail: a minimum-team-size floor and no individual drill-down in the schema — a structural guarantee beats a stated intention, and it's a real spec to write."
+      }
+    ],
+    "mapping:maya-adoption-aitransformation": [
+      {
+        "t": "public",
+        "x": "Adoption is the easy measure; the ROI claim rests on the controlled cohort/A-B comparison ('separates gains from coincidence'). So: adoption is measured, ROI is argued from the comparison — and I won't blur them."
+      },
+      {
+        "t": "independent",
+        "x": "MIT NANDA's 95%-no-P&L finding is exactly why I keep them separate — adoption without attributed outcome is the gap, not the proof."
+      },
+      {
+        "t": "verify",
+        "x": "Pull a real Faros ROI case and check whether the lift came from a true holdout/cohort or a pre/post trend — that tells you if 'ROI' is earned or relabeled adoption."
+      }
+    ],
+    "mapping:maya-surveillance-govern": [
+      {
+        "t": "shipped",
+        "x": "Measurement lands at repo/system level by design — context, flags, traces, policy — so there's no per-engineer keystroke record to rank."
+      },
+      {
+        "t": "inference",
+        "x": "I won't overclaim a hard lock; whether individual attribution is even computable from the graph is genuinely open, and I'd say so."
+      },
+      {
+        "t": "build",
+        "x": "Specify the enforcement: schema-level aggregation floors plus no individual identity on metric rows, so 'can't rank individuals' is a property of the data model, not a policy promise."
+      }
+    ],
+    "mapping:maya-govern-velocity": [
+      {
+        "t": "inference",
+        "x": "The control is the flag bound to a required human approval and an immutable provenance record — the flag ships safely, the approval+trail is what the CISO attests to. A convention becomes a control when it's enforced and logged."
+      },
+      {
+        "t": "roadmap",
+        "x": "The full policy system is roadmap; the audit trail and human gate are real today."
+      },
+      {
+        "t": "build",
+        "x": "Map this to a named control (e.g. a SOC2 change-management control) and show the evidence it produces — that's what turns 'feature flag' into 'auditable control.'"
+      }
+    ],
+    "persona:maya": [
+      {
+        "t": "inference",
+        "x": "Maya is the champion and owner of the pain; the CFO is the economic buyer who opens budget and can veto; the staff engineer can veto on technical trust; developers decide adoption. She drives, the CFO signs, two groups can kill it."
+      },
+      {
+        "t": "principle",
+        "x": "Her squeeze — answer up without policing down — is why money-is-door and empower-not-police both have to hold, or a vetoer kills the deal."
+      },
+      {
+        "t": "verify",
+        "x": "In discovery, confirm the real signing/veto map for a target account — get the actual org chart, because the deal dies at the vetoer you didn't map."
+      }
+    ],
+    "principle:empower-not-police": [
+      {
+        "t": "shipped",
+        "x": "Enforced by where data lands: repo/system level, never individual keystrokes — it's a property of the schema, so there's nothing to police with."
+      },
+      {
+        "t": "inference",
+        "x": "Every DevEx vendor says 'we don't surveil' — so the only real enforcement is showing the granularity, and I'd show it rather than assert intent."
+      },
+      {
+        "t": "build",
+        "x": "Turn the value into a verifiable constraint — aggregation floors + no individual drill-down, documented as a guarantee a customer can audit. That's enforcement, not a promise."
+      }
+    ],
+    "principle:transfer-of-mastery": [
+      {
+        "t": "shipped",
+        "x": "What's real is the mechanism: Clara learns from every merged PR, so a senior's reviewed decision already propagates into the next agent run — transfer of mastery in miniature, today."
+      },
+      {
+        "t": "inference",
+        "x": "Honest answer on the story: I don't have a named one — and I'd source a real one rather than invent it."
+      },
+      {
+        "t": "test",
+        "x": "Find or instrument one concrete instance with a design partner — a lesson a senior fixed once that the system then applied automatically. That single story is the emotional close, so go get it."
+      }
+    ]
+  }
+}
